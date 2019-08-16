@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/m-app/static/css/main.8d39111d.chunk.css",
+    "main.js": "/m-app/static/js/main.168899de.chunk.js",
+    "main.js.map": "/m-app/static/js/main.168899de.chunk.js.map",
+    "runtime~main.js": "/m-app/static/js/runtime~main.209ac6fa.js",
+    "runtime~main.js.map": "/m-app/static/js/runtime~main.209ac6fa.js.map",
+    "static/js/2.58447131.chunk.js": "/m-app/static/js/2.58447131.chunk.js",
+    "static/js/2.58447131.chunk.js.map": "/m-app/static/js/2.58447131.chunk.js.map",
+    "index.html": "/m-app/index.html",
+    "precache-manifest.dc7e1872257892e948fafc6a65bf4d49.js": "/m-app/precache-manifest.dc7e1872257892e948fafc6a65bf4d49.js",
+    "service-worker.js": "/m-app/service-worker.js",
+    "static/css/main.8d39111d.chunk.css.map": "/m-app/static/css/main.8d39111d.chunk.css.map",
+    "static/media/construction.svg": "/m-app/static/media/construction.d0467843.svg",
+    "static/media/crying.gif": "/m-app/static/media/crying.c31cfa71.gif",
+    "static/media/gif_home2.gif": "/m-app/static/media/gif_home2.b9e4960c.gif",
+    "static/media/logo_univesp_branco.svg": "/m-app/static/media/logo_univesp_branco.e8640bb3.svg",
+    "static/media/triangle.gif": "/m-app/static/media/triangle.56d45690.gif",
+    "static/media/typing_transparent.gif": "/m-app/static/media/typing_transparent.70e3f504.gif"
+  }
+}
