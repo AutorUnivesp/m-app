@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+@media (min-width: 800px) and (max-width: 1450px) {
+  main, html{
+    font-family: 'Barlow';
+    background-color: #00838f;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .home-div-principal {
+    margin-top: 12%;
+  }
+
+  .img-home {
+    border-radius: 15px;
+    height: 190px;
+  }
+
+  .montagem-name{
+    font-size: 48pt;
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 33%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ebf0f2;
+  }
+
+  .titulo-montagem-app {
+    color: #ebf0f2;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .version {
+    color: #00838f;
+    font-size: 14pt;
+  }
+
+  .construtor-link {
+    color: #00838f;
+    border-radius: 0px 5px 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .construtor-link:hover {
+    color: white;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .activeTabApp {
+    color: white;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tab-pane {
+    background-color: #00838f;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .nav .active {
+    background: #14aadb;
+  }
+
+  .active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 4% 4% 4% 4%;
+    grid-column-gap: 35px;
+    font-size: 1.5em;
+    color: #00838f;
+    margin-left: 9%;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #c4d1d6;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #ffe270;
+  }
+
+  #icon-canvas1 {
+    position: absolute;
+    top: 26%;
+  }
+
+  .guia-canvas{
+    margin-left: 5%;
+    position: absolute;
+    top: 180px;
+  }
+
+  .btn{
+    width: 800px;
+  }
+  .btn-link{
+    text-decoration: none;
+  }
+
+  .card-body{
+    width: 800px;
+  }
+
+  .accordion {
+    width: 950px;
+  }
+
+  .exe-diferenciados {
+    width: 950px;
+    padding-left: 10%;
+  }
+
+  .btn-light {
+    background-color: #00838f;
+    color: white;
+  }
+
+  .btn-light:hover {
+    background-color: #ebf0e2;
+    color: #00838f;
+    font-weight: bold;
+  }
+
+  .card-header {
+    background-color: #005662;
+    text-align: center;
+  }
+
+  .list-group-item-action {
+    color: #0093a1;
+    background-color: #ebf0f2;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+    font-size: 0.8em;
+    padding-left: 5px;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
+    color: white;
+    background-color: #005662;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+}
+
+@media (min-width: 1451px) {
+  main, html{
+    font-family: 'Raleway';
+    background-color: #00838f;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .img-home {
+    margin-top: 200px;
+    border-radius: 15px;
+    height: 100%;
+  }
+
+  .montagem-name {
+    margin-left: 2%;
+    font-size: 62pt;
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 33%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ebf0f2;
+    box-shadow: 4px 4px 4px #252a2e;
+  }
+
+  .titulo-montagem-app {
+    color: #ebf0f2;
+    font-size: 24pt;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+  }
+
+  .version {
+    color: #00838f;
+    font-size: 14pt;
+  }
+
+  .list-group-item-action {
+    color: #0093a1;
+    background-color: #ebf0f2;
+    border-radius: 0px 5px 20px 0px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus {
+    color: white;
+    background-color: #005662;
+    border-radius: 0px 5px 20px 0px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  .construtor-link {
+    color: #00838f;
+    border-radius: 0px 5px 20px 0px;
+    font-family: 'Raleway';
+  }
+
+  .construtor-link:hover, .construtor-link:focus {
+    color: white;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .activeTabApp {
+    color: white;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tab-pane {
+    background-color: #00838f;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .nav .active {
+    background: #14aadb;
+    color: white;
+  }
+
+  .active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 4% 4% 4% 4%;
+    grid-column-gap: 50%;
+    font-size: 1.8em;
+    color: #00838f;
+    margin-left: 10%;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #c4d1d6;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #ffe270;
+  }
+
+  #icon-canvas1 {
+    position: absolute;
+    top: 16px;
+  }
+
+  .icon-bar1{
+    color: #ebf0f2;
+    margin-left: 55%;
+    font-size: 1.8em;
+  }
+  .icon-bar1:hover{
+    cursor: pointer;
+    color: #00838f;
+  }
+
+  .guia-canvas{
+    margin-left: 5%;
+    position: absolute;
+    top: 80px;
+  }
+
+  .diferenciados{
+    margin-left: 31.5%;
+    position: absolute;
+    top: 120px;
+    font-family: 'Raleway';
+  }
+
+  .btn{
+    width: 800px;
+  }
+  .btn-link{
+    text-decoration: none;
+  }
+
+  .card-body{
+    width: 800px;
+  }
+
+  .accordion {
+    width: 1300px;
+  }
+
+  .exe-diferenciados {
+    width: 1300px;
+    font-family: 'Raleway';
+  }
+
+  .btn-light {
+    background-color: #00838f;
+    color: white;
+  }
+
+  .btn-light:hover {
+    background-color: #ebf0e2;
+    color: #00838f;
+    font-weight: bold;
+  }
+
+  .card-header {
+    background-color: #005662;
+    text-align: center;
+  }
+}

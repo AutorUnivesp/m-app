@@ -1,0 +1,21 @@
+@media (min-width: 800px) and (max-width: 1450px){
+  .gridBasicos {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    margin-left: 17%;
+    grid-column-gap: 95px;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1451px){
+  .gridBasicos {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    margin-left: 27%;
+    grid-column-gap: 30px;
+    margin-top: 5%;
+    text-align: center;
+  }
+}

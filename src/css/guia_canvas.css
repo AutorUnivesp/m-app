@@ -1,0 +1,199 @@
+@media (min-width: 800px) and (max-width: 1450px) {
+  .guia-de-uso {
+    list-style-type: none;
+    margin-left: 30%;
+  }
+
+  #navbar-guia {
+    position: fixed;
+    margin-left: 0px;
+    border-radius: 20px;
+    margin-top: -5%;
+    box-shadow: 2px 2px 8px #343A40;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    color: white;
+  }
+
+  .padding_li {
+    padding: 5px;
+  }
+
+  .margin-div {
+    margin-right: 20%;
+  }
+
+  .nav-link {
+    color: #dbdbdb;
+  }
+
+  .nav-link-in {
+    color: #00838f;
+    font-weight: bold;
+    font-size: 16pt;
+    cursor: pointer;
+  }
+
+  .activeTab {
+    background-color: transparent;
+    color: #00838f;
+    font-weight: bold;
+    font-size: 16pt;
+  }
+
+  .badge-light {
+    margin-left: 5px;
+  }
+
+  .badge-light:hover {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #14aadb;
+  }
+
+  .hide-button {
+    margin-left: 75%;
+  }
+
+  .hide-button:hover {
+    margin-left: 75%;
+    cursor: pointer;
+    background-color: #005662;
+  }
+
+  .show-button {
+    margin-left: 2px;
+  }
+
+  .show-button:hover {
+    cursor: pointer;
+    background-color: #005662;
+  }
+
+  .fa-caret-down {
+    font-size: 12px;
+  }
+
+  .code {
+    display: none;
+    padding-left: 20%;
+  }
+
+  .guia-content {
+    color: #272822;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+  }
+
+  .guia-list {
+    background: #dbdbdb;
+    color: #272822;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px #343A40;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 1451px) {
+  .guia-de-uso {
+    list-style-type: none;
+    margin-left: 30%;
+  }
+
+  #navbar-guia {
+    position: fixed;
+    margin-left: 0px;
+    border-radius: 20px;
+    margin-top: 1.5%;
+    box-shadow: 2px 2px 8px #343A40;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    color: white;
+  }
+
+  .padding_li {
+    padding: 5px;
+  }
+
+  .margin-div {
+    margin-right: 20%;
+  }
+
+  .nav-link {
+    color: #dbdbdb;
+  }
+
+  .nav-link-in {
+    color: #00838f;
+    font-weight: bold;
+    font-size: 16pt;
+    cursor: pointer;
+  }
+
+  .activeTab {
+    background-color: transparent;
+    color: #00838f;
+    font-weight: bold;
+    font-size: 16pt;
+  }
+
+  .badge-light {
+    margin-left: 5px;
+  }
+
+  .badge-light:hover {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #14aadb;
+  }
+
+  .hide-button {
+    margin-left: 75%;
+  }
+
+  .hide-button:hover {
+    margin-left: 75%;
+    cursor: pointer;
+    background-color: #005662;
+  }
+
+  .show-button {
+    margin-left: 2px;
+  }
+
+  .show-button:hover {
+    cursor: pointer;
+    background-color: #005662;
+  }
+
+  .fa-caret-down {
+    font-size: 12px;
+  }
+
+  .code {
+    display: none;
+    padding-left: 20%;
+  }
+
+  .guia-content {
+    color: #272822;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+  }
+
+  .guia-list {
+    background: #dbdbdb;
+    color: #272822;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px #343A40;
+    padding-right: 20%;
+  }
+}

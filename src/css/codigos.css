@@ -1,0 +1,35 @@
+.gridCodigos{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    text-align: center;
+    margin-left: 23%;
+    margin-top: 10%;
+  }
+
+  .codigoItens{
+    width: 250px;
+    height: 150px;
+    background-color: #162833;
+    color: #00afaf;
+    border-radius: 15px;
+    font-size: 20pt;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px #00afaf;
+  }
+
+  .codigoItens:hover{
+    box-shadow: 8px 8px 15px black;
+    background-color: #dde5e8;
+    color: #162833;
+    font-weight: 400;
+  }
+
+  .codigoItens p{
+    margin-top: 50px;
+  }
+
+  #codItens2linhas p{
+    margin-top: 33px;
+  }

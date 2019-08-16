@@ -1,0 +1,120 @@
+@media (min-width: 800px) and (max-width: 1450px){
+  .gridProfsPage {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: 4%;
+    margin-left: 1%;
+  }
+
+  .formModelo1 {
+    margin: 0 10px 0 20px;
+  }
+
+  .div-cx-curta {
+    margin: 20px 0 20px 0;
+  }
+
+  .btn-cx-curta {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .list-modelo1 {
+    color: #005662;
+    font-weight: bold;
+  }
+
+  .perguntas {
+    color: #333;
+    font-weight: normal;
+  }
+
+  .paragraph-modelo3 {
+    padding-left: 30px;
+  }
+
+  .collapse-modelo3 {
+    display: none;
+  }
+
+  .gabarito {
+    display: none;
+  }
+
+  .alternativas {
+    font-size: 1.05em;
+    color: black;
+  }
+
+  .paragraph-modelo7 {
+    font-size: 1.10em;
+    color: black;
+  }
+
+  .exe-diferenciados{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+}
+
+@media (min-width: 1451px){
+  .gridProfsPage {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: 4%;
+    margin-top: 2%;
+  }
+
+  .formModelo1 {
+    margin: 0 10px 0 20px;
+  }
+
+  .div-cx-curta {
+    margin: 20px 0 20px 0;
+  }
+
+  .btn-cx-curta {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .list-modelo1 {
+    color: #005662;
+    font-weight: bold;
+  }
+
+  .perguntas {
+    color: #333;
+    font-weight: normal;
+  }
+
+  .paragraph-modelo3 {
+    padding-left: 30px;
+  }
+
+  .collapse-modelo3 {
+    display: none;
+  }
+
+  .gabarito {
+    display: none;
+  }
+
+  .alternativas {
+    font-size: 1.05em;
+    color: black;
+  }
+
+  .paragraph-modelo7 {
+    font-size: 1.10em;
+    color: black;
+  }
+
+  .exe-diferenciados{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 5%;
+  }
+
+}

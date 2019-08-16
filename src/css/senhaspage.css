@@ -1,0 +1,104 @@
+@media (min-width: 800px) and (max-width: 1450px) {
+  #gridSenhas {
+    display: grid;
+    grid-template-columns: 250px 250px 300px;
+    grid-column-gap: 170px;
+    margin: 90px 0 0 100px;
+  }
+
+  #icon-canvas2 {
+    color: white;
+    font-size: 4em;
+  }
+
+  #github-senhas {
+    color: white;
+    font-size: 4em;
+  }
+
+  #gabaritos-senhas {
+    color: white;
+    font-size: 4em;
+    margin-left: 15%;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    background: #162833;
+    color: white;
+  }
+
+  #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
+   background: white;
+   color: #162833;
+  }
+
+  .paragrafo-senhaspage {
+    color: white;
+  }
+
+  .login{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1451px) {
+  .login {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  #gridSenhas {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 70px 0 0 100px;
+  }
+
+  #icon-canvas2 {
+    color: white;
+    font-size: 5em;
+  }
+
+  #icon-canvas2:hover {
+    color: #14aadb;
+  }
+
+  #github-senhas {
+    color: white;
+    font-size: 5em;
+  }
+
+  #github-senhas:hover {
+    color: #14aadb;
+  }
+
+  #gabaritos-senhas {
+    color: white;
+    font-size: 5em;
+  }
+
+  #gabaritos-senhas:hover {
+    color: #14aadb;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    background: #162833;
+    color: white;
+  }
+
+  #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
+   background: white;
+   color: #162833;
+  }
+
+  .paragrafo-senhaspage {
+    color: white;
+  }
+  .logo-senhas:hover {
+    color: #14aadb;
+  }
+}

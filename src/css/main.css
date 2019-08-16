@@ -1,0 +1,49 @@
+.title-main-codigo {
+  font-size: 15pt;
+}
+
+.section {
+  font-size: 20pt;
+  text-shadow: 2px 2px 2px #888888;
+  font-family: 'Noto Sans JP';
+  color: white;
+  border-radius: 10px;
+  background-color: #03575e;
+  box-shadow: 5px 5px 8px #343A40;
+  margin-right: 50%;
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+.secao-code {
+  background-color: #272822;
+  padding: 15px;
+  color: #08b0bf;
+  border-radius: 0 20px 0 0;
+  text-align: left;
+}
+
+.copy-button {
+  position: absolute;
+  right: 61%;
+}
+
+.gridCodigosCanvas {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.div-gif {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.menu-superior {
+  display:none;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 3;
+}

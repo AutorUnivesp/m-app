@@ -1,0 +1,82 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.form-tag-cx-curta{
+    margin-left: 20px;
+    margin-right: 10%;
+}
+
+.li-cx-curta{
+    font-weight: bold;
+    color: #005662;
+}
+
+.span-cx-curta{
+    color:#333;
+    font-weight: normal;
+}
+
+.firstDiv-cx-curta{
+    margin: 20px 0 20px 0;
+}
+
+.form-cx-curta {
+display: block;
+width: 70%;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.botao-cx-curta{
+box-shadow: 2px 2px 10px #888888;
+}
+
+.botao-cx-curta:hover{
+color: #f9ddba;
+background-color: #d33338;
+box-shadow: 3px 3px 10px #888888;
+}
+
+.form-border {
+box-shadow: 1px 1px 10px #888888;
+}
+
+.collapse-cx-curta1{
+display: none;
+color: #ff0000;
+font-size: 14pt;
+font-weight: lighter;
+margin-bottom: 20px;
+}
+
+.btn-cx-curta{
+margin-top: 20px;
+background-color: #d33338;
+color: white;
+padding: 7px;
+border-radius: 5px;
+border: 0;
+width: 150px;
+font-size: 1em;
+margin-left: 6.5%;
+text-align: center;
+}
+.btn-cx-curta:hover{
+  cursor: pointer;
+}
+
+.centraliza-botao{
+text-align: center;
+}

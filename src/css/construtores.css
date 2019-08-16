@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@media (min-width: 800px) and (max-width: 1450px){
+  .construtor-title{
+      color: white;
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+      margin-top: 8%;
+      text-shadow: 8px 8px 15px #024147;
+    }
+
+    .gridConstrutores{
+      display: grid;
+      grid-template-columns: 20% 20%;
+      grid-gap: 100px;
+      margin-left: 30%;
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .construtorElement{
+      width: 250px;
+      height: 150px;
+      background-color: #162833;
+      color: #00afaf;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      cursor: pointer;
+      box-shadow: 5px 5px 8px #00afaf;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:focus{
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:hover{
+      box-shadow: 8px 8px 15px black;
+      background-color: #dde5e8;
+      color: #162833;
+    }
+
+    .construtorElementDisabled {
+      width: 250px;
+      height: 150px;
+      background-color: #A9A9A9;
+      color: black;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      box-shadow: 5px 5px 8px #00afaf;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement p{
+      margin-top: 15px;
+    }
+}
+
+@media (min-width: 1451px){
+  .construtor-title{
+      color: white;
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+      margin-top: 8%;
+      text-shadow: 8px 8px 15px #024147;
+    }
+
+    .gridConstrutores{
+      display: grid;
+      grid-template-columns: 20% 20%;
+      grid-gap: 100px;
+      margin-left: 35%;
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .construtorElement{
+      width: 250px;
+      height: 150px;
+      background-color: #162833;
+      color: #00afaf;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      cursor: pointer;
+      box-shadow: 5px 5px 8px #00afaf;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElementDisabled {
+      width: 250px;
+      height: 150px;
+      background-color: #A9A9A9;
+      color: black;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      box-shadow: 5px 5px 8px #00afaf;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:focus{
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:hover{
+      box-shadow: 8px 8px 15px black;
+      background-color: #dde5e8;
+      color: #162833;
+    }
+
+    .construtorElement p{
+      margin-top: 15px;
+    }
+
+}
