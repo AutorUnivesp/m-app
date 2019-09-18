@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import banners from '../data/banners_data.js'
-import '../css/banners.css'
-import triangulo from '../images/triangle_site.gif'
+import classico from '../../data/data_classico.js'
+import '../../css/main.css'
+import triangulo from '../../images/triangle_site.gif'
 
-class Banners extends Component {
+class Classico extends Component {
+
   state = {
-    disciplines: banners,
-    filteredDisciplines: banners
+    disciplines: classico,
+    filteredDisciplines: classico
   }
 
   copyToClipboard = str => {
@@ -21,7 +22,7 @@ class Banners extends Component {
   onchange = e => {
     const { disciplines } = this.state
     const filteredDisciplines = disciplines.filter(dis => {
-      return dis.name.toLowerCase().includes(e.target.value.toLowerCase())
+      return dis.title.toLowerCase().includes(e.target.value.toLowerCase())
     })
     this.setState({
       filteredDisciplines
@@ -42,9 +43,9 @@ class Banners extends Component {
               {filteredDisciplines.map(dis => (
                 <li style={{listStyle: 'none'}}>
                   <div className="discipline my-1">
-                    <span className="title-banners pr-2">{dis.name}</span>
+                    <span className="title-banners pr-2">{dis.title}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
-                      this.copyToClipboard('https://assets.univesp.br/canvas/img/banners/' + dis.bannerCode)
+                      this.copyToClipboard(dis.code)
                     )}>Copy</span>
                   </div>
                 </li>
@@ -57,8 +58,8 @@ class Banners extends Component {
           <img style={{borderRadius: '20px'}} src={triangulo}/>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Banners
+export default Classico

@@ -1,0 +1,517 @@
+@media (min-width: 0px) and (max-width: 650px) {
+  .gridDisciplinas {
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tituloDisciplinas {
+    background-color: #543c52;
+    color: #ccc;
+    border-radius: 20px 0 0 0;
+  }
+
+  .listaDisciplinas {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .disciplinas {
+    background: white;
+    border-radius: 20px 5px 5px 5px;
+  }
+
+  .itemDisciplina {
+    color: grey;
+  }
+
+  .itemDisciplina:hover {
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    cursor: pointer;
+  }
+
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 {
+    display: none;
+  }
+
+  #preview-menu-semanas {
+    display: none;
+  }
+
+  .grid-inputs-semanas {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 20%;
+  }
+
+  .input-semanas {
+    display: inline;
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15.5pt;
+    margin: 0 0 15px 0px;
+    width: 100%;
+  }
+
+  .input-semanas::placeholder {
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+
+  .tema-semana {
+    color: #543c52;
+    font-size: 14pt;
+  }
+
+  .inputs-temas {
+    margin: 40px;
+  }
+
+  .inputs-links {
+    margin: 40px;
+  }
+
+  #construirBotao {
+    background-color: #543c52;
+    color: #f1e8e6;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Barlow';
+    width: 140px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px #361d32;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+  #construirBotao:hover {
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 799px){
+  .gridDisciplinas {
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tituloDisciplinas {
+    background-color: #543c52;
+    color: #ccc;
+    border-radius: 20px 0 0 0;
+  }
+
+  .listaDisciplinas {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .disciplinas {
+    background: white;
+    border-radius: 20px 5px 5px 5px;
+  }
+
+  .itemDisciplina {
+    color: grey;
+  }
+
+  .itemDisciplina:hover {
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    cursor: pointer;
+  }
+
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 {
+    display: none;
+  }
+
+  #preview-menu-semanas {
+    display: none;
+  }
+
+  .grid-inputs-semanas {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 20%;
+  }
+
+  .input-semanas {
+    display: inline;
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15.5pt;
+    margin: 0 0 15px 0px;
+    width: 100%;
+  }
+
+  .input-semanas::placeholder {
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+
+  .tema-semana {
+    color: #543c52;
+    font-size: 14pt;
+  }
+
+  .inputs-temas {
+    margin: 40px;
+  }
+
+  .inputs-links {
+    margin: 40px;
+  }
+
+  #construirBotao {
+    background-color: #543c52;
+    color: #f1e8e6;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Barlow';
+    width: 140px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px #361d32;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+  #construirBotao:hover {
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+  .gridDisciplinas {
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tituloDisciplinas {
+    background-color: #543c52;
+    color: #ccc;
+    border-radius: 20px 0 0 0;
+  }
+
+  .listaDisciplinas {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .disciplinas {
+    background: white;
+    border-radius: 20px 5px 5px 5px;
+  }
+
+  .itemDisciplina {
+    color: grey;
+  }
+
+  .itemDisciplina:hover {
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    cursor: pointer;
+  }
+
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 {
+    display: none;
+  }
+
+  #preview-menu-semanas {
+    display: none;
+  }
+
+  .grid-inputs-semanas {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 20%;
+  }
+
+  .input-semanas {
+    display: inline;
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15.5pt;
+    margin: 0 0 15px 0px;
+    width: 100%;
+  }
+
+  .input-semanas::placeholder {
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+
+  .tema-semana {
+    color: #543c52;
+    font-size: 14pt;
+  }
+
+  .inputs-temas {
+    margin: 40px;
+  }
+
+  .inputs-links {
+    margin: 40px;
+  }
+
+  #construirBotao {
+    background-color: #543c52;
+    color: #f1e8e6;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Barlow';
+    width: 140px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px #361d32;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+  #construirBotao:hover {
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1450px) {
+  .gridDisciplinas {
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tituloDisciplinas {
+    background-color: #543c52;
+    color: #ccc;
+    border-radius: 20px 0 0 0;
+  }
+
+  .listaDisciplinas {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .disciplinas {
+    background: white;
+    border-radius: 20px 5px 5px 5px;
+  }
+
+  .itemDisciplina {
+    color: grey;
+  }
+
+  .itemDisciplina:hover {
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    cursor: pointer;
+  }
+
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 {
+    display: none;
+  }
+
+  #preview-menu-semanas {
+    display: none;
+  }
+
+  .grid-inputs-semanas {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 20%;
+  }
+
+  .input-semanas {
+    display: inline;
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15.5pt;
+    margin: 0 0 15px 0px;
+    width: 100%;
+  }
+
+  .input-semanas::placeholder {
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+
+  .tema-semana {
+    color: #543c52;
+    font-size: 14pt;
+  }
+
+  .inputs-temas {
+    margin: 40px;
+  }
+
+  .inputs-links {
+    margin: 40px;
+  }
+
+  #construirBotao {
+    background-color: #543c52;
+    color: #f1e8e6;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Barlow';
+    width: 140px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px #361d32;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+  #construirBotao:hover {
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1451px) {
+  .gridDisciplinas {
+    display: block;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .tituloDisciplinas {
+    background-color: #543c52;
+    color: #ccc;
+    border-radius: 20px 0 0 0;
+  }
+
+  .listaDisciplinas {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .disciplinas {
+    background: white;
+    border-radius: 20px 5px 5px 5px;
+    box-shadow: 4px 4px 8px #343A40;
+    margin-bottom: 80px;
+  }
+
+  .itemDisciplina {
+    color: grey;
+  }
+
+  .itemDisciplina:hover {
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 {
+    display: none;
+  }
+
+  #preview-menu-semanas {
+    display: none;
+  }
+
+  .grid-inputs-semanas {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 20%;
+  }
+
+  .input-semanas {
+    display: inline;
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15.5pt;
+    margin: 0 0 15px 0px;
+    width: 100%;
+  }
+
+  .input-semanas::placeholder {
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+
+  .tema-semana {
+    color: #543c52;
+    font-size: 14pt;
+  }
+
+  .inputs-temas {
+    margin: 40px;
+  }
+
+  .inputs-links {
+    margin: 40px;
+  }
+
+  #construirBotao {
+    background-color: #543c52;
+    color: #f1e8e6;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Barlow';
+    width: 140px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px #361d32;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+  #construirBotao:hover {
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}

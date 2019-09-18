@@ -65,36 +65,44 @@ class SenhasPage extends Component {
   render() {
     return (
       <div id="gridSenhas" style={{fontFamily: 'Raleway'}}>
-        <div>
+        <div id="login-canvas">
 
           <p className="login">LOGIN CANVAS</p>
-            <a className="pl-5" href="https://login.univesp.br/" target="_blank" title="Site do Canvas">
-              <IconInstructureLine className="my-4" id="icon-canvas2"/>
+            <a className="" href="https://login.univesp.br/" target="_blank" title="Site do Canvas">
+              <IconInstructureLine className="my-3" id="icon-canvas2"/>
             </a>
           <br/><br/>
 
           <p className="paragrafo-senhaspage">Login: <span id="copy1">{this.renderLogin1()}</span>
-            <a href="#" className="badge badge-light" id="copy-1">Copy</a>
+            <span className="badge badge-light" id="copy-1">Copy</span>
           </p>
 
           <p className="paragrafo-senhaspage">Senha: <span id="copy2">{this.renderSenha1()}</span>
-            <a href="#" className="badge badge-light" id="copy-2">Copy</a>
+            <span className="badge badge-light" id="copy-2">Copy</span>
           </p>
 
         </div>
 
-        <div>
+        <div id="login-github">
           <p className="login">LOGIN GITHUB</p>
-          <a className="pl-5" href="https://github.com/" target="_blank" title="Site do Github"><span className="icon-github" id="github-senhas"><i className="fab fa-github"></i></span></a><br /><br />
-          <p className="paragrafo-senhaspage">Login: <span id="copy3">{this.renderLogin2()}</span> <a href="#" className="badge badge-light" id="copy-3">Copy</a></p>
-          <p className="paragrafo-senhaspage">Senha: <span id="copy4">{this.renderSenha2()}</span> <a href="#" className="badge badge-light" id="copy-4">Copy</a></p>
+          <a className="my-3" href="https://github.com/" target="_blank" title="Site do Github"><span className="icon-github" id="github-senhas"><i className="fab fa-github"></i></span></a><br /><br />
+          <p className="paragrafo-senhaspage">Login: <span id="copy3">{this.renderLogin2()}</span>
+            <span className="badge badge-light" id="copy-3">Copy</span>
+          </p>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy4">{this.renderSenha2()}</span>
+            <span className="badge badge-light" id="copy-4">Copy</span>
+          </p>
         </div>
 
-        <div>
+        <div id="login-drive">
           <p className="login">LOGIN DRIVE GABARITOS</p>
-          <a className="pl-5" href="https://drive.google.com/drive/my-drive" target="_blank" title="drive gabaritos"><span className="icon-google-drive" id="gabaritos-senhas"><i className="fab fa-google-drive"></i></span></a><br /><br />
-          <p className="paragrafo-senhaspage">Login: <span id="copy5">{this.renderLogin3()}</span> <a href="#" className="badge badge-light" id="copy-5">Copy</a></p>
-          <p className="paragrafo-senhaspage">Senha: <span id="copy6">{this.renderSenha3()}</span> <a href="#" className="badge badge-light" id="copy-6">Copy</a></p>
+          <a className="my-3" href="https://drive.google.com/drive/my-drive" target="_blank" title="drive gabaritos"><span className="icon-google-drive" id="gabaritos-senhas"><i className="fab fa-google-drive"></i></span></a><br /><br />
+          <p className="paragrafo-senhaspage">Login: <span id="copy5">{this.renderLogin3()}</span>
+            <span className="badge badge-light" id="copy-5">Copy</span>
+          </p>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy6">{this.renderSenha3()}</span>
+            <span className="badge badge-light" id="copy-6">Copy</span>
+          </p>
         </div>
       </div>
     )

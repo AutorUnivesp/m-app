@@ -1,13 +1,207 @@
 @charset "UTF-8";
 
-@media (min-width: 800px) and (max-width: 1450px){
+@media (min-width: 0px) and (max-width: 650px) {
   .construtor-title{
-      color: white;
+      color: #543c52;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 27%;
+      text-shadow: 0px 1px 1px #361d32;
+    }
+
+    .gridConstrutores{
+      margin-left: 33%;
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .construtorElement{
+      display: block;
+      width: 200px;
+      height: 110px;
+      margin-bottom: 50px;
+      background-color: #543c52;
+      color: #f1e8e6;
+      border-radius: 15px;
+      font-size: 1.5em;
+      line-height: 1.5;
+      cursor: pointer;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:focus{
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:hover{
+      box-shadow: 8px 8px 15px #edd2cb;
+      background-color: #f55951;
+      color: #f1e8e6;
+    }
+
+    .construtorElementDisabled {
+      width: 220px;
+      height: 120px;
+      background-color: #A9A9A9;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElementDisabled p{
+      color: #543c52;
+    }
+
+    .construtorElement p{
+      margin-top: 15px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 799px){
+  .construtor-title{
+      color: #543c52;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-top: 27%;
+      text-shadow: 0px 1px 1px #361d32;
+    }
+
+    .gridConstrutores{
+      display: grid;
+      grid-template-columns: 20% 20%;
+      grid-gap: 27%;
+      margin-left: 15%;
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .construtorElement{
+      width: 220px;
+      height: 120px;
+      background-color: #543c52;
+      color: #f1e8e6;
+      border-radius: 15px;
+      font-size: 1.5em;
+      line-height: 1.5;
+      cursor: pointer;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:focus{
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:hover{
+      box-shadow: 8px 8px 15px #edd2cb;
+      background-color: #f55951;
+      color: #f1e8e6;
+    }
+
+    .construtorElementDisabled {
+      width: 220px;
+      height: 120px;
+      background-color: #A9A9A9;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElementDisabled p{
+      color: #543c52;
+    }
+
+    .construtorElement p{
+      margin-top: 15px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 990px){
+  .construtor-title{
+      color: #543c52;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-top: 23%;
+      text-shadow: 0px 1px 1px #361d32;
+    }
+
+    .gridConstrutores{
+      display: grid;
+      grid-template-columns: 20% 20%;
+      grid-gap: 27%;
+      margin-left: 17%;
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .construtorElement{
+      width: 220px;
+      height: 120px;
+      background-color: #543c52;
+      color: #f1e8e6;
+      border-radius: 15px;
+      font-size: 1.5em;
+      line-height: 1.5;
+      cursor: pointer;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:focus{
+      outline: none;
+      border: none;
+    }
+
+    .construtorElement:hover{
+      box-shadow: 8px 8px 15px #edd2cb;
+      background-color: #f55951;
+      color: #f1e8e6;
+    }
+
+    .construtorElementDisabled {
+      width: 220px;
+      height: 120px;
+      background-color: #A9A9A9;
+      border-radius: 15px;
+      font-size: 1.7em;
+      line-height: 1.5;
+      box-shadow: 3px 3px 20px #361d32;
+      outline: none;
+      border: none;
+    }
+
+    .construtorElementDisabled p{
+      color: #543c52;
+    }
+
+    .construtorElement p{
+      margin-top: 15px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1450px){
+  .construtor-title{
+      color: #543c52;
       text-align: center;
       font-size: 2.2em;
       font-weight: bold;
       margin-top: 8%;
-      text-shadow: 8px 8px 15px #024147;
+      text-shadow: 0px 1px 1px #361d32;
     }
 
     .gridConstrutores{
@@ -22,13 +216,13 @@
     .construtorElement{
       width: 250px;
       height: 150px;
-      background-color: #162833;
-      color: #00afaf;
+      background-color: #543c52;
+      color: #f1e8e6;
       border-radius: 15px;
       font-size: 1.7em;
       line-height: 1.5;
       cursor: pointer;
-      box-shadow: 5px 5px 8px #00afaf;
+      box-shadow: 3px 3px 20px #361d32;
       outline: none;
       border: none;
     }
@@ -39,22 +233,25 @@
     }
 
     .construtorElement:hover{
-      box-shadow: 8px 8px 15px black;
-      background-color: #dde5e8;
-      color: #162833;
+      box-shadow: 8px 8px 15px #edd2cb;
+      background-color: #f55951;
+      color: #f1e8e6;
     }
 
     .construtorElementDisabled {
       width: 250px;
       height: 150px;
       background-color: #A9A9A9;
-      color: black;
       border-radius: 15px;
       font-size: 1.7em;
       line-height: 1.5;
-      box-shadow: 5px 5px 8px #00afaf;
+      box-shadow: 3px 3px 20px #361d32;
       outline: none;
       border: none;
+    }
+
+    .construtorElementDisabled p{
+      color: #543c52;
     }
 
     .construtorElement p{
@@ -64,12 +261,12 @@
 
 @media (min-width: 1451px){
   .construtor-title{
-      color: white;
+      color: #543c52;
       text-align: center;
       font-size: 2.2em;
       font-weight: bold;
       margin-top: 8%;
-      text-shadow: 8px 8px 15px #024147;
+      text-shadow: 0px 1px 1px #361d32;
     }
 
     .gridConstrutores{
@@ -84,13 +281,13 @@
     .construtorElement{
       width: 250px;
       height: 150px;
-      background-color: #162833;
-      color: #00afaf;
+      background-color: #543c52;
+      color: #f1e8e6;
       border-radius: 15px;
       font-size: 1.7em;
       line-height: 1.5;
       cursor: pointer;
-      box-shadow: 5px 5px 8px #00afaf;
+      box-shadow: 3px 3px 20px #361d32;
       outline: none;
       border: none;
     }
@@ -99,13 +296,16 @@
       width: 250px;
       height: 150px;
       background-color: #A9A9A9;
-      color: black;
       border-radius: 15px;
       font-size: 1.7em;
       line-height: 1.5;
-      box-shadow: 5px 5px 8px #00afaf;
+      box-shadow: 3px 3px 20px #361d32;
       outline: none;
       border: none;
+    }
+
+    .construtorElementDisabled p{
+      color: #543c52;
     }
 
     .construtorElement:focus{
@@ -114,9 +314,9 @@
     }
 
     .construtorElement:hover{
-      box-shadow: 8px 8px 15px black;
-      background-color: #dde5e8;
-      color: #162833;
+      box-shadow: 8px 8px 15px #edd2cb;
+      background-color: #f55951;
+      color: #f1e8e6;
     }
 
     .construtorElement p{

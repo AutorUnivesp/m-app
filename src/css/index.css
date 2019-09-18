@@ -1,9 +1,669 @@
 @charset "UTF-8";
 
-@media (min-width: 800px) and (max-width: 1450px) {
+@media (min-width: 0px) and (max-width: 650px) {
+  #icon-canvas1 {
+    position: absolute;
+    top: 60%;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 30px;
+    font-size: 1.3em;
+    color: #00838f;
+    position: fixed;
+    right: 0;
+    top: 5px;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #543c52;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #f55951;
+  }
+
+  .construtor-link {
+    color: #361d32;
+    border-radius: 0px 5px 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .construtor-link:hover {
+    color: #f55951;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .home-div-principal {
+    margin-top: 13%;
+  }
+
+  .list-group-item-action {
+    color: #f1e8e6;
+    background-color: #543c52;
+    border-radius: 10px 5px 20px 10px;
+
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+    font-size: 0.8em;
+    padding-left: 5px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 25%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #f1e8e6;
+    background-color: #543c52;
+    width: 50%;
+  }
+
+  .version {
+    color: #f55951;
+    font-size: 14pt;
+  }
+
+  .titulo-montagem-app {
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .home-div-principal {
+    margin-top: 12%;
+  }
+
+  .img-home {
+    border-radius: 15px;
+    height: 140px;
+  }
+
+  .montagem-name{
+    font-size: 28pt;
+  }
+
+  .monta {
+    color: #f55951;
+    font-size: 42pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 42pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 799px){
+  #icon-canvas1 {
+    position: absolute;
+    top: 60%;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 30px;
+    font-size: 1.3em;
+    color: #00838f;
+    position: fixed;
+    right: 0;
+    top: 5px;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #543c52;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #f55951;
+  }
+
+  .construtor-link {
+    color: #361d32;
+    border-radius: 0px 5px 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .construtor-link:hover {
+    color: #f55951;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .home-div-principal {
+    margin-top: 13%;
+  }
+
+  .list-group-item-action {
+    color: #f1e8e6;
+    background-color: #543c52;
+    border-radius: 10px 5px 20px 10px;
+
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+    font-size: 0.8em;
+    padding-left: 5px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 25%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #f1e8e6;
+    background-color: #543c52;
+    width: 50%;
+  }
+
+  .version {
+    color: #f55951;
+    font-size: 14pt;
+  }
+
+  .titulo-montagem-app {
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .home-div-principal {
+    margin-top: 12%;
+  }
+
+  .img-home {
+    border-radius: 15px;
+    height: 140px;
+  }
+
+  .montagem-name{
+    font-size: 28pt;
+  }
+
+  .monta {
+    color: #f55951;
+    font-size: 42pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 42pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px){
+  #icon-canvas1 {
+    position: absolute;
+    top: 60%;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 30px;
+    font-size: 1.3em;
+    color: #00838f;
+    position: fixed;
+    right: 0;
+    top: 5px;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #543c52;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #f55951;
+  }
+
+  .construtor-link {
+    color: #361d32;
+    border-radius: 0px 5px 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  .construtor-link:hover {
+    color: #f55951;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+
+  .home-div-principal {
+    margin-top: 13%;
+  }
+
+  .list-group-item-action {
+    color: #f1e8e6;
+    background-color: #543c52;
+    border-radius: 10px 5px 20px 10px;
+
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+    font-size: 0.8em;
+    padding-left: 5px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 25%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #f1e8e6;
+    background-color: #543c52;
+    width: 50%;
+  }
+
+  .version {
+    color: #f55951;
+    font-size: 14pt;
+  }
+
+  .titulo-montagem-app {
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .home-div-principal {
+    margin-top: 12%;
+  }
+
+  .img-home {
+    border-radius: 15px;
+    height: 190px;
+  }
+
+  .montagem-name{
+    font-size: 48pt;
+  }
+
+  .monta {
+    color: #f55951;
+    font-size: 52pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 52pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+}
+
+@media (min-width: 991px) and (max-width: 1090px) {
+  #icon-canvas1 {
+    position: absolute;
+    top: 6px;
+  }
+
+  .activeTabApp {
+    color: #f55951;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 30px;
+    font-size: 1.3em;
+    color: #00838f;
+    position: fixed;
+    right: 0;
+    top: 5px;
+  }
+  .grid-nav a{
+    text-decoration: none;
+    color: #543c52;
+  }
+  .grid-nav a:hover{
+    text-decoration: none;
+    color: #f55951;
+  }
+
+  #icon-canvas1 {
+    position: absolute;
+    top: 37px;
+  }
+
+  .construtor-link {
+    color: #361d32;
+    border-radius: 0px 5px 20px 0px;
+    font-size: 11pt;
+    padding-left: 2px;
+  }
+
+  .construtor-link:hover {
+    color: #f55951;
+    border-radius: 0px 5px 20px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 2px;
+  }
+
+  .home-div-principal {
+    margin-top: 13%;
+  }
+
+  .list-group-item-action {
+    color: #f1e8e6;
+    background-color: #543c52;
+    border-radius: 10px 5px 20px 10px;
+
+    font-family: 'Raleway';
+    padding: 15px 0 15px 0;
+    font-size: 0.8em;
+    padding-left: 5px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  .montagem-web {
+    margin: 30px 33% 0 25%;
+    padding: 20px;
+    border-radius: 20px;
+    color: #f1e8e6;
+    background-color: #543c52;
+    width: 50%;
+  }
+
+  .version {
+    color: #f55951;
+    font-size: 14pt;
+  }
+
+  .titulo-montagem-app {
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+
+  .gif-two-people-typing {
+    height: 250px;
+  }
+
+  .gif-in-construction {
+    width: 150px;
+  }
+
+  .home {
+    position: absolute;
+    margin: 0 0 0 10px;
+  }
+
+  .home-div-principal {
+    margin-top: 12%;
+  }
+
+  .img-home {
+    border-radius: 15px;
+    height: 190px;
+  }
+
+  .montagem-name{
+    font-size: 48pt;
+  }
+
+  .monta {
+    color: #f55951;
+    font-size: 52pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 52pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+}
+
+@media (min-width: 1091px) and (max-width: 1508px) {
   main, html{
     font-family: 'Barlow';
-    background-color: #00838f;
+    background-color: #f1e8e6;
   }
 
   .home {
@@ -28,35 +688,37 @@
     margin: 30px 33% 0 33%;
     padding: 20px;
     border-radius: 20px;
-    color: #ebf0f2;
+    color: #f1e8e6;
+    background-color: #543c52;
   }
 
   .titulo-montagem-app {
-    color: #ebf0f2;
-    text-shadow: 1px 1px 1px black;
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
   }
 
   .version {
-    color: #00838f;
+    color: #f55951;
     font-size: 14pt;
   }
 
   .construtor-link {
-    color: #00838f;
+    color: #361d32;
     border-radius: 0px 5px 20px 0px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 12pt;
+    padding-left: 5px;
   }
 
   .construtor-link:hover {
-    color: white;
+    color: #f55951;
     border-radius: 0px 5px 20px 0px;
     text-decoration: none;
     cursor: pointer;
+    padding-left: 5px;
   }
 
   .activeTabApp {
-    color: white;
+    color: #f55951;
     border-radius: 0px 5px 20px 0px;
     text-decoration: none;
     cursor: pointer;
@@ -85,24 +747,27 @@
 
   .grid-nav{
     display: grid;
-    grid-template-columns: 4% 4% 4% 4%;
-    grid-column-gap: 35px;
-    font-size: 1.5em;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 30px;
+    font-size: 1.3em;
     color: #00838f;
-    margin-left: 9%;
+    position: fixed;
+    right: 0;
+    top: 5px;
   }
   .grid-nav a{
     text-decoration: none;
-    color: #c4d1d6;
+    color: #543c52;
   }
   .grid-nav a:hover{
     text-decoration: none;
-    color: #ffe270;
+    color: #f55951;
   }
 
   #icon-canvas1 {
     position: absolute;
-    top: 26%;
+    top: 37px;
   }
 
   .guia-canvas{
@@ -148,10 +813,10 @@
   }
 
   .list-group-item-action {
-    color: #0093a1;
-    background-color: #ebf0f2;
+    color: #f1e8e6;
+    background-color: #543c52;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
+
     font-family: 'Raleway';
     padding: 15px 0 15px 0;
     font-size: 0.8em;
@@ -159,18 +824,68 @@
   }
 
   .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus, .list-group-item-action:visited {
-    color: white;
-    background-color: #005662;
+    color: #f1e8e6;
+    background-color: #f55951;
     border-radius: 10px 5px 20px 10px;
     font-weight: bold;
     font-family: 'Raleway';
   }
+
+  .monta {
+    color: #f55951;
+    font-size: 62pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 62pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
 }
 
-@media (min-width: 1451px) {
+@media (min-width: 1508px) {
   main, html{
     font-family: 'Raleway';
-    background-color: #00838f;
+    background-color: #f1e8e6;
   }
 
   .home {
@@ -181,11 +896,11 @@
   .img-home {
     margin-top: 200px;
     border-radius: 15px;
-    height: 100%;
+    height: 250px;
   }
 
   .montagem-name {
-    margin-left: 2%;
+    margin-left: 1%;
     font-size: 62pt;
   }
 
@@ -193,54 +908,60 @@
     margin: 30px 33% 0 33%;
     padding: 20px;
     border-radius: 20px;
-    color: #ebf0f2;
+    color: #f1e8e6;
+    background-color: #543c52;
     box-shadow: 4px 4px 4px #252a2e;
   }
 
   .titulo-montagem-app {
-    color: #ebf0f2;
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
     font-size: 24pt;
-    text-shadow: 2px 2px 2px black;
-    font-weight: bold;
   }
 
   .version {
-    color: #00838f;
+    color: #f55951;
     font-size: 14pt;
   }
 
   .list-group-item-action {
-    color: #0093a1;
-    background-color: #ebf0f2;
+    color: #f1e8e6;
+    background-color: #543c52;
     border-radius: 0px 5px 20px 0px;
-    font-weight: bold;
+
     font-family: 'Raleway';
     padding: 15px 0 15px 0;
   }
 
   .list-group-item-action:hover, .list-group-item-action.active, .list-group-item-action:focus {
-    color: white;
-    background-color: #005662;
+    color: #f1e8e6;
+    background-color: #f55951;
     border-radius: 0px 5px 20px 0px;
     font-weight: bold;
     font-family: 'Raleway';
   }
 
   .construtor-link {
-    color: #00838f;
+    color: #361d32;
     border-radius: 0px 5px 20px 0px;
     font-family: 'Raleway';
+    padding-left: 20px;
+    font-size: 13pt;
+    font-weight: bold;
   }
 
   .construtor-link:hover, .construtor-link:focus {
-    color: white;
+    color: #f55951;
     border-radius: 0px 5px 20px 0px;
     text-decoration: none;
     cursor: pointer;
+    padding-left: 20px;
+    font-size: 13pt;
+    font-weight: bold;
   }
 
   .activeTabApp {
-    color: white;
+    color: #f55951;
     border-radius: 0px 5px 20px 0px;
     text-decoration: none;
     cursor: pointer;
@@ -274,20 +995,21 @@
     grid-column-gap: 50%;
     font-size: 1.8em;
     color: #00838f;
-    margin-left: 10%;
+    position: fixed;
+    right: 90px;
   }
   .grid-nav a{
     text-decoration: none;
-    color: #c4d1d6;
+    color: #543c52;
   }
   .grid-nav a:hover{
     text-decoration: none;
-    color: #ffe270;
+    color: #f55951;
   }
 
   #icon-canvas1 {
     position: absolute;
-    top: 16px;
+    top: 8px;
   }
 
   .icon-bar1{
@@ -347,5 +1069,55 @@
   .card-header {
     background-color: #005662;
     text-align: center;
+  }
+
+  .monta {
+    color: #f55951;
+    font-size: 62pt;
+    font-family: 'Russo One';
+  }
+
+  .gem {
+    color: #543c52;
+    font-size: 62pt;
+    font-family: 'Russo One';
+  }
+
+  .logo-univesp {
+    margin-bottom: 1rem !important;
+    background-color: #f55951;
+    box-shadow: 0.5px 0.5px 7px white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #361d32 !important;
+    height: 70px;
+    transition: background-color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .construtor-link.link-color:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in {
+    color: #f1e8e6;
+    font-weight: lighter;
+    transition: color 400ms ease-in-out;
+  }
+
+  .grid-nav a.scroll-in:hover {
+    color: #f55951;
+    font-weight: lighter;
+    transition: color 100ms ease-in-out;
   }
 }

@@ -1,20 +1,25 @@
-@media (min-width: 800px) and (max-width: 1450px) {
+@media (min-width: 651px) and (max-width: 799px){
+
+}
+
+@media (min-width: 800px) and (max-width: 990px){
   .guia-de-uso {
     list-style-type: none;
-    margin-left: 30%;
+    margin-left: 40%;
   }
 
   #navbar-guia {
     position: fixed;
     margin-left: 0px;
     border-radius: 20px;
-    margin-top: -5%;
+    margin-top: 5%;
     box-shadow: 2px 2px 8px #343A40;
+    width: 35%;
   }
 
   .navbar-brand {
     font-weight: bold;
-    color: white;
+    color: #543c52;
   }
 
   .padding_li {
@@ -26,11 +31,11 @@
   }
 
   .nav-link {
-    color: #dbdbdb;
+    color: #543c52;
   }
 
   .nav-link-in {
-    color: #00838f;
+    color: #f55951;
     font-weight: bold;
     font-size: 16pt;
     cursor: pointer;
@@ -38,7 +43,7 @@
 
   .activeTab {
     background-color: transparent;
-    color: #00838f;
+    color: #f55951;
     font-weight: bold;
     font-size: 16pt;
   }
@@ -50,26 +55,31 @@
   .badge-light:hover {
     margin-left: 5px;
     cursor: pointer;
-    background-color: #14aadb;
+    background-color: #f55951;
+    color: #f1e8e6;
   }
 
   .hide-button {
     margin-left: 75%;
+    color: #543c52;
+    background-color: #f1e8e6;
   }
 
   .hide-button:hover {
     margin-left: 75%;
     cursor: pointer;
-    background-color: #005662;
+    background-color: #f55951;
   }
 
   .show-button {
     margin-left: 2px;
+    color: #543c52;
+    background-color: #f1e8e6;
   }
 
   .show-button:hover {
     cursor: pointer;
-    background-color: #005662;
+    background-color: #f55951;
   }
 
   .fa-caret-down {
@@ -88,10 +98,116 @@
   }
 
   .guia-list {
-    background: #dbdbdb;
+    background: #543c52;
+    color: #edd2cb;
+    font-family: 'Noto Sans JP';
+
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px #343A40;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1450px) {
+  .guia-de-uso {
+    list-style-type: none;
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+
+  #navbar-guia {
+    position: fixed;
+    margin-left: 0px;
+    border-radius: 20px;
+    margin-top: -5%;
+    box-shadow: 2px 2px 8px #343A40;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #543c52;
+  }
+
+  .padding_li {
+    padding: 5px;
+  }
+
+  .margin-div {
+    margin-right: 20%;
+  }
+
+  .nav-link {
+    color: #543c52;
+  }
+
+  .nav-link-in {
+    color: #f55951;
+    font-weight: bold;
+    font-size: 16pt;
+    cursor: pointer;
+  }
+
+  .activeTab {
+    background-color: transparent;
+    color: #f55951;
+    font-weight: bold;
+    font-size: 16pt;
+  }
+
+  .badge-light {
+    margin-left: 5px;
+  }
+
+  .badge-light:hover {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #f55951;
+    color: #f1e8e6;
+  }
+
+  .hide-button {
+    margin-left: 75%;
+    color: #543c52;
+    background-color: #f1e8e6;
+  }
+
+  .hide-button:hover {
+    margin-left: 75%;
+    cursor: pointer;
+    background-color: #f55951;
+  }
+
+  .show-button {
+    margin-left: 2px;
+    color: #543c52;
+    background-color: #f1e8e6;
+  }
+
+  .show-button:hover {
+    cursor: pointer;
+    background-color: #f55951;
+  }
+
+  .fa-caret-down {
+    font-size: 12px;
+  }
+
+  .code {
+    display: none;
+    padding-left: 20%;
+  }
+
+  .guia-content {
     color: #272822;
     font-family: 'Noto Sans JP';
     font-weight: bold;
+  }
+
+  .guia-list {
+    background: #543c52;
+    color: #edd2cb;
+    font-family: 'Noto Sans JP';
+
     border-radius: 20px;
     box-shadow: 3px 3px 8px #343A40;
     padding-right: 20%;
@@ -114,7 +230,7 @@
 
   .navbar-brand {
     font-weight: bold;
-    color: white;
+    color: #543c52;
   }
 
   .padding_li {
@@ -126,11 +242,11 @@
   }
 
   .nav-link {
-    color: #dbdbdb;
+    color: #543c52;
   }
 
   .nav-link-in {
-    color: #00838f;
+    color: #f55951;
     font-weight: bold;
     font-size: 16pt;
     cursor: pointer;
@@ -138,7 +254,7 @@
 
   .activeTab {
     background-color: transparent;
-    color: #00838f;
+    color: #f55951;
     font-weight: bold;
     font-size: 16pt;
   }
@@ -150,26 +266,31 @@
   .badge-light:hover {
     margin-left: 5px;
     cursor: pointer;
-    background-color: #14aadb;
+    background-color: #f55951;
+    color: #f1e8e6;
   }
 
   .hide-button {
     margin-left: 75%;
+    color: #543c52;
+    background-color: #f1e8e6;
   }
 
   .hide-button:hover {
     margin-left: 75%;
     cursor: pointer;
-    background-color: #005662;
+    background-color: #f55951;
   }
 
   .show-button {
     margin-left: 2px;
+    color: #543c52;
+    background-color: #f1e8e6;
   }
 
   .show-button:hover {
     cursor: pointer;
-    background-color: #005662;
+    background-color: #f55951;
   }
 
   .fa-caret-down {
@@ -188,10 +309,10 @@
   }
 
   .guia-list {
-    background: #dbdbdb;
-    color: #272822;
+    background: #543c52;
+    color: #edd2cb;
     font-family: 'Noto Sans JP';
-    font-weight: bold;
+
     border-radius: 20px;
     box-shadow: 3px 3px 8px #343A40;
     padding-right: 20%;

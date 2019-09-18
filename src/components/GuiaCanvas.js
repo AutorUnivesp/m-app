@@ -88,7 +88,7 @@ class NavGuia extends Component {
 
   render() {
     return (
-      <nav id="navbar-guia" class="navbar bg-dark">
+      <nav id="navbar-guia" class="navbar">
         <h3 className="navbar-brand">Seções</h3>
         <nav className="nav nav-pills flex-column">
           <Link to="item1" onClick={this.active} smooth={true} offset={-70} duration={500} >
@@ -112,10 +112,10 @@ class NavGuia extends Component {
           <Link to="item12" onClick={this.active} smooth={true} offset={-70} duration={500}>
             <span className="nav-link" onMouseEnter={this.onMouseIn} onMouseOut={this.onMouseOut}>Inserindo</span>
           </Link>
-          <Link to="item15" onClick={this.active} smooth={true} offset={-70} duration={500}>
+          <Link to="item16" onClick={this.active} smooth={true} offset={-70} duration={500}>
             <span className="nav-link" onMouseEnter={this.onMouseIn} onMouseOut={this.onMouseOut}>Classes</span>
           </Link>
-          <Link to="item19" onClick={this.active} smooth={true} offset={-70} duration={500}>
+          <Link to="item20" onClick={this.active} smooth={true} offset={-70} duration={500}>
             <span className="nav-link" onMouseEnter={this.onMouseIn} onMouseOut={this.onMouseOut}>Diferenciados</span>
           </Link>
         </nav>

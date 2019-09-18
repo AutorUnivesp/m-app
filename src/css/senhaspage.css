@@ -1,55 +1,280 @@
-@media (min-width: 800px) and (max-width: 1450px) {
+@media (min-width: 0px) and (max-width: 650px) {
   #gridSenhas {
-    display: grid;
-    grid-template-columns: 250px 250px 300px;
-    grid-column-gap: 170px;
-    margin: 90px 0 0 100px;
+    display: block;
+    margin-top: 20%;
+  }
+
+  #login-canvas {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 20%;
+  }
+
+  #login-github {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 20%;
+  }
+
+  #login-drive {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 20%;
   }
 
   #icon-canvas2 {
-    color: white;
-    font-size: 4em;
+    color: #361d32;
+    font-size: 5em;
+  }
+
+  #icon-canvas2:hover {
+    color: #f55951;
   }
 
   #github-senhas {
-    color: white;
-    font-size: 4em;
+    color: #361d32;
+    font-size: 5em;
+  }
+
+  #github-senhas:hover {
+    color: #f55951;
   }
 
   #gabaritos-senhas {
-    color: white;
-    font-size: 4em;
-    margin-left: 15%;
+    color: #361d32;
+    font-size: 5em;
+  }
+
+  #gabaritos-senhas:hover {
+    color: #f55951;
   }
 
   #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
-    background: #162833;
-    color: white;
+    background: #361d32;
+    color: #f1e8e6;
   }
 
   #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
-   background: white;
-   color: #162833;
+   background: #f55951;
+   color: #361d32;
   }
 
   .paragrafo-senhaspage {
-    color: white;
+    color: #543c52;
   }
 
   .login{
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-    margin-left: 10%;
+    color: #543c52;
+    font-size: 1.3em;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 799px){
+  #gridSenhas {
+    display: block;
+    margin-top: 20%;
+  }
+
+  #login-canvas {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #login-github {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #login-drive {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #icon-canvas2 {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #icon-canvas2:hover {
+    color: #f55951;
+  }
+
+  #github-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #github-senhas:hover {
+    color: #f55951;
+  }
+
+  #gabaritos-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #gabaritos-senhas:hover {
+    color: #f55951;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    background: #361d32;
+    color: #f1e8e6;
+  }
+
+  #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
+   background: #f55951;
+   color: #361d32;
+  }
+
+  .paragrafo-senhaspage {
+    color: #543c52;
+  }
+
+  .login{
+    color: #543c52;
+    font-size: 1.3em;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px){
+  #gridSenhas {
+    display: block;
+    margin-top: 20%;
+  }
+
+  #login-canvas {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #login-github {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #login-drive {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #icon-canvas2 {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #icon-canvas2:hover {
+    color: #f55951;
+  }
+
+  #github-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #github-senhas:hover {
+    color: #f55951;
+  }
+
+  #gabaritos-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #gabaritos-senhas:hover {
+    color: #f55951;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    background: #361d32;
+    color: #f1e8e6;
+  }
+
+  #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
+   background: #f55951;
+   color: #361d32;
+  }
+
+  .paragrafo-senhaspage {
+    color: #543c52;
+  }
+
+  .login{
+    color: #543c52;
+    font-size: 1.3em;
+    text-shadow: 0px 1px 1px #361d32;
+  }
+
+}
+
+@media (min-width: 991px) and (max-width: 1450px) {
+  #gridSenhas {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 90px 0 0 20px;
+  }
+
+  #icon-canvas2 {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #icon-canvas2:hover {
+    color: #f55951;
+  }
+
+  #github-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #github-senhas:hover {
+    color: #f55951;
+  }
+
+  #gabaritos-senhas {
+    color: #361d32;
+    font-size: 4em;
+  }
+
+  #gabaritos-senhas:hover {
+    color: #f55951;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    background: #361d32;
+    color: #f1e8e6;
+  }
+
+  #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
+   background: #f55951;
+   color: #361d32;
+  }
+
+  .paragrafo-senhaspage {
+    color: #543c52;
+  }
+
+  .login{
+    font-size: 1.2em;
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
   }
 }
 
 @media (min-width: 1451px) {
   .login {
     font-size: 1.5em;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    color: #543c52;
+    text-shadow: 0px 1px 1px #361d32;
   }
 
   #gridSenhas {
@@ -59,44 +284,45 @@
   }
 
   #icon-canvas2 {
-    color: white;
+    color: #361d32;
     font-size: 5em;
   }
 
   #icon-canvas2:hover {
-    color: #14aadb;
+    color: #f55951;
   }
 
   #github-senhas {
-    color: white;
+    color: #361d32;
     font-size: 5em;
   }
 
   #github-senhas:hover {
-    color: #14aadb;
+    color: #f55951;
   }
 
   #gabaritos-senhas {
-    color: white;
+    color: #361d32;
     font-size: 5em;
   }
 
   #gabaritos-senhas:hover {
-    color: #14aadb;
+    color: #f55951;
   }
 
   #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
-    background: #162833;
-    color: white;
+    background: #361d32;
+    color: #f1e8e6;
   }
 
   #copy-1:hover, #copy-2:hover, #copy-3:hover, #copy-4:hover, #copy-5:hover, #copy-6:hover{
-   background: white;
-   color: #162833;
+   background: #f55951;
+   color: #361d32;
   }
 
   .paragrafo-senhaspage {
-    color: white;
+    color: #543c52;
+    font-size: 12pt;
   }
   .logo-senhas:hover {
     color: #14aadb;

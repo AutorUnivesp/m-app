@@ -200,6 +200,16 @@ const itens = [
   },
   {
     id: 'item15',
+    title: 'Inserindo um botao Imprimir',
+    paragraph: 'Para inserir um botão de imprimir, coloque a id “imprimir” na tag “div” que você deseja usar como botão de imprimir.',
+    list: [],
+    code:
+    `
+    <div id="imprimir" style="width: 60px;">Imprimir</div>
+    `
+  },
+  {
+    id: 'item16',
     title: 'Classe “Menu-Semanas”',
     paragraph: 'Quando for criar o menu das semanas da disciplina, colocar na div container a classe “menu-semanas”. Isso permite a identificação da página inicial pelo Javascript.',
     list: [],
@@ -208,7 +218,7 @@ const itens = [
     `
   },
   {
-    id: 'item16',
+    id: 'item17',
     title: 'Classe “Semanal”',
     paragraph: 'Quando for criar o menu das semanas da disciplina, colocar na div container a classe “semanal”. Isso permite a identificação do desbloqueio das semanas como sendo a cada 7 dias pelo Javascript.',
     list: [],
@@ -217,7 +227,7 @@ const itens = [
     `
   },
   {
-    id: 'item17',
+    id: 'item18',
     title: 'Classe “Quinzenal”',
     paragraph: 'Quando for criar o menu das semanas da disciplina, colocar na div container a classe “quinzenal”. Isso permite a identificação do desbloqueio das semanas como sendo a cada 15 dias pelo Javascript.',
     list: [],
@@ -226,14 +236,14 @@ const itens = [
     `
   },
   {
-    id: 'item18',
+    id: 'item19',
     title: 'Classe “Certa” - Diferenciados',
     paragraph: 'Quando for criar um exercício diferenciado que contenha alternativas, por favor inserir a classe “certa” nas respostas. Isso permite a identificação das respostas corretas pelo Javascript. As substituições dos textos dos modelos DEVEM SER feitas no editor de HTML do canvas.',
     list: [],
     code: ``
   },
   {
-    id: 'item19',
+    id: 'item20',
     title: 'Modelo  1 – Seleciona a Certa',
     paragraph: '',
     list: [],
@@ -248,7 +258,7 @@ const itens = [
     `
   },
   {
-    id: 'item20',
+    id: 'item21',
     title: 'Modelo  5 – Clicar e Selecionar',
     paragraph: 'O modelo 5 “Clicar e Selecionar” aceita somente 3 tamanhos de exercício: com 6 alternativas (podendo ter até 3 corretas), com 9 alternativas (podendo ter até 4 corretas) ou com 12 alternativas (podendo ter até 5 corretas). O modelo padrão (HTML que está no github) é o que contém 12 alternativas. Caso queira um modelo com 6 alternativas – retirar as 6 últimas divs. Caso queira um com 9 alternativas – retirar as 3 últimas divs.  Isso se faz necessário, pois qualquer outro número de alternativas (por exemplo, 8, 10, etc.) fará com que o JavaScript não funcione corretamente.',
     list: [],
@@ -268,7 +278,7 @@ const itens = [
   },
 
   {
-    id: 'item21',
+    id: 'item22',
     title: 'Modelo  6 – Clicar e Selecionar',
     paragraph: '',
     list: [],
@@ -283,7 +293,7 @@ const itens = [
     `
   },
   {
-    id: 'item22',
+    id: 'item23',
     title: 'Modelo  7 – Múltipla Escolha',
     paragraph: '',
     list: [],
