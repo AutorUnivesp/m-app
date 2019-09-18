@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee73b23f5c1400578840db4838931254",
+    "revision": "540ebcdb56002d2901d26169f51cb16a",
     "url": "/m-app/index.html"
   },
   {
-    "revision": "3744c2598f1e85f012ea",
-    "url": "/m-app/static/css/main.7a1cfcbe.chunk.css"
+    "revision": "25cfdb32b6378186281d",
+    "url": "/m-app/static/css/main.fa45958a.chunk.css"
   },
   {
-    "revision": "40548ecea729abd44d10",
-    "url": "/m-app/static/js/2.ce0002b9.chunk.js"
+    "revision": "42f614b6438b607d6788",
+    "url": "/m-app/static/js/2.e7cf09da.chunk.js"
   },
   {
-    "revision": "3744c2598f1e85f012ea",
-    "url": "/m-app/static/js/main.925aaf95.chunk.js"
+    "revision": "25cfdb32b6378186281d",
+    "url": "/m-app/static/js/main.4a90407d.chunk.js"
   },
   {
     "revision": "55a0693b587f7feaffda",
     "url": "/m-app/static/js/runtime~main.209ac6fa.js"
+  },
+  {
+    "revision": "db1652307acbb4b0b20e74fd261994b2",
+    "url": "/m-app/static/media/Bm7L.db165230.gif"
   },
   {
     "revision": "d046784375d95461aa6204318158f336",
@@ -36,11 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/m-app/static/media/logo_univesp_branco.e8640bb3.svg"
   },
   {
-    "revision": "56d4569053c4aab98b5c20e72d46157b",
-    "url": "/m-app/static/media/triangle.56d45690.gif"
-  },
-  {
-    "revision": "70e3f50480f15934f4d6f5b63f7aea4e",
-    "url": "/m-app/static/media/typing_transparent.70e3f504.gif"
+    "revision": "0ff4c110171f6ec208c353c152a65282",
+    "url": "/m-app/static/media/triangle_site.0ff4c110.gif"
   }
 ]);

@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/m-app/static/css/main.7a1cfcbe.chunk.css",
-    "main.js": "/m-app/static/js/main.925aaf95.chunk.js",
-    "main.js.map": "/m-app/static/js/main.925aaf95.chunk.js.map",
+    "main.css": "/m-app/static/css/main.fa45958a.chunk.css",
+    "main.js": "/m-app/static/js/main.4a90407d.chunk.js",
+    "main.js.map": "/m-app/static/js/main.4a90407d.chunk.js.map",
     "runtime~main.js": "/m-app/static/js/runtime~main.209ac6fa.js",
     "runtime~main.js.map": "/m-app/static/js/runtime~main.209ac6fa.js.map",
-    "static/js/2.ce0002b9.chunk.js": "/m-app/static/js/2.ce0002b9.chunk.js",
-    "static/js/2.ce0002b9.chunk.js.map": "/m-app/static/js/2.ce0002b9.chunk.js.map",
+    "static/js/2.e7cf09da.chunk.js": "/m-app/static/js/2.e7cf09da.chunk.js",
+    "static/js/2.e7cf09da.chunk.js.map": "/m-app/static/js/2.e7cf09da.chunk.js.map",
     "index.html": "/m-app/index.html",
-    "precache-manifest.fd61c34000e39f2ea811679045d3fbb0.js": "/m-app/precache-manifest.fd61c34000e39f2ea811679045d3fbb0.js",
+    "precache-manifest.96414df3f94d3d022a029e4ff8b0bac1.js": "/m-app/precache-manifest.96414df3f94d3d022a029e4ff8b0bac1.js",
     "service-worker.js": "/m-app/service-worker.js",
-    "static/css/main.7a1cfcbe.chunk.css.map": "/m-app/static/css/main.7a1cfcbe.chunk.css.map",
+    "static/css/main.fa45958a.chunk.css.map": "/m-app/static/css/main.fa45958a.chunk.css.map",
+    "static/media/Bm7L.gif": "/m-app/static/media/Bm7L.db165230.gif",
     "static/media/construction.svg": "/m-app/static/media/construction.d0467843.svg",
     "static/media/crying.gif": "/m-app/static/media/crying.c31cfa71.gif",
     "static/media/gif_home2.gif": "/m-app/static/media/gif_home2.b9e4960c.gif",
     "static/media/logo_univesp_branco.svg": "/m-app/static/media/logo_univesp_branco.e8640bb3.svg",
-    "static/media/triangle.gif": "/m-app/static/media/triangle.56d45690.gif",
-    "static/media/typing_transparent.gif": "/m-app/static/media/typing_transparent.70e3f504.gif"
+    "static/media/triangle_site.gif": "/m-app/static/media/triangle_site.0ff4c110.gif"
   }
 }
