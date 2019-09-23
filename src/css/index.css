@@ -132,7 +132,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 
@@ -293,7 +293,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 
@@ -456,7 +456,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 
@@ -501,10 +501,10 @@
 
   .grid-nav{
     display: grid;
-    grid-template-columns: 5% 5%;
+    grid-template-columns: repeat(4, 4%);
     grid-template-rows: 50% 50%;
-    grid-column-gap: 30px;
-    font-size: 1.3em;
+    grid-column-gap: 22px;
+    font-size: 1.25em;
     color: #00838f;
     position: fixed;
     right: 0;
@@ -521,13 +521,13 @@
 
   #icon-canvas1 {
     position: absolute;
-    top: 37px;
+    top: 6px;
   }
 
   .construtor-link {
     color: #361d32;
     border-radius: 0px 5px 20px 0px;
-    font-size: 11pt;
+    font-size: 10.5pt;
     padding-left: 2px;
   }
 
@@ -631,7 +631,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 
@@ -672,7 +672,7 @@
   }
 
   .home-div-principal {
-    margin-top: 12%;
+    margin-top: 7%;
   }
 
   .img-home {
@@ -705,7 +705,7 @@
   .construtor-link {
     color: #361d32;
     border-radius: 0px 5px 20px 0px;
-    font-size: 12pt;
+    font-size: 11pt;
     padding-left: 5px;
   }
 
@@ -747,9 +747,9 @@
 
   .grid-nav{
     display: grid;
-    grid-template-columns: 5% 5%;
+    grid-template-columns: repeat(4, 4%);
     grid-template-rows: 50% 50%;
-    grid-column-gap: 30px;
+    grid-column-gap: 25px;
     font-size: 1.3em;
     color: #00838f;
     position: fixed;
@@ -767,7 +767,7 @@
 
   #icon-canvas1 {
     position: absolute;
-    top: 37px;
+    top: 5px;
   }
 
   .guia-canvas{
@@ -853,7 +853,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 
@@ -1093,7 +1093,7 @@
 
   .navbar-fixed-top.scrolled {
     background-color: #361d32 !important;
-    height: 70px;
+    height: 55px;
     transition: background-color 400ms ease-in-out;
   }
 

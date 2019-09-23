@@ -51,8 +51,8 @@
 
   .input-semanas {
     display: inline;
-    background-color: #543c52;
-    color: #f1e8e6;
+    background-color: #ccc;
+    color: #361d32;
     padding: 5px;
     border-radius: 6px;
     border: 0;
@@ -62,7 +62,7 @@
   }
 
   .input-semanas::placeholder {
-    color: #edd2cb;
+    color: #361d32;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -154,8 +154,8 @@
 
   .input-semanas {
     display: inline;
-    background-color: #543c52;
-    color: #f1e8e6;
+    background-color: #ccc;
+    color: #361d32;
     padding: 5px;
     border-radius: 6px;
     border: 0;
@@ -165,7 +165,7 @@
   }
 
   .input-semanas::placeholder {
-    color: #edd2cb;
+    color: #361d32;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -257,8 +257,8 @@
 
   .input-semanas {
     display: inline;
-    background-color: #543c52;
-    color: #f1e8e6;
+    background-color: #ccc;
+    color: #361d32;
     padding: 5px;
     border-radius: 6px;
     border: 0;
@@ -268,7 +268,7 @@
   }
 
   .input-semanas::placeholder {
-    color: #edd2cb;
+    color: #361d32;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -360,8 +360,8 @@
 
   .input-semanas {
     display: inline;
-    background-color: #543c52;
-    color: #f1e8e6;
+    background-color: #ccc;
+    color: #361d32;
     padding: 5px;
     border-radius: 6px;
     border: 0;
@@ -371,7 +371,7 @@
   }
 
   .input-semanas::placeholder {
-    color: #edd2cb;
+    color: #361d32;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -466,8 +466,8 @@
 
   .input-semanas {
     display: inline;
-    background-color: #543c52;
-    color: #f1e8e6;
+    background-color: #ccc;
+    color: #361d32;
     padding: 5px;
     border-radius: 6px;
     border: 0;
@@ -477,7 +477,7 @@
   }
 
   .input-semanas::placeholder {
-    color: #edd2cb;
+    color: #361d32;
     font-size: 9.5pt;
     font-style: italic;
   }

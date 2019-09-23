@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
 import { bimestres, semestres, semanasLista } from '../../data/data_pagina_inicial.js'
 import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
+import Tabletop from 'tabletop'
 
 const PaginaInicial = () => {
   return (
@@ -40,8 +41,10 @@ class Disciplines extends Component {
   }
 
   renderElement = (e, planilha) => {
-    ReactDOM.render(<Inputs semanasTemas={semanasLista}/>, document.getElementById('inputs-semanas'))
-    this.handleClick(e, planilha)
+    if (planilha !== '') {
+      ReactDOM.render(<Inputs semanasTemas={semanasLista}/>, document.getElementById(`inputs-semanas-${e}`))
+      this.handleClick(e, planilha)
+    }
   }
 
   render() {
@@ -55,9 +58,15 @@ class Disciplines extends Component {
               <li id={item.id} className="py-2 itemDisciplina text-left" onClick={() => {
                 this.renderElement(item.id, item.planilha)
               }}>
-                <h4 className="pl-5">{item.title}</h4>
+                <h4 className="pl-5">
+                {
+                  item.title && item.planilha !== '' ?
+                  item.title :
+                  `${item.title} - Sem dados`
+                }
+                </h4>
               </li>
-              <div id="inputs-semanas"></div>
+              <div id={`inputs-semanas-${item.id}`}></div>
               <div id={`semanas-preview-${item.id}`}></div>
             </React.Fragment>
             ))
@@ -75,16 +84,34 @@ const Inputs = props => {
         <div className="inputs-temas">
           {props.semanasTemas.map(semana => (
             <div>
-              <label className="tema-semana" htmlFor={`semana-${semana.num}-tema`}>Insira o tema da semana <span className={semana.num == 1 ? "ml-1" : "ml-0"}>{semana.num}</span></label><br/>
-              <input className="input-semanas" id={`semana-${semana.num}-tema`} placeholder="Escreva um espaço em branco se não houver" />
+              <label className="tema-semana" htmlFor={`semana-${semana.num}-tema`}>
+                Insira o tema da semana
+                <span className={semana.num == 1 ? "ml-1" : "ml-0"}>
+                  {semana.num}
+                </span>
+              </label><br/>
+              <input
+                className="input-semanas"
+                id={`semana-${semana.num}-tema`}
+                placeholder="Escreva um espaço em branco se não houver"
+              />
             </div>
           ))}
         </div>
         <div className="inputs-links">
           {props.semanasTemas.map(semana => (
             <div>
-              <label className="tema-semana" htmlFor={`semana-${semana.num}-link`}>Insira o link da semana <span className={semana.num == 1 ? "ml-1" : "ml-0"}>{semana.num}</span></label><br/>
-              <input className="input-semanas" id={`semana-${semana.num}-link`} placeholder="Escreva um espaço em branco se não houver" />
+              <label className="tema-semana" htmlFor={`semana-${semana.num}-link`}>
+                Insira o link da semana
+                <span className={semana.num == 1 ? "ml-1" : "ml-0"}>
+                  {semana.num}
+                </span>
+              </label><br/>
+              <input
+                className="input-semanas"
+                id={`semana-${semana.num}-link`}
+                placeholder="Escreva um espaço em branco se não houver"
+              />
             </div>
           ))}
         </div>
@@ -125,16 +152,16 @@ class SemanasPreenchidas extends Component {
   }
 
   componentDidMount() {
-    const { link } = this.props
-    fetch(link)
-      .then((response) => {
-        return response.json()
-      }).then((json) => {
+    Tabletop.init({
+      key: this.props.link,
+      callback: googleData => {
         this.setState({
-          semanas: json,
+          semanas: googleData,
           constructor: 'Construir!'
         })
-      })
+      },
+      simpleSheet: true
+    })
   }
 
   render() {
@@ -153,8 +180,21 @@ class SemanasPreenchidas extends Component {
               <div className={`container title semana-${item.semana}`}>
                 <div className="before">{item.dia < 10 ? `0${item.dia}` : item.dia}<br />{meses[item.mes - 1]}</div>
                 <span>{item.semana}</span>
-                <h1>{document.getElementById(`semana-${item.semana}-tema`).value}</h1>
-                <a className="overlay" href={document.getElementById(`semana-${item.semana}-link`).value}>link</a>
+                <h1>
+                  {
+                    document.getElementById(`semana-${item.semana}-tema`) &&
+                    document.getElementById(`semana-${item.semana}-tema`).value
+                  }
+                </h1>
+                <a
+                  className="overlay"
+                  href={
+                    document.getElementById(`semana-${item.semana}-link`) &&
+                    document.getElementById(`semana-${item.semana}-link`).value
+                  }
+                >
+                  Link para a semana {item.semana}
+                </a>
               </div>
             ))}
           </div>
@@ -165,14 +205,4 @@ class SemanasPreenchidas extends Component {
   }
 }
 
-class Semestrais extends Component {
-  render() {
-    return (
-      <div className="mt-5">
-        <h2>Construtor Página Inicial - Disciplinas Semestrais</h2>
-      </div>
-    )
-  }
-}
-
-export { PaginaInicial, SemanasPreenchidas, Semestrais }
+export { PaginaInicial, SemanasPreenchidas }

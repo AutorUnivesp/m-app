@@ -2,11 +2,11 @@ const bimestres = [
   {
     id: 'BIM042019',
     title: '4º Bimestre | 2019',
-    planilha: "https://sheetsu.com/apis/v1.0bu/ae4b0dda9e40"
+    planilha: "1_z_e1BCEUE5lq1t-YMz2njPmI8qpZyQdp-lTT5QCaR4"
   },
   {
     id: 'BIM012020',
-    title: '1º Bimestre | 2020 - (Aguardando datas)',
+    title: '1º Bimestre | 2020',
     planilha: ''
   }
 ]
@@ -14,12 +14,12 @@ const bimestres = [
 const semestres = [
   {
     id: 'SEM012020',
-    title: '1º Semestre | 2020 - (Aguardando datas)',
+    title: '1º Semestre | 2020',
     planilha: ''
   },
   {
     id: 'SEM022020',
-    title: '2º Semestre | 2020 - (Aguardando datas)',
+    title: '2º Semestre | 2020',
     planilha: ''
   }
 ]
