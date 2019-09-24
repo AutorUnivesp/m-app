@@ -4,11 +4,13 @@ import VideosBase from './components/ConstrutoresBases/VideoBase'
 import ExsDiferenciados from './components/ModelosDiferenciados/ExerciciosDiferenciados'
 import SenhasPage from './components/SenhasPage'
 import GuiaCanvas from './components/GuiaCanvas'
-import Antigo from './components/Modelos/Antigo.js'
+import Antigo from './components/Modelos/Antigo'
 import Sona from './components/Modelos/Sona'
 import Classico from './components/Modelos/Classico'
 import Banners from './components/Banners'
+import { Creditos } from './components/Creditos/Creditos'
 import { PaginaInicial, SemanasPreenchidas, Semestrais } from './components/ConstrutoresDiferenciados/PaginaInicial'
+import { Documentacao } from './components/Documentacao/Documentacao'
 import { IconInstructureLine } from '@instructure/ui-icons'
 import { Route, Link } from "react-router-dom";
 import { GoogleLogin } from 'react-google-login'
@@ -18,7 +20,6 @@ import './css/construtores.css'
 import './css/codigos.css'
 import './css/basicos.css'
 import listaMenu from './data/data_menu.js'
-import versoes from './data/data_versoes.js'
 import initialGif from './images/Bm7L.gif'
 import inconstruction from './images/gif_home2.gif'
 import inconstructionSVG from './images/construction.svg'
@@ -101,14 +102,14 @@ const ConstrutorDiferenciados = () => {
   )
 }
 
-const Documentacao = () => {
-  return (
-    <div className="text-center" style={{marginTop: '15%'}}>
-      <h4 className="mt-2 pl-5" style={{color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>PÁGINA EM CONSTRUÇÃO...</h4>
-      <img className="ml-4 rounded shadow gif-two-people-typing" src={inconstruction} alt="duas pessoas digitando no notebook" />
-    </div>
-  )
-}
+// const Documentacao = () => {
+//   return (
+//     <div className="text-center" style={{marginTop: '15%'}}>
+//       <h4 className="mt-2 pl-5" style={{color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>PÁGINA EM CONSTRUÇÃO...</h4>
+//       <img className="ml-4 rounded shadow gif-two-people-typing" src={inconstruction} alt="duas pessoas digitando no notebook" />
+//     </div>
+//   )
+// }
 
 // <img className="gif-in-construction" src={inconstructionSVG} alt="Página em construção" />
 
@@ -215,29 +216,6 @@ const ModeloSona = () => {
     <div style={{marginTop: '5%'}}>
       <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Sona</h1>
       <Sona />
-    </div>
-  )
-}
-
-const Creditos = () => {
-  return (
-    <div style={{marginTop: '10%'}}>
-      <h4 className="text-center mt-5 titulo-montagem-app">Montagem Web App | Univesp</h4>
-      <div className="montagem-web">
-        <h5 className="my-4">Versões</h5>
-        <ul>
-          {versoes.map(versao => (
-            <li>
-              <div><span className="version"><strong>{versao.name}</strong></span> - {versao.data}</div>
-              <div className="ml-5 mt-3">{versao.details}</div>
-            </li>
-          ))}
-        </ul>
-        <h5 className="mt-5 mb-3">Créditos</h5>
-        <ul>
-          <li>Desenvolvido por Leonardo Reina, Gabriel Gallo e Victor Planas</li>
-        </ul>
-      </div>
     </div>
   )
 }
