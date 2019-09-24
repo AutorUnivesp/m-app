@@ -313,4 +313,7 @@ const itens = [
   }
 ]
 
+const itensToJson = JSON.stringify(itens)
+console.log(itensToJson)
+
 export default itens

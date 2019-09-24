@@ -6,16 +6,36 @@ import '../../css/guia_canvas.css'
 import '../../css/prism.css';
 
 export class GuiaCanvas extends Component {
+  state = {
+    guia_data: []
+  }
+
   componentDidMount() {
     Prism.highlightAll();
   }
 
+  receiveGuiaData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_versoes.json')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          guia_data: data.guia
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
+  }
+
   render() {
+    const { guia_data } = this.state
     return (
       <div className="guia-canvas" id="collapse-guia-canvas">
         <NavGuia />
         <ul className="guia-de-uso" data-spy="scroll" data-target="#navbar-guia" data-offset="0">
-          {itens.map(item => (
+          {guia_data.map(item => (
             <div className="my-5 margin-div">
               <li id={item.id} key={item.id}>
                 <h2 style={{fontWeight: 'bold', paddingTop: '70px'}}>{item.title}</h2>
