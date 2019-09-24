@@ -41,30 +41,30 @@ class ProfsPage extends Component {
         </div>
         <div className="gridProfsPage">
 
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item-action active my-2" id="list-modelo1-list" data-toggle="list" href="#list-modelo1" role="tab" aria-controls="modelo1">MODELO 1 - SELECIONE A CERTA</a>
-              <a class="list-group-item-action my-2" id="list-modelo2-list" data-toggle="list" href="#list-modelo2" role="tab" aria-controls="modelo2">MODELO 2 - CAIXA DE RESPOSTA CURTA</a>
-              <a class="list-group-item-action my-2" id="list-modelo3-list" data-toggle="list" href="#list-modelo3" role="tab" aria-controls="modelo3">MODELO 3 - CAIXA DE RESPOSTA LONGA</a>
-              <a class="list-group-item-action my-2" id="list-modelo4-list" data-toggle="list" href="#list-modelo4" role="tab" aria-controls="modelo4">MODELO 4 - DRAG AND DROP</a>
-              <a class="list-group-item-action my-2" id="list-modelo5-list" data-toggle="list" href="#list-modelo5" role="tab" aria-controls="modelo5">MODELO 5 - CLICAR E SELECIONAR</a>
-              <a class="list-group-item-action my-2" id="list-modelo6-list" data-toggle="list" href="#list-modelo6" role="tab" aria-controls="modelo6">MODELO 6 - CHECKBOX</a>
-              <a class="list-group-item-action my-2" id="list-modelo7-list" data-toggle="list" href="#list-modelo7" role="tab" aria-controls="modelo7">MODELO 7 - MÚLTIPLA ESCOLHA</a>
+            <div className="list-group" id="list-tab" role="tablist">
+              <a className="list-group-item-action active my-2" id="list-modelo1-list" data-toggle="list" href="#list-modelo1" role="tab" aria-controls="modelo1">MODELO 1 - SELECIONE A CERTA</a>
+              <a className="list-group-item-action my-2" id="list-modelo2-list" data-toggle="list" href="#list-modelo2" role="tab" aria-controls="modelo2">MODELO 2 - CAIXA DE RESPOSTA CURTA</a>
+              <a className="list-group-item-action my-2" id="list-modelo3-list" data-toggle="list" href="#list-modelo3" role="tab" aria-controls="modelo3">MODELO 3 - CAIXA DE RESPOSTA LONGA</a>
+              <a className="list-group-item-action my-2" id="list-modelo4-list" data-toggle="list" href="#list-modelo4" role="tab" aria-controls="modelo4">MODELO 4 - DRAG AND DROP</a>
+              <a className="list-group-item-action my-2" id="list-modelo5-list" data-toggle="list" href="#list-modelo5" role="tab" aria-controls="modelo5">MODELO 5 - CLICAR E SELECIONAR</a>
+              <a className="list-group-item-action my-2" id="list-modelo6-list" data-toggle="list" href="#list-modelo6" role="tab" aria-controls="modelo6">MODELO 6 - CHECKBOX</a>
+              <a className="list-group-item-action my-2" id="list-modelo7-list" data-toggle="list" href="#list-modelo7" role="tab" aria-controls="modelo7">MODELO 7 - MÚLTIPLA ESCOLHA</a>
             </div>
 
 
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active bg-light" id="list-modelo1" role="tabpanel" aria-labelledby="list-modelo1-list">
+            <div className="tab-content" id="nav-tabContent">
+              <div className="tab-pane fade show active bg-light" id="list-modelo1" role="tabpanel" aria-labelledby="list-modelo1-list">
                 <ModeloUmDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code1')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code1')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[0].code)
@@ -75,18 +75,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo2" role="tabpanel" aria-labelledby="list-modelo2-list">
+              <div className="tab-pane fade bg-light" id="list-modelo2" role="tabpanel" aria-labelledby="list-modelo2-list">
                 <ModeloDoisDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code2')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code2')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[1].code)
@@ -97,18 +97,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo3" role="tabpanel" aria-labelledby="list-modelo3-list">
+              <div className="tab-pane fade bg-light" id="list-modelo3" role="tabpanel" aria-labelledby="list-modelo3-list">
                 <ModeloTresDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code3')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code3')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[2].code)
@@ -119,18 +119,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo4" role="tabpanel" aria-labelledby="list-modelo4-list">
+              <div className="tab-pane fade bg-light" id="list-modelo4" role="tabpanel" aria-labelledby="list-modelo4-list">
                 <ModeloQuatroDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code4')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code4')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[3].code)
@@ -141,18 +141,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo5" role="tabpanel" aria-labelledby="list-modelo5-list">
+              <div className="tab-pane fade bg-light" id="list-modelo5" role="tabpanel" aria-labelledby="list-modelo5-list">
                 <ModeloCincoDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code5')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code5')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[4].code)
@@ -163,18 +163,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo6" role="tabpanel" aria-labelledby="list-modelo6-list">
+              <div className="tab-pane fade bg-light" id="list-modelo6" role="tabpanel" aria-labelledby="list-modelo6-list">
                 <ModeloSeisDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code6')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code6')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[5].code)
@@ -185,18 +185,18 @@ class ProfsPage extends Component {
                   </code>
                 </pre>
               </div>
-              <div class="tab-pane fade bg-light" id="list-modelo7" role="tabpanel" aria-labelledby="list-modelo7-list">
+              <div className="tab-pane fade bg-light" id="list-modelo7" role="tabpanel" aria-labelledby="list-modelo7-list">
                 <ModeloSeteDiferenciado />
                 <pre className="line-numbers">
-                  <span class="hide-button badge badge-pill" onClick={() => {
+                  <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code7')
                     code1.style.display = 'none'
-                  }}><i class="fas fa-caret-up px-1"></i></span>
+                  }}><i className="fas fa-caret-up px-1"></i></span>
 
-                  <span class="show-button badge badge-pill" onClick={() => {
+                  <span className="show-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code7')
                     code1.style.display = 'block'
-                  }}><i class="fas fa-caret-down px-1"></i></span>
+                  }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
                     copyToClipboard(itens[6].code)
@@ -514,7 +514,7 @@ class ModeloTresDiferenciado extends Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <br /> <br />
         <div>
           <p className="paragraph-modelo3">
@@ -525,14 +525,14 @@ class ModeloTresDiferenciado extends Component {
           </p>
           <textarea class="form-control-modelo3" rows="10" cols="70" placeholder="Digite sua resposta"></textarea>
         </div>
-      	<div class="collapse-modelo3">
+      	<div className="collapse-modelo3">
       		<p>
       			<span style={this.styleResposta}>Resposta:<br /><br />
       				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       			</span>
       		</p>
       	</div>
-        <div class="btn-modelo3">
+        <div className="btn-modelo3">
           Mostrar Gabarito
         </div>
       </div>
@@ -1337,4 +1337,10 @@ class ModeloSeteDiferenciado extends Component {
   }
 }
 
-export default ProfsPage
+export const Diferenciados = () => {
+  return (
+    <div className="mt-5">
+      <ProfsPage />
+    </div>
+  )
+}

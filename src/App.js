@@ -1,224 +1,33 @@
 import React, { Component } from 'react'
-import VideoAula from './components/ConstrutoresBases/VideoAula'
-import VideosBase from './components/ConstrutoresBases/VideoBase'
-import ExsDiferenciados from './components/ModelosDiferenciados/ExerciciosDiferenciados'
-import SenhasPage from './components/SenhasPage'
-import GuiaCanvas from './components/GuiaCanvas'
-import Antigo from './components/Modelos/Antigo'
-import Sona from './components/Modelos/Sona'
-import Classico from './components/Modelos/Classico'
-import Banners from './components/Banners'
-import { Creditos } from './components/Creditos/Creditos'
-import { PaginaInicial, SemanasPreenchidas, Semestrais } from './components/ConstrutoresDiferenciados/PaginaInicial'
-import { Documentacao } from './components/Documentacao/Documentacao'
-import { IconInstructureLine } from '@instructure/ui-icons'
 import { Route, Link } from "react-router-dom";
-import { GoogleLogin } from 'react-google-login'
+import { IconInstructureLine } from '@instructure/ui-icons'
+import { Home } from './components/Home/Home'
+import { Diferenciados } from './components/ModelosDiferenciados/ExerciciosDiferenciados'
+import { Codigos } from './components/Codigos/Codigos.js'
+import { ModeloAntigo } from './components/Codigos/Antigo.js'
+import { ModeloClassico } from './components/Codigos/Classico.js'
+import { ModeloSona } from './components/Codigos/Sona.js'
+import { Construtores } from './components/Construtores/Construtores'
+import { ConstrutorBases } from './components/ConstrutoresBases/ConstrutorBases'
+import { ConstrutorDiferenciados } from './components/ConstrutoresDiferenciados/ConstrutorDiferenciados'
+import { Planilha } from './components/Planilha/Planilha'
+import { Basicos } from './components/Basicos/Basicos'
+import { Banners } from './components/Basicos/Banners'
+import { VideoAulasPlanilha } from './components/Basicos/PlanilhaVideoAulas'
+import { Creditos } from './components/Creditos/Creditos'
+import { Documentacao } from './components/Documentacao/Documentacao'
+import { SemanasPreenchidas } from './components/ConstrutoresDiferenciados/PaginaInicial'
+import { GuiaCanvas } from './components/GuiaUso/GuiaCanvas'
+import { SenhasPage } from './components/Senhas/SenhasPage'
 import './css/construtoresBasesDiferenciados/bases-construtor.css'
 import './css/construtoresBasesDiferenciados/diferenciados-construtor.css'
 import './css/construtores.css'
 import './css/codigos.css'
 import './css/basicos.css'
 import listaMenu from './data/data_menu.js'
-import initialGif from './images/Bm7L.gif'
 import inconstruction from './images/gif_home2.gif'
 import inconstructionSVG from './images/construction.svg'
-import logo from './images/logo_univesp_branco.svg'
 import $ from 'jquery'
-
-class Home extends Component {
-  state = {
-    googleLogin: 'Login'
-  }
-
-  componentDidMount() {
-    loadingScript("https://apis.google.com/js/platform.js")
-  }
-
-  changingState = (response) => {
-    this.setState({
-      googleLogin: 'Logado'
-    }, responseGoogle(response) )
-  }
-
-  render() {
-    const { googleLogin } = this.state
-
-    return (
-      <div className='text-center home-div-principal'>
-        <img className="img-home shadow-lg" src={initialGif} alt="Página em construção" />
-        <h1 className="montagem-name mt-4 text-center mr-4">
-          <span className="monta">MONTA</span>
-          <span className="gem">GEM</span>
-        </h1>
-        <img className="mt-3 mb-3 logo-univesp" src={logo} width="150"/><br/>
-        <GoogleLogin
-          clientId="149444863402-7ulom30mslsi955t27gsmfthaskgvddf.apps.googleusercontent.com"
-          buttonText={googleLogin}
-          onSuccess={this.changingState}
-          onFailure={responseGoogle}
-          cookiePolicy={'single_host_origin'}
-        />
-      </div>
-    )
-  }
-}
-
-const responseGoogle = response => {
-  let profile = response.getBasicProfile();
-  if (profile.getEmail().includes("@univesp.br")) {
-    const barraDeNavegacao = document.getElementsByClassName('menu-superior');
-    barraDeNavegacao[0].style.display = "flex";
-  } else {
-    alert('Você não possui permissão para acessar o conteúdo deste App.');
-  }
-}
-
-const Bases = () => {
-  return (
-    <React.Fragment>
-      <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Videoaula</h1><br />
-      <VideoAula/>
-      <h1 className="text-center" style={{marginTop: '4%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Vídeo Base</h1><br />
-      <VideosBase />
-    </React.Fragment>
-  )
-}
-
-const Diferenciados = () => {
-  return (
-    <div className="mt-5">
-      <ExsDiferenciados />
-    </div>
-  )
-}
-
-const ConstrutorDiferenciados = () => {
-  return (
-    <div className="construtor-diferenciados" id="collapse-construtor-diferenciados">
-      <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Página Inicial - Menu-semanas</h1><br />
-      <PaginaInicial />
-    </div>
-  )
-}
-
-// const Documentacao = () => {
-//   return (
-//     <div className="text-center" style={{marginTop: '15%'}}>
-//       <h4 className="mt-2 pl-5" style={{color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>PÁGINA EM CONSTRUÇÃO...</h4>
-//       <img className="ml-4 rounded shadow gif-two-people-typing" src={inconstruction} alt="duas pessoas digitando no notebook" />
-//     </div>
-//   )
-// }
-
-// <img className="gif-in-construction" src={inconstructionSVG} alt="Página em construção" />
-
-const Planilha = () => {
-  return (
-    <div className="mt-5">
-      <iframe src="https://docs.google.com/spreadsheets/d/1ZYQ04NYV7UwZhF8kTWanQiGuoAHNXjqy9tzKJjA3Rh4/edit#gid=889486014" width="100%" height="900" frameborder="0"></iframe>
-    </div>
-  )
-}
-
-const VideoAulasPlanilha = () => {
-  return (
-    <div className="mt-5">
-      <iframe src="https://docs.google.com/spreadsheets/d/1krv7ctjAdwAoKse7m4oQ1ttTU00-M1-S71IVNNR4rR0/edit#gid=2062978425" width="100%" height="900" frameborder="0"></iframe>
-    </div>
-  )
-}
-
- const Basicos = () => {
-   return (
-     <div style={{marginTop: '15%'}}>
-       <div className="construtor-title">ESCOLHA UMA OPÇÃO</div>
-       <div className="gridBasicos">
-        <Link to='/basicos/banners/'>
-          <button className="construtorElement">
-            <p>BANNERS</p>
-          </button>
-        </Link>
-        <Link to='/basicos/videoaulas/'>
-         <button className="construtorElement">
-           <p>PLANILHA<br/>VIDEOAULAS</p>
-         </button>
-        </Link>
-        <Link >
-         <button className="construtorElementDisabled">
-           <p>PLANILHA<br/>SLIDES</p>
-         </button>
-        </Link>
-       </div>
-     </div>
-   )
- }
-
- const Construtores = () => {
-   return (
-     <div style={{marginTop: '15%'}}>
-       <div className="construtor-title">ESCOLHA SEU CONSTRUTOR</div>
-       <div className="gridConstrutores">
-        <Link to='/construtores/bases/'>
-          <button className="construtorElement">
-            <p>CONSTRUTOR<br/>BASES</p>
-          </button>
-        </Link>
-        <Link to='/construtores/diferenciados/'>
-         <button className="construtorElement">
-           <p>CONSTRUTOR<br />DIFERENCIADOS</p>
-         </button>
-        </Link>
-       </div>
-     </div>
-   )
-}
-
-const Codigos = () => {
- return (
-   <div style={{marginTop: '10%'}}>
-     <div className="construtor-title">ESCOLHA O TIPO DE MODELO</div>
-     <div className="gridCodigos">
-      <Link className="codigoItens" to="/codigos/antigo/" style={{ textDecoration: 'none'}}>
-        <p>Antigo</p>
-      </Link>
-      <Link className="codigoItens" to="/codigos/classico/" style={{ textDecoration: 'none'}}>
-        <p>Clássico</p>
-      </Link>
-      <Link className="codigoItens" to="/codigos/sona/" style={{ textDecoration: 'none'}}>
-        <p>SONA</p>
-      </Link>
-     </div>
-   </div>
- )
-}
-
-const ModeloAntigo = () => {
-  return (
-    <div style={{marginTop: '5%'}}>
-      <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Antigo</h1>
-      <Antigo />
-    </div>
-  )
-}
-
-const ModeloClassico = () => {
-  return (
-    <div style={{marginTop: '5%'}}>
-      <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Clássico</h1>
-      <Classico />
-    </div>
-  )
-}
-
-const ModeloSona = () => {
-  return (
-    <div style={{marginTop: '5%'}}>
-      <h1 className="text-center" style={{marginTop: '5%', color: '#543c52', textShadow: '0px 1px 1px #361d32'}}>Sona</h1>
-      <Sona />
-    </div>
-  )
-}
 
 class App extends Component {
 
@@ -324,13 +133,15 @@ class App extends Component {
         <Route path="/senhas/" component={SenhasPage}/>
         <Route path="/documentacao/" component={Documentacao}/>
         <Route path="/creditos/" component={Creditos}/>
-        <Route exact path='/construtores/bases/' component={Bases} />
+        <Route exact path='/construtores/bases/' component={ConstrutorBases} />
         <Route exact path='/construtores/diferenciados/' component={ConstrutorDiferenciados} />
         <Route path='/construtores/diferenciados/Bimestrais/' component={SemanasPreenchidas} />
       </div>
     )
   }
 }
+
+export default App
 
 // <Route exact path='/construtores/bases/antes-de-comecar' component={ConstrutorDiferenciados} />
 // <Route exact path='/construtores/bases/orientacao/' component={ConstrutorDiferenciados} />
@@ -345,16 +156,3 @@ class App extends Component {
 
 /*
 <Route exact path="/basicos/slides/" component={Slides}/> */
-
-/* Adding the script tag in HTML */
-const loadingScript = url => {
-  let getScript = window.document.getElementsByTagName('script')[0]
-  let insertScript = window.document.createElement('script')
-  insertScript.src = url
-  insertScript.async = true
-  insertScript.defer = true
-  getScript.parentNode.insertBefore(insertScript, getScript)
-  insertScript.onerror = () => alert('Oh no! Login API request catch an error.')
-}
-
-export default App

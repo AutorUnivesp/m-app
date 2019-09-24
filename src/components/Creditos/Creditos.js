@@ -10,14 +10,15 @@ export class Creditos extends Component {
   }
 
   receiveData = () => {
-    fetch()
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_versoes.json')
     .then(response => {
       response.json()
-    }).then(data => {
+      .then(data => {
         this.setState({
           versoes: data.results
         })
       })
+    })
     .catch(err => {
       console.log(`Request returned with an error: ${err}`)
     })
@@ -31,8 +32,8 @@ export class Creditos extends Component {
         <div className="montagem-web">
           <h5 className="my-4">Versões</h5>
           <ul>
-            {versoes.map(versao => (
-              <li>
+            {versoes.map((versao, index) => (
+              <li key={index}>
                 <div><span className="version"><strong>{versao.name}</strong></span> - {versao.data}</div>
                 <div className="ml-5 mt-3">{versao.details}</div>
               </li>
