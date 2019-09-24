@@ -1,12 +1,31 @@
 import React, { Component } from 'react'
-import banners from '../../data/banners_data.js'
 import '../../css/banners.css'
 import triangulo from '../../images/triangle_site.gif'
 
 export class Banners extends Component {
   state = {
-    disciplines: banners,
-    filteredDisciplines: banners
+    disciplines: [],
+    filteredDisciplines: []
+  }
+
+  componentDidMount() {
+    this.receiveBannerData()
+  }
+
+  receiveBannerData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/banners_data.json')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          disciplines: data.banners,
+          filteredDisciplines: data.banners
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
   }
 
   copyToClipboard = str => {
