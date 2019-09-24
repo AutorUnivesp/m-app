@@ -24,7 +24,6 @@ import './css/construtoresBasesDiferenciados/diferenciados-construtor.css'
 import './css/construtores.css'
 import './css/codigos.css'
 import './css/basicos.css'
-import listaMenu from './data/data_menu.js'
 import inconstruction from './images/gif_home2.gif'
 import inconstructionSVG from './images/construction.svg'
 import $ from 'jquery'
@@ -32,6 +31,7 @@ import $ from 'jquery'
 class App extends Component {
 
   state = {
+    menu_data: [],
     clicks: false,
     width: window.innerWidth
   }
@@ -43,12 +43,28 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.receiveMenuData()
     this.changingMenu()
     window.addEventListener("resize", this.updateDimensions);
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
+  }
+
+  receiveMenuData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_menu.json')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          menu_data: data.menu
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
   }
 
   active = (e) => {
@@ -74,7 +90,7 @@ class App extends Component {
   }
 
   render() {
-    const { width } = this.state
+    const { width, menu_data } = this.state
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top menu-superior">
@@ -83,7 +99,7 @@ class App extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              {listaMenu.map(item => (
+              {menu_data.map(item => (
                 <li className="nav-item">
                   <Link className="py-3 my-1 construtor-link" to={item.link} onClick={this.active}>
                     <span className={item.marginSpan}>
