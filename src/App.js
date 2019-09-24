@@ -99,8 +99,8 @@ class App extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              {menu_data.map(item => (
-                <li className="nav-item">
+              {menu_data.map((item, index) => (
+                <li className="nav-item" key={index}>
                   <Link className="py-3 my-1 construtor-link" to={item.link} onClick={this.active}>
                     <span className={item.marginSpan}>
                       <i className={item.icon}></i>
@@ -112,22 +112,22 @@ class App extends Component {
             </ul>
             <div className="grid-nav">
               <div>
-                <a className="icon" href="https://github.com/AutorUnivesp/Montagem" target="_blank" title="github da montagem">
+                <a className="icon" href="https://github.com/AutorUnivesp/Montagem" target="_blank" rel="noopener noreferrer" title="github da montagem">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
               <div>
-                <a className="icon" href="https://trello.com/b/NBa6HB76/montagem-e-revis%C3%A3o" target="_blank" title="Site do Trello">
+                <a className="icon" href="https://trello.com/b/NBa6HB76/montagem-e-revis%C3%A3o" target="_blank" rel="noopener noreferrer" title="Site do Trello">
                   <i className="fab fa-trello"></i>
                 </a>
               </div>
               <div>
-                <a className="icon" href="https://drive.google.com/drive/my-drive" target="_blank" title="Drive do autor">
+                <a className="icon" href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener noreferrer" title="Drive do autor">
                   <i className="fab fa-google-drive"></i>
                 </a>
               </div>
               <div>
-                <a className="icon" href="https://login.univesp.br/" target="_blank" title="Canvas Link">
+                <a className="icon" href="https://login.univesp.br/" target="_blank" rel="noopener noreferrer" title="Canvas Link">
                   <IconInstructureLine id="icon-canvas1"/>
                 </a>
               </div>

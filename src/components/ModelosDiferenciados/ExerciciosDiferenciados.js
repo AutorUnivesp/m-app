@@ -20,20 +20,42 @@ import '../../css/exsDiferenciados/modeloSeis.css'
 import '../../css/exsDiferenciados/modeloSete.css'
 
 class ProfsPage extends Component {
-  componentDidMount() {
-    Prism.highlightAll()
+  state = {
+    diferenciados_data: []
   }
 
-  render() {
-    const copyToClipboard = str => {
-       let el = document.createElement('textarea');
-       el.value = str;
-       document.body.appendChild(el);
-       el.select();
-       document.execCommand('copy');
-       el.style.display = "none";
-     }
+  componentDidMount() {
+    this.receiveDifereciadosData()
+  }
 
+
+  receiveDifereciadosData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_guia.json')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          diferenciados_data: data.diferenciados
+        })
+        Prism.highlightAll()
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
+  }
+
+  copyToClipboard = str => {
+   let el = document.createElement('textarea');
+   el.value = str;
+   document.body.appendChild(el);
+   el.select();
+   document.execCommand('copy');
+   el.style.display = "none";
+   }
+
+  render() {
+    const { diferenciados_data } = this.state
     return (
       <div>
         <div>
@@ -67,11 +89,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[0].code)
+                    this.copyToClipboard(diferenciados_data[0].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code1">
-                  {itens[0].code}
+                  {diferenciados_data[0].code}
                   </code>
                 </pre>
               </div>
@@ -89,11 +111,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[1].code)
+                    this.copyToClipboard(diferenciados_data[1].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code2">
-                  {itens[1].code}
+                  {diferenciados_data[1].code}
                   </code>
                 </pre>
               </div>
@@ -111,11 +133,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[2].code)
+                    this.copyToClipboard(diferenciados_data[2].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code3">
-                  {itens[2].code}
+                  {diferenciados_data[2].code}
                   </code>
                 </pre>
               </div>
@@ -133,11 +155,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[3].code)
+                    this.copyToClipboard(diferenciados_data[3].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code4">
-                  {itens[3].code}
+                  {diferenciados_data[3].code}
                   </code>
                 </pre>
               </div>
@@ -155,11 +177,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[4].code)
+                    this.copyToClipboard(diferenciados_data[4].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code5">
-                  {itens[4].code}
+                  {diferenciados_data[4].code}
                   </code>
                 </pre>
               </div>
@@ -177,11 +199,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[5].code)
+                    this.copyToClipboard(diferenciados_data[5].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code6">
-                  {itens[5].code}
+                  {diferenciados_data[5].code}
                   </code>
                 </pre>
               </div>
@@ -199,11 +221,11 @@ class ProfsPage extends Component {
                   }}><i className="fas fa-caret-down px-1"></i></span>
 
                   <span className="badge badge-pill badge-light px-3" onClick={() => {
-                    copyToClipboard(itens[6].code)
+                    this.copyToClipboard(diferenciados_data[6].code)
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code7">
-                  {itens[6].code}
+                  {diferenciados_data[6].code}
                   </code>
                 </pre>
               </div>

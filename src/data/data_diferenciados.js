@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-
 const itens = [
   {
     modelo: 'ModeloUm',
@@ -421,5 +419,8 @@ const itens = [
     `
   }
 ]
+
+const jsonItens = JSON.stringify(itens)
+console.log(jsonItens)
 
 export default itens

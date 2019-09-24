@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Prism from "prismjs";
 import { Link, animateScroll as scroll } from 'react-scroll';
-import itens from '../../data/data_guia.js'
 import '../../css/guia_canvas.css'
 import '../../css/prism.css';
 
@@ -11,17 +10,18 @@ export class GuiaCanvas extends Component {
   }
 
   componentDidMount() {
-    Prism.highlightAll();
+    this.receiveGuiaData()
   }
 
   receiveGuiaData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_versoes.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_guia.json')
     .then(response => {
       response.json()
       .then(data => {
         this.setState({
           guia_data: data.guia
         })
+        Prism.highlightAll()
       })
     })
     .catch(err => {
@@ -35,20 +35,20 @@ export class GuiaCanvas extends Component {
       <div className="guia-canvas" id="collapse-guia-canvas">
         <NavGuia />
         <ul className="guia-de-uso" data-spy="scroll" data-target="#navbar-guia" data-offset="0">
-          {guia_data.map(item => (
-            <div className="my-5 margin-div">
+          {guia_data.map((item, index) => (
+            <div className="my-5 margin-div" key={index}>
               <li id={item.id} key={item.id}>
                 <h2 style={{fontWeight: 'bold', paddingTop: '70px'}}>{item.title}</h2>
                 <p className="py-4 guia-content">{item.paragraph}</p>
                 <ol className="guia-list">
-                  {item.list.map(listItem => {
+                  {item.list.map((listItem, index) => {
                     if (listItem.section) {
                       return (
-                        <li className="padding_li">
+                        <li className="padding_li" key={index}>
                           <p>{listItem.section}</p>
                           <ul>
-                            {listItem.itens.map(itemSub => (
-                              <li>
+                            {listItem.itens.map((itemSub, index) => (
+                              <li key={index}>
                                 <p>{itemSub}</p>
                               </li>
                             ))}
@@ -57,7 +57,7 @@ export class GuiaCanvas extends Component {
                       )
                     } else {
                       return (
-                        <li className="padding_li">
+                        <li className="padding_li" key={index}>
                           {listItem}
                         </li>
                       )
@@ -108,7 +108,7 @@ class NavGuia extends Component {
 
   render() {
     return (
-      <nav id="navbar-guia" class="navbar">
+      <nav id="navbar-guia" className="navbar">
         <h3 className="navbar-brand">Seções</h3>
         <nav className="nav nav-pills flex-column">
           <Link to="item1" onClick={this.active} smooth={true} offset={-70} duration={500} >
