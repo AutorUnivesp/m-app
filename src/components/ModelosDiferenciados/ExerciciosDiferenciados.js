@@ -30,7 +30,7 @@ class ProfsPage extends Component {
 
 
   receiveDifereciadosData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_guia.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_diferenciados.json')
     .then(response => {
       response.json()
       .then(data => {
@@ -62,7 +62,6 @@ class ProfsPage extends Component {
           <h1 className="exe-diferenciados font-weight-light py-2 text-center mx-auto">Exercícios Diferenciados | Univesp</h1>
         </div>
         <div className="gridProfsPage">
-
             <div className="list-group" id="list-tab" role="tablist">
               <a className="list-group-item-action active my-2" id="list-modelo1-list" data-toggle="list" href="#list-modelo1" role="tab" aria-controls="modelo1">MODELO 1 - SELECIONE A CERTA</a>
               <a className="list-group-item-action my-2" id="list-modelo2-list" data-toggle="list" href="#list-modelo2" role="tab" aria-controls="modelo2">MODELO 2 - CAIXA DE RESPOSTA CURTA</a>
@@ -72,7 +71,6 @@ class ProfsPage extends Component {
               <a className="list-group-item-action my-2" id="list-modelo6-list" data-toggle="list" href="#list-modelo6" role="tab" aria-controls="modelo6">MODELO 6 - CHECKBOX</a>
               <a className="list-group-item-action my-2" id="list-modelo7-list" data-toggle="list" href="#list-modelo7" role="tab" aria-controls="modelo7">MODELO 7 - MÚLTIPLA ESCOLHA</a>
             </div>
-
 
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active bg-light" id="list-modelo1" role="tabpanel" aria-labelledby="list-modelo1-list">
@@ -93,7 +91,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code1">
-                  {diferenciados_data[0].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[0].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -115,7 +113,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code2">
-                  {diferenciados_data[1].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[1].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -137,7 +135,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code3">
-                  {diferenciados_data[2].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[2].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -159,7 +157,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code4">
-                  {diferenciados_data[3].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[3].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -181,7 +179,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code5">
-                  {diferenciados_data[4].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[4].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -203,7 +201,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code6">
-                  {diferenciados_data[5].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[5].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
@@ -225,7 +223,7 @@ class ProfsPage extends Component {
                   }}>Copy</span><br/>
 
                   <code className="code language-markup" id="code7">
-                  {diferenciados_data[6].code}
+                  { diferenciados_data.length > 0 ? diferenciados_data[6].code : 'Aguardando dados'}
                   </code>
                 </pre>
               </div>
