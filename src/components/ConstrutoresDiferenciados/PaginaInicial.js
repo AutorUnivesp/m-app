@@ -1,25 +1,51 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
-import { bimestres, semestres, semanasLista } from '../../data/data_pagina_inicial.js'
+import { semestres, semanasLista } from '../../data/paginainicial.js'
 import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
 import Tabletop from 'tabletop'
 
-const PaginaInicial = () => {
-  return (
-    <React.Fragment>
-      <div className="gridDisciplinas">
-        <Disciplines
-          title='Bimestrais'
-          lista={bimestres}
-        />
-        <Disciplines
-          title='Semestrais'
-          lista={semestres}
-        />
-      </div>
-    </React.Fragment>
-  )
+class PaginaInicial extends Component {
+  state = {
+    bimestres: [],
+    semestres: []
+  }
+
+  componentDidMount() {
+    this.receiveBimestresData()
+  }
+
+  receiveBimestresData = () => {
+    fetch('')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          bimestres: data.bimestres
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div className="gridDisciplinas">
+          <Disciplines
+            title='Bimestrais'
+            lista={bimestres.length > 0 ? bimestres : 'Aguardando dados'}
+          />
+          <Disciplines
+            title='Semestrais'
+            lista={semestres}
+          />
+        </div>
+      </React.Fragment>
+    )
+  }
 }
 
 
