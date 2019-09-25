@@ -33,7 +33,7 @@ class Classico extends Component {
   }
 
   receiveClassicoData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_classico.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/classico.json')
     .then(response => {
       response.json()
       .then(data => {

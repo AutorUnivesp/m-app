@@ -53,7 +53,7 @@ class App extends Component {
   }
 
   receiveMenuData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_menu.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/menu.json')
     .then(response => {
       response.json()
       .then(data => {

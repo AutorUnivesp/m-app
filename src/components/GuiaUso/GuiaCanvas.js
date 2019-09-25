@@ -14,7 +14,7 @@ export class GuiaCanvas extends Component {
   }
 
   receiveGuiaData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_guia.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/guia.json')
     .then(response => {
       response.json()
       .then(data => {

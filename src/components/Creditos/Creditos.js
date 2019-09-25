@@ -10,7 +10,7 @@ export class Creditos extends Component {
   }
 
   receiveData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_versoes.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/versoes.json')
     .then(response => {
       response.json()
       .then(data => {

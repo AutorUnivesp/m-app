@@ -13,7 +13,7 @@ export class Banners extends Component {
   }
 
   receiveBannerData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/banners_data.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/banners.json')
     .then(response => {
       response.json()
       .then(data => {

@@ -34,7 +34,7 @@ class Sona extends Component {
   }
 
   receiveSonaData = () => {
-    fetch('')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/sona.json')
     .then(response => {
       response.json()
       .then(data => {

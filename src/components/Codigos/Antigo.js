@@ -33,7 +33,7 @@ class Antigo extends Component {
   }
 
   receiveAntigoData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_antigo.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/antigo.json')
     .then(response => {
       response.json()
       .then(data => {

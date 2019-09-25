@@ -29,7 +29,7 @@ class ProfsPage extends Component {
 
 
   receiveDifereciadosData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_diferenciados.json')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/diferenciados.json')
     .then(response => {
       response.json()
       .then(data => {
