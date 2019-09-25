@@ -1,19 +1,58 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
-import { bimestres, semestres, semanasLista } from '../../data/paginainicial.js'
+// import { bimestres, semestres } from '../../data/paginainicial.js'
 import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
 import Tabletop from 'tabletop'
 
-class PaginaInicial extends Component {
+class Disciplines extends Component {
 
   state = {
+    semanasLista: [],
     bimestres: [],
     semestres: []
   }
 
   componentDidMount() {
     this.receiveBimestresData()
+    this.receiveSemestresData()
+    this.receiveListaSemanasData()
+  }
+
+  handleClick = (e, planilha) => {
+    document.getElementById(`semanas-preview-${e}`).style.display = 'block'
+    ReactDOM.render(
+      planilha != '' ?
+      <SemanasPreenchidas
+        link={planilha}
+        element={e}
+        semanasTemas={this.state.semanasLista}
+      />
+        : null,
+      document.getElementById(`semanas-preview-${e}`)
+    )
+  }
+
+  renderElement = (e, planilha) => {
+    if (planilha !== '') {
+      ReactDOM.render(<Inputs semanasTemas={this.state.semanasLista}/>, document.getElementById(`inputs-semanas-${e}`))
+      this.handleClick(e, planilha)
+    }
+  }
+
+  receiveListaSemanasData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/lista_semanas.json')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          semanasLista: data.lista_semanas
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
   }
 
   receiveBimestresData = () => {
@@ -31,60 +70,13 @@ class PaginaInicial extends Component {
     })
   }
 
-  render() {
-    return (
-      <React.Fragment>
-        <div className="gridDisciplinas">
-          <Disciplines
-          title='Bimestrais'
-          lista={bimestres}
-          />
-          <Disciplines
-          title='Semestrais'
-          lista={semestres}
-          />
-        </div>
-      </React.Fragment>
-    )
-  }
-}
-
-
-
-class Disciplines extends Component {
-
-  state = {
-    semanasLista: []
-  }
-
-  handleClick = (e, planilha) => {
-    document.getElementById(`semanas-preview-${e}`).style.display = 'block'
-    ReactDOM.render(
-      planilha != '' ?
-      <SemanasPreenchidas
-        link={planilha}
-        element={e}
-        semanasTemas={semanasLista}
-      />
-        : null,
-      document.getElementById(`semanas-preview-${e}`)
-    )
-  }
-
-  renderElement = (e, planilha) => {
-    if (planilha !== '') {
-      ReactDOM.render(<Inputs semanasTemas={semanasLista}/>, document.getElementById(`inputs-semanas-${e}`))
-      this.handleClick(e, planilha)
-    }
-  }
-
-  receiveListaSemanasData = () => {
-    fetch('')
+  receiveSemestresData = () => {
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/semestres.json')
     .then(response => {
       response.json()
       .then(data => {
         this.setState({
-          semanasLista: data.lista_semanas
+          semestres: data.semestres
         })
       })
     })
@@ -94,12 +86,12 @@ class Disciplines extends Component {
   }
 
   render() {
-    const { title, lista } = this.props
+    const { title, mode } = this.props
     return (
       <div className="disciplinas">
         <h3 className="tituloDisciplinas py-2 pl-4">{title}</h3>
         <ul className="listaDisciplinas">
-          {lista.map(item => (
+          {this.state.bimestres.map(item => (
             <React.Fragment>
               <li id={item.id} className="py-2 itemDisciplina text-left" onClick={() => {
                 this.renderElement(item.id, item.planilha)
@@ -247,6 +239,25 @@ class SemanasPreenchidas extends Component {
         </div>
 
       </div>
+    )
+  }
+}
+
+class PaginaInicial extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <div className="gridDisciplinas">
+          <Disciplines
+          title='Bimestrais'
+          mode="bimestres"
+          />
+          <Disciplines
+          title='Semestrais'
+          mode="semestres"
+          />
+        </div>
+      </React.Fragment>
     )
   }
 }
