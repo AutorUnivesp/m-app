@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
-import { semestres, semanasLista } from '../../data/paginainicial.js'
+import { bimestres, semestres, semanasLista } from '../../data/paginainicial.js'
 import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
 import Tabletop from 'tabletop'
 
 class PaginaInicial extends Component {
+
   state = {
     bimestres: [],
     semestres: []
@@ -16,7 +17,7 @@ class PaginaInicial extends Component {
   }
 
   receiveBimestresData = () => {
-    fetch('')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/bimestres.json')
     .then(response => {
       response.json()
       .then(data => {
@@ -35,12 +36,12 @@ class PaginaInicial extends Component {
       <React.Fragment>
         <div className="gridDisciplinas">
           <Disciplines
-            title='Bimestrais'
-            lista={bimestres.length > 0 ? bimestres : 'Aguardando dados'}
+          title='Bimestrais'
+          lista={bimestres}
           />
           <Disciplines
-            title='Semestrais'
-            lista={semestres}
+          title='Semestrais'
+          lista={semestres}
           />
         </div>
       </React.Fragment>
@@ -51,6 +52,10 @@ class PaginaInicial extends Component {
 
 
 class Disciplines extends Component {
+
+  state = {
+    semanasLista: []
+  }
 
   handleClick = (e, planilha) => {
     document.getElementById(`semanas-preview-${e}`).style.display = 'block'
@@ -71,6 +76,21 @@ class Disciplines extends Component {
       ReactDOM.render(<Inputs semanasTemas={semanasLista}/>, document.getElementById(`inputs-semanas-${e}`))
       this.handleClick(e, planilha)
     }
+  }
+
+  receiveListaSemanasData = () => {
+    fetch('')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          semanasLista: data.lista_semanas
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
   }
 
   render() {

@@ -11,31 +11,28 @@ const bimestres = [
   }
 ]
 
-// const semestres = [
-//   {
-//     id: 'SEM012020',
-//     title: '1º Semestre | 2020',
-//     planilha: ''
-//   },
-//   {
-//     id: 'SEM022020',
-//     title: '2º Semestre | 2020',
-//     planilha: ''
-//   }
-// ]
-//
-// const semanasLista = [
-//   {num: '1', content: '', link: ''},
-//   {num: '2', content: '', link: ''},
-//   {num: '3', content: '', link: ''},
-//   {num: '4', content: '', link: ''},
-//   {num: '5', content: '', link: ''},
-//   {num: '6', content: '', link: ''},
-//   {num: '7', content: '', link: ''},
-//   {num: '8', content: '', link: ''}
-// ]
-//
-// export { bimestres, semestres, semanasLista }
+const semestres = [
+  {
+    id: 'SEM012020',
+    title: '1º Semestre | 2020',
+    planilha: ''
+  },
+  {
+    id: 'SEM022020',
+    title: '2º Semestre | 2020',
+    planilha: ''
+  }
+]
 
-const jsonBimestres = JSON.stringify(bimestres)
-console.log(jsonBimestres)
+const semanasLista = [
+  {num: '1', content: '', link: ''},
+  {num: '2', content: '', link: ''},
+  {num: '3', content: '', link: ''},
+  {num: '4', content: '', link: ''},
+  {num: '5', content: '', link: ''},
+  {num: '6', content: '', link: ''},
+  {num: '7', content: '', link: ''},
+  {num: '8', content: '', link: ''}
+]
+
+export { bimestres, semestres, semanasLista }
