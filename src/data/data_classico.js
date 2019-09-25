@@ -390,4 +390,5 @@ Vídeo de apoio - xxxxxxxxxxxx | yyyyyyyyyy
   }
 ]
 
-export default classico
+const jsonClassico = JSON.stringify(classico)
+console.log(jsonClassico)

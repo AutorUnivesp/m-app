@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import classico from '../../data/data_classico.js'
 import '../../css/main.css'
 import triangulo from '../../images/triangle_site.gif'
 
 class Classico extends Component {
 
   state = {
-    disciplines: classico,
-    filteredDisciplines: classico
+    disciplines: [],
+    filteredDisciplines: []
+  }
+
+  componentDidMount() {
+    this.receiveClassicoData()
   }
 
   copyToClipboard = str => {
@@ -29,6 +32,22 @@ class Classico extends Component {
     })
   }
 
+  receiveClassicoData = () => {
+    fetch('')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          disciplines: data.classico,
+          filteredDisciplines: data.classico
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
+  }
+
   render() {
     const { filteredDisciplines } = this.state;
     return (
@@ -40,9 +59,9 @@ class Classico extends Component {
           </div>
           <div>
             <ul>
-              {filteredDisciplines.map(dis => (
-                <li style={{listStyle: 'none'}}>
-                  <div className="discipline my-1">
+              {filteredDisciplines.map((dis, index) => (
+                <li style={{listStyle: 'none'}} key={index}>
+                  <div className="discipline my-1" key={index}>
                     <span className="title-banners pr-2">{dis.title}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
                       this.copyToClipboard(dis.code)

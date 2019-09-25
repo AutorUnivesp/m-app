@@ -33,7 +33,7 @@ class Antigo extends Component {
   }
 
   receiveAntigoData = () => {
-    fetch('')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/data_antigo.json')
     .then(response => {
       response.json()
       .then(data => {
@@ -59,9 +59,9 @@ class Antigo extends Component {
           </div>
           <div>
             <ul>
-              {filteredDisciplines.map(dis => (
-                <li style={{listStyle: 'none'}}>
-                  <div className="discipline my-1">
+              {filteredDisciplines.map((dis, index) => (
+                <li style={{listStyle: 'none'}} key={index}>
+                  <div className="discipline my-1" key={index}>
                     <span className="title-banners pr-2">{dis.title}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
                       this.copyToClipboard(dis.code)
