@@ -827,4 +827,5 @@ Webconferência - xxxxxxxxxxxxxxx
   }
 ]
 
-export default sona
+const jsonSona = JSON.stringify(sona)
+console.log(jsonSona)

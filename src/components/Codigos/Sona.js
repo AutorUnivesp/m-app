@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import sona from '../../data/data_sona.js'
 import '../../css/main.css'
 import '../../css/banners.css'
 import triangulo from '../../images/triangle_site.gif'
@@ -7,8 +6,12 @@ import triangulo from '../../images/triangle_site.gif'
 class Sona extends Component {
 
   state = {
-    disciplines: sona,
-    filteredDisciplines: sona
+    disciplines: [],
+    filteredDisciplines: []
+  }
+
+  componentDidMount() {
+    this.receiveSonaData()
   }
 
   copyToClipboard = str => {
@@ -30,6 +33,22 @@ class Sona extends Component {
     })
   }
 
+  receiveSonaData = () => {
+    fetch('')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          disciplines: data.sona,
+          filteredDisciplines: data.sona
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
+    })
+  }
+
   render() {
     const { filteredDisciplines } = this.state;
     return (
@@ -41,9 +60,9 @@ class Sona extends Component {
           </div>
           <div>
             <ul>
-              {filteredDisciplines.map(dis => (
-                <li style={{listStyle: 'none'}}>
-                  <div className="discipline my-1">
+              {filteredDisciplines.map((dis, index) => (
+                <li style={{listStyle: 'none'}} key={index}>
+                  <div className="discipline my-1" key={index}>
                     <span className="title-banners pr-2">{dis.title}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
                       this.copyToClipboard(dis.code)
