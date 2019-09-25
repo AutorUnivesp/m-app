@@ -924,4 +924,5 @@ xxxxxxxxxxxxx
   }
 ]
 
-export default antigosHTML
+const jsonAntigo = JSON.stringify(antigosHTML)
+console.log(jsonAntigo)

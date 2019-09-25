@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import itens from '../../data/data_diferenciados'
 import Prism from "prismjs";
 import { IconInstructureLine } from '@instructure/ui-icons'
 import $ from 'jquery'

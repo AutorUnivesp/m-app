@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import antigosHTML from '../../data/data_antigo.js'
 import '../../css/main.css'
 import triangulo from '../../images/triangle_site.gif'
 
 class Antigo extends Component {
 
   state = {
-    disciplines: antigosHTML,
-    filteredDisciplines: antigosHTML
+    disciplines: [],
+    filteredDisciplines: []
+  }
+
+  componentDidMount() {
+    this.receiveAntigoData()
   }
 
   copyToClipboard = str => {
@@ -26,6 +29,22 @@ class Antigo extends Component {
     })
     this.setState({
       filteredDisciplines
+    })
+  }
+
+  receiveAntigoData = () => {
+    fetch('')
+    .then(response => {
+      response.json()
+      .then(data => {
+        this.setState({
+          disciplines: data.antigo,
+          filteredDisciplines: data.antigo
+        })
+      })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
     })
   }
 
