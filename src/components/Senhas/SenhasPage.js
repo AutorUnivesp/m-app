@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { IconInstructureLine } from '@instructure/ui-icons'
-import '../../css/senhaspage.css'
+import '../../styles/scss/senhaspage.scss'
 import Tabletop from 'tabletop';
 
 export class SenhasPage extends Component {

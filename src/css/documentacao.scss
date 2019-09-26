@@ -1,0 +1,71 @@
+@mixin verySmall() {
+    @media only screen and (max-width: 650px) {
+        @content;
+    }
+}
+@mixin small() {
+    @media only screen and (max-width: 799px) {
+        @content;
+    }
+}
+@mixin medium() {
+    @media only screen and (max-width: 990px) {
+        @content;
+    }
+}
+@mixin big() {
+    @media only screen and (max-width: 1450px) {
+        @content;
+    }
+}
+@mixin veryBig() {
+    @media only screen and (min-width: 1451px) {
+        @content;
+    }
+}
+
+@mixin headerItemBig {
+  padding: 15px;
+}
+
+@mixin titlePage {
+  text-align: center;
+}
+
+
+
+// @include verySmall {
+//   .header-doc-item {
+//     @include headerItemVerySmall;
+//   }
+// }
+//
+// @include small {
+//   .header-doc-item {
+//     @include headerItemSmall;
+//   }
+// }
+//
+// @include medium {
+//   .header-doc-item {
+//     @include headerItemMedium;
+//   }
+// }
+
+@include big {
+  .header-doc-item {
+    @include headerItemBig;
+  }
+  .header-doc-title {
+    @include titlePage;
+  }
+}
+
+@include veryBig {
+  .header-doc-item {
+    @include headerItemBig;
+  }
+  .header-doc-title {
+    @include titlePage;
+  }
+}

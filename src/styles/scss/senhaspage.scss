@@ -1,0 +1,232 @@
+// Mixins Tamanhos
+@mixin verySmall() {
+  @media only screen and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin small() {
+  @media only screen and (max-width: 799px) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (max-width: 990px) {
+    @content;
+  }
+}
+
+@mixin big() {
+  @media only screen and (max-width: 1450px) {
+    @content;
+  }
+}
+
+@mixin veryBig() {
+  @media only screen and (min-width: 1451px) {
+    @content;
+  }
+}
+
+// Mixins Página
+@mixin loginSenhas {
+  text-align: left;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+@mixin loginSmallMedium{
+  text-align: left;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+@mixin gridSenhas {
+  display: block;
+  margin-top: 20%;
+}
+
+@mixin gridSenhasBig {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin: 90px 0 0 20px;
+}
+
+@mixin gridSenhasVeryBig {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 70px 0 0 100px;
+}
+
+@mixin iconSenhas {
+  color: #361d32;
+  font-size: 5em;
+  &:hover{
+    color: #f55951;
+  }
+}
+
+@mixin iconSmallMedium{
+  color: #361d32;
+  font-size: 4em;
+  &:hover{
+    color: #f55951;
+  }
+}
+
+@mixin copySenhas{
+  background: #361d32;
+  color: #f1e8e6;
+  &:hover{
+    background: #f55951;
+    color: #361d32;
+    cursor: pointer;
+  }
+}
+
+@mixin paragrafoSenhas {
+  color: #543c52;
+}
+
+@mixin paragrafoSenhasVeryBig {
+  color: #543c52;
+  font-size: 12pt;
+}
+
+@mixin loginSenhas2 {
+  color: #543c52;
+  font-size: 1.3em;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin loginSenhas2Big {
+  color: #543c52;
+  font-size: 1.2em;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin loginSenhas2VeryBig {
+  color: #543c52;
+  font-size: 1.5em;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+// Includes
+@include verySmall{
+  #login-canvas, #login-github, #login-drive{
+    @include loginSenhas;
+  }
+
+  #gridSenhas{
+    @include gridSenhas;
+  }
+
+  #icon-canvas2, #github-senhas, #gabaritos-senhas{
+    @include iconSenhas;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    @include copySenhas;
+  }
+
+  .paragrafo-senhaspage{
+    @include paragrafoSenhas;
+  }
+
+  .login{
+    @include loginSenhas2;
+  }
+}
+
+@include small{
+  #gridSenhas{
+    @include gridSenhas;
+  }
+
+  #login-canvas, #login-github, #login-drive{
+    @include loginSmallMedium;
+  }
+
+  #icon-canvas2, #github-senhas, #gabaritos-senhas{
+    @include iconSmallMedium;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    @include copySenhas;
+  }
+
+  .paragrafo-senhaspage{
+    @include paragrafoSenhas;
+  }
+
+  .login{
+    @include loginSenhas2;
+  }
+}
+
+@include medium{
+  #gridSenhas{
+    @include gridSenhas;
+  }
+
+  #login-canvas, #login-github, #login-drive{
+    @include loginSmallMedium;
+  }
+
+  #icon-canvas2, #github-senhas, #gabaritos-senhas{
+    @include iconSmallMedium;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    @include copySenhas;
+  }
+
+  .paragrafo-senhaspage{
+    @include paragrafoSenhas;
+  }
+
+  .login{
+    @include loginSenhas2;
+  }
+}
+
+@include big{
+  #gridSenhas{
+    @include gridSenhasBig;
+  }
+
+  #icon-canvas2, #github-senhas, #gabaritos-senhas{
+    @include iconSmallMedium;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    @include copySenhas;
+  }
+
+  .paragrafo-senhaspage{
+    @include paragrafoSenhas;
+  }
+
+  .login{
+    @include loginSenhas2Big;
+  }
+}
+
+@include veryBig{
+  #gridSenhas{
+    @include gridSenhasVeryBig;
+  }
+
+  #icon-canvas2, #github-senhas, #gabaritos-senhas{
+    @include iconSenhas;
+  }
+
+  #copy-1, #copy-2, #copy-3, #copy-4, #copy-5, #copy-6{
+    @include copySenhas;
+  }
+
+  .paragrafo-senhaspage{
+    @include paragrafoSenhasVeryBig;
+  }
+}
