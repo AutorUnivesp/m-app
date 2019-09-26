@@ -12,7 +12,7 @@ class HeaderDoc extends Component {
   }
 
   receiveDocData = () => {
-    fetch('')
+    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/documentacao.json')
     .then(response => {
       response.json()
       .then(data => {
@@ -27,15 +27,11 @@ class HeaderDoc extends Component {
   }
 
   render() {
+    const { docs } = this.state
     return (
       <div className="mt-5 doc-box">
         <h2 className="header-doc-title">Documentação Javascript Montagem</h2>
-        <p>
-          Abaixo você encontrará as informações necessárias sobre todo o conteúdo
-          de código front-end utilizados pela equipe da Montagem da Univesp. Em seguida você verá uma lista
-          com as versões JS (ECMAScripts) utilizadas, assim como suas bibliotecas e frameworks. Além disso,
-          também utilizamos outras tecnologias para integrar informações.
-        </p>
+        <p>{docs.length > 0 && docs.title_content}</p>
         <ul>
           <li className="header-doc-item">ES5 e jQuery - 80% de todo o código escrito.
             (Utilizamos esse padrão para favorecer a compatibilidade com o
