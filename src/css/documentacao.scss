@@ -24,12 +24,19 @@
     }
 }
 
-@mixin headerItemBig {
+@mixin header {
+  margin: 0 20% 0 20%;
+}
+
+@mixin headerListItens {
   padding: 15px;
 }
 
 @mixin titlePage {
   text-align: center;
+  color: #543c52;
+  text-shadow: 0px 1px 1px #361d32;
+  padding: 50px;
 }
 
 
@@ -54,18 +61,24 @@
 
 @include big {
   .header-doc-item {
-    @include headerItemBig;
+    @include headerListItens;
   }
   .header-doc-title {
     @include titlePage;
+  }
+  .doc-box {
+    @include header;
   }
 }
 
 @include veryBig {
   .header-doc-item {
-    @include headerItemBig;
+    @include headerListItens;
   }
   .header-doc-title {
     @include titlePage;
+  }
+  .doc-box {
+    @include header;
   }
 }
