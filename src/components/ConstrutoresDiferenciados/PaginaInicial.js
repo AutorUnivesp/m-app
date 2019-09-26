@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
-// import { bimestres, semestres } from '../../data/paginainicial.js'
 import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
 import Tabletop from 'tabletop'
 
@@ -91,7 +90,25 @@ class Disciplines extends Component {
       <div className="disciplinas">
         <h3 className="tituloDisciplinas py-2 pl-4">{title}</h3>
         <ul className="listaDisciplinas">
-          {this.state.bimestres.map(item => (
+          {mode === "bimestres" && this.state.bimestres.map(item => (
+            <React.Fragment>
+              <li id={item.id} className="py-2 itemDisciplina text-left" onClick={() => {
+                this.renderElement(item.id, item.planilha)
+              }}>
+                <h4 className="pl-5">
+                {
+                  item.title && item.planilha !== '' ?
+                  item.title :
+                  `${item.title} - Sem dados`
+                }
+                </h4>
+              </li>
+              <div id={`inputs-semanas-${item.id}`}></div>
+              <div id={`semanas-preview-${item.id}`}></div>
+            </React.Fragment>
+            ))
+          }
+          {mode === "semestres" && this.state.semestres.map(item => (
             <React.Fragment>
               <li id={item.id} className="py-2 itemDisciplina text-left" onClick={() => {
                 this.renderElement(item.id, item.planilha)
@@ -124,7 +141,7 @@ const Inputs = props => {
             <div>
               <label className="tema-semana" htmlFor={`semana-${semana.num}-tema`}>
                 Insira o tema da semana
-                <span className={semana.num == 1 ? "ml-1" : "ml-0"}>
+                <span className="ml-1">
                   {semana.num}
                 </span>
               </label><br/>
@@ -141,7 +158,7 @@ const Inputs = props => {
             <div>
               <label className="tema-semana" htmlFor={`semana-${semana.num}-link`}>
                 Insira o link da semana
-                <span className={semana.num == 1 ? "ml-1" : "ml-0"}>
+                <span className="ml-1">
                   {semana.num}
                 </span>
               </label><br/>
