@@ -3,19 +3,6 @@
     font-size: 15pt;
   }
 
-  .section {
-    font-size: 20pt;
-    text-shadow: 2px 2px 2px #888888;
-    font-family: 'Noto Sans JP';
-    color: white;
-    border-radius: 10px;
-    background-color: #03575e;
-    box-shadow: 5px 5px 8px #343A40;
-    margin-right: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
-  }
-
   .secao-code {
     background-color: #272822;
     padding: 15px;
@@ -52,19 +39,6 @@
 @media (min-width: 651px) and (max-width: 799px){
   .title-main-codigo {
     font-size: 15pt;
-  }
-
-  .section {
-    font-size: 20pt;
-    text-shadow: 2px 2px 2px #888888;
-    font-family: 'Noto Sans JP';
-    color: white;
-    border-radius: 10px;
-    background-color: #03575e;
-    box-shadow: 5px 5px 8px #343A40;
-    margin-right: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
   }
 
   .secao-code {
@@ -106,19 +80,6 @@
     font-size: 15pt;
   }
 
-  .section {
-    font-size: 20pt;
-    text-shadow: 2px 2px 2px #888888;
-    font-family: 'Noto Sans JP';
-    color: white;
-    border-radius: 10px;
-    background-color: #03575e;
-    box-shadow: 5px 5px 8px #343A40;
-    margin-right: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
-  }
-
   .secao-code {
     background-color: #272822;
     padding: 15px;
@@ -158,19 +119,6 @@
     font-size: 15pt;
   }
 
-  .section {
-    font-size: 20pt;
-    text-shadow: 2px 2px 2px #888888;
-    font-family: 'Noto Sans JP';
-    color: white;
-    border-radius: 10px;
-    background-color: #03575e;
-    box-shadow: 5px 5px 8px #343A40;
-    margin-right: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
-  }
-
   .secao-code {
     background-color: #272822;
     padding: 15px;
@@ -208,19 +156,6 @@
 @media (min-width: 1451px) {
   .title-main-codigo {
     font-size: 15pt;
-  }
-
-  .section {
-    font-size: 20pt;
-    text-shadow: 2px 2px 2px #888888;
-    font-family: 'Noto Sans JP';
-    color: white;
-    border-radius: 10px;
-    background-color: #03575e;
-    box-shadow: 5px 5px 8px #343A40;
-    margin-right: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
   }
 
   .secao-code {

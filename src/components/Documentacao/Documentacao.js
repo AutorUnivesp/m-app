@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../css/documentacao.scss'
+import '../../styles/scss/documentacao.scss'
 import '../../data/documentacao.js'
 
 class HeaderDoc extends Component {
@@ -43,10 +43,29 @@ class HeaderDoc extends Component {
   }
 }
 
+class MainDoc extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h2 className="section">Canvas Docs.</h2>
+        <div className="section-content">
+
+        </div>
+
+        <h2 className="section">Montagem Web App Docs.</h2>
+        <div className="section-content">
+
+        </div>
+      </React.Fragment>
+    )
+  }
+}
+
 export const Documentacao = () => {
   return (
     <div className="doc-box">
-      <HeaderDoc/>
+      <HeaderDoc />
+      <MainDoc />
     </div>
   )
 }

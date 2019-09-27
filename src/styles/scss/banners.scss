@@ -1,0 +1,189 @@
+// Mixins Tamanhos
+@mixin small() {
+  @media (min-width: 0px) and (max-width: 990px) { @content; } }
+
+@mixin medium() {
+  @media (min-width: 991px) and (max-width: 1450px) { @content; } }
+
+@mixin big() {
+  @media (min-width: 1451px) { @content; } }
+
+// Mixins Página
+@mixin gifBanners {
+  display: none;
+}
+
+@mixin gridSmall {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-top: 6%;
+}
+
+@mixin gridMedium {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 6%;
+}
+
+@mixin gridBig {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 4%;
+}
+
+@mixin titleBanners {
+  font-size: 13pt;
+}
+
+@mixin searchDiv {
+  margin: 20px 0 20px 15px;
+}
+
+@mixin searchField {
+  width: 60%;
+  padding: 7.5px 0 7.5px 10px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  padding-left: 40px;
+  &::placeholder{
+    color: #f1e8e6;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #f55951;
+  }
+}
+
+@mixin searchFieldBig {
+  width: 50%;
+  padding: 7.5px 0 7.5px 10px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  padding-left: 40px;
+  &::placeholder{
+    color: #f1e8e6;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #f55951;
+  }
+}
+
+@mixin buttonSearch {
+  background: transparent;
+  border: 0;
+  color: #f1e8e6;
+  position: relative;
+  left: 35px;
+  cursor: text;
+  &:hover{
+    cursor: text;
+  }
+}
+
+@mixin discipline {
+  margin-left: 0%;
+  margin-right: 20%;
+  background-color: #543c52;
+  padding: 5px;
+  color: #f1e8e6;
+  border-radius: 10px;
+  width: 115%;
+}
+
+@mixin disciplineBig {
+  margin-left: 0%;
+  margin-right: 20%;
+  background-color: #543c52;
+  padding: 5px;
+  color: #f1e8e6;
+  border-radius: 10px;
+}
+
+@mixin copyButton {
+  position: absolute;
+  margin-top: 3px;
+  right: 28%;
+  &:hover{
+    cursor: pointer;
+    background: #f55951;
+    color: #361d32;
+  }
+}
+
+@mixin copyButtonMedium {
+  position: absolute;
+  margin-top: 3px;
+  right: 44%;
+  &:hover{
+    cursor: pointer;
+    background: #f55951;
+    color: #361d32;
+  }
+}
+
+@mixin copyButtonBig {
+  position: absolute;
+  margin-top: 3px;
+  right: 60%;
+  &:hover{
+    cursor: pointer;
+    background: #f55951;
+    color: #361d32;
+  }
+}
+
+// Includes
+@include small{
+  .div-gif { @include gifBanners; }
+
+  .grid-Banners { @include gridSmall; }
+
+  .title-banners { @include titleBanners; }
+
+  .search-div { @include searchDiv; }
+
+  .search-field { @include searchField; }
+
+  .button-search { @include buttonSearch; }
+
+  .discipline { @include discipline; }
+
+  .copy-button-banners { @include copyButton; }
+}
+
+@include medium{
+  .grid-Banners { @include gridMedium; }
+
+  .title-banners { @include titleBanners; }
+
+  .search-div { @include searchDiv; }
+
+  .search-field { @include searchField; }
+
+  .button-search { @include buttonSearch; }
+
+  .discipline { @include discipline; }
+
+  .copy-button-banners { @include copyButtonMedium; }
+}
+
+@include big{
+  .grid-Banners { @include gridBig; }
+
+  .title-banners { @include titleBanners; }
+
+  .search-div { @include searchDiv; }
+
+  .search-field { @include searchFieldBig; }
+
+  .button-search { @include buttonSearch; }
+
+  .discipline { @include disciplineBig; }
+
+  .copy-button-banners { @include copyButtonBig; }
+}

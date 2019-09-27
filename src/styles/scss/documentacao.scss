@@ -19,6 +19,8 @@ $shadowTitle : 0px 1px 1px #361d32;
 $textSize : 13pt;
 $textSizeBig : 15pt;
 
+// Header
+
 @mixin header {
   margin: 0 20% 0 20%;
 }
@@ -63,6 +65,16 @@ $textSizeBig : 15pt;
   font-size: $textSizeBig;
 }
 
+// Main
+
+@mixin section {
+  color: $textColor;
+  text-shadow: $shadowTitle;
+}
+
+// Includes
+
+
 @include verySmall {
   .header-doc-item {@include headerListItens}
   .header-doc-title {@include titlePage}
@@ -93,6 +105,7 @@ $textSizeBig : 15pt;
   .doc-box {@include header}
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContent}
+  .section{@include section}
 }
 
 @include veryBig {
@@ -101,4 +114,5 @@ $textSizeBig : 15pt;
   .doc-box {@include header}
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContent}
+  .section{@include section}
 }

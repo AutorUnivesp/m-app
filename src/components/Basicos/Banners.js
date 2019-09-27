@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../css/banners.css'
+import '../../styles/scss/banners.scss'
 import triangulo from '../../images/triangle_site.gif'
 
 export class Banners extends Component {
