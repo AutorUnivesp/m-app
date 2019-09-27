@@ -1,6 +1,6 @@
 const doc = [
   {
-    title_content: "Abaixo você encontrará as informações necessárias sobre todo o conteúdo de código front-end utilizados pela equipe da Montagem da Univesp. Em seguida você verá uma lista com as versões JS (ECMAScripts) utilizadas, assim como suas bibliotecas e frameworks. Além disso, também utilizamos outras tecnologias para integrar informações."
+    title_content: "Abaixo você encontrará as informações necessárias sobre todo o conteúdo de código <strong>front-end</strong> utilizados pela equipe da Montagem da Univesp. Em seguida você verá uma lista com as versões JS (ECMAScripts) utilizadas, assim como suas bibliotecas e frameworks. Além disso, também utilizamos outras tecnologias para integrar informações."
   },
   {
     header_content: [
