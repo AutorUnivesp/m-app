@@ -28,7 +28,6 @@ class HeaderDoc extends Component {
 
   render() {
     const { docs } = this.state
-    console.log(docs)
     return (
       <div className="header-content">
         <h2 className="header-doc-title">Documentação Javascript Montagem</h2>
