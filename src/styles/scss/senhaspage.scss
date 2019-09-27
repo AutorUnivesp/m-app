@@ -1,32 +1,26 @@
+$textColor : #543c52;
+$shadowTitle : 0px 1px 1px #361d32;
+$hoverColor : #f55951;
+
 // Mixins Tamanhos
 @mixin verySmall() {
-  @media only screen and (max-width: 650px) {
-    @content;
-  }
+  @media (min-width: 0px) and (max-width: 650px) {@content;}
 }
 
 @mixin small() {
-  @media only screen and (max-width: 799px) {
-    @content;
-  }
+  @media (min-width: 651px) and (max-width: 799px) {@content;}
 }
 
 @mixin medium() {
-  @media only screen and (max-width: 990px) {
-    @content;
-  }
+  @media (min-width: 800px) and (max-width: 990px) {@content;}
 }
 
 @mixin big() {
-  @media only screen and (max-width: 1450px) {
-    @content;
-  }
+  @media (min-width: 991px) and (max-width: 1450px) {@content;}
 }
 
 @mixin veryBig() {
-  @media only screen and (min-width: 1451px) {
-    @content;
-  }
+  @media (min-width: 1451px) {@content;}
 }
 
 // Mixins Página
@@ -63,7 +57,7 @@
   color: #361d32;
   font-size: 5em;
   &:hover{
-    color: #f55951;
+    color: $hoverColor;
   }
 }
 
@@ -71,7 +65,7 @@
   color: #361d32;
   font-size: 4em;
   &:hover{
-    color: #f55951;
+    color: $hoverColor;
   }
 }
 
@@ -79,37 +73,37 @@
   background: #361d32;
   color: #f1e8e6;
   &:hover{
-    background: #f55951;
+    background: $hoverColor;
     color: #361d32;
     cursor: pointer;
   }
 }
 
 @mixin paragrafoSenhas {
-  color: #543c52;
+  color: $textColor;
 }
 
 @mixin paragrafoSenhasVeryBig {
-  color: #543c52;
+  color: $textColor;
   font-size: 12pt;
 }
 
 @mixin loginSenhas2 {
-  color: #543c52;
+  color: $textColor;
   font-size: 1.3em;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: $shadowTitle;
 }
 
 @mixin loginSenhas2Big {
-  color: #543c52;
+  color: $textColor;
   font-size: 1.2em;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: $shadowTitle;
 }
 
 @mixin loginSenhas2VeryBig {
-  color: #543c52;
+  color: $textColor;
   font-size: 1.5em;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: $shadowTitle;
 }
 
 // Includes
@@ -228,5 +222,9 @@
 
   .paragrafo-senhaspage{
     @include paragrafoSenhasVeryBig;
+  }
+
+  .login{
+    @include loginSenhas2Big;
   }
 }

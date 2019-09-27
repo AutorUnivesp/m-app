@@ -1,42 +1,54 @@
 @mixin verySmall() {
-    @media only screen and (max-width: 650px) {
-        @content;
-    }
+    @media only screen and (max-width: 650px) {@content;}
 }
 @mixin small() {
-    @media only screen and (max-width: 799px) {
-        @content;
-    }
+    @media only screen and (max-width: 799px) {@content;}
 }
 @mixin medium() {
-    @media only screen and (max-width: 990px) {
-        @content;
-    }
+    @media only screen and (max-width: 990px) {@content;}
 }
 @mixin big() {
-    @media only screen and (max-width: 1450px) {
-        @content;
-    }
+    @media only screen and (max-width: 1450px) {@content;}
 }
 @mixin veryBig() {
-    @media only screen and (min-width: 1451px) {
-        @content;
-    }
+    @media only screen and (min-width: 1451px) {@content;}
 }
+
+$textColor : #543c52;
+$shadowTitle : 0px 1px 1px #361d32;
+$textSize : 13pt;
+$textSizeBig : 15pt;
 
 @mixin header {
   margin: 0 20% 0 20%;
 }
 
+@mixin headerContent {
+  margin-top: 12%;
+  margin-bottom: 10%;
+  background: white;
+  border-radius: 20px;
+  padding: 20px 10% 20px 10%;
+}
+
 @mixin headerListItens {
   padding: 15px;
+  font-size: $textSize;
+  font-weight: bold;
+  color: $textColor;
+  list-style-type: none;
 }
 
 @mixin titlePage {
   text-align: center;
-  color: #543c52;
-  text-shadow: 0px 1px 1px #361d32;
+  color: $textColor;
+  text-shadow: $shadowTitle;
   padding: 50px;
+}
+
+@mixin headerParagraph {
+  color: $textColor;
+  font-size: $textSizeBig;
 }
 
 
@@ -60,25 +72,17 @@
 // }
 
 @include big {
-  .header-doc-item {
-    @include headerListItens;
-  }
-  .header-doc-title {
-    @include titlePage;
-  }
-  .doc-box {
-    @include header;
-  }
+  .header-doc-item {@include headerListItens}
+  .header-doc-title {@include titlePage}
+  .doc-box {@include header}
+  .header-paragraph {@include headerParagraph}
+  .header-content {@include headerContent}
 }
 
 @include veryBig {
-  .header-doc-item {
-    @include headerListItens;
-  }
-  .header-doc-title {
-    @include titlePage;
-  }
-  .doc-box {
-    @include header;
-  }
+  .header-doc-item {@include headerListItens}
+  .header-doc-title {@include titlePage}
+  .doc-box {@include header}
+  .header-paragraph {@include headerParagraph}
+  .header-content {@include headerContent}
 }

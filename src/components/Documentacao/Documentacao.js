@@ -30,15 +30,15 @@ class HeaderDoc extends Component {
     const { docs } = this.state
     console.log(docs)
     return (
-      <div className="mt-5">
+      <div className="header-content">
         <h2 className="header-doc-title">Documentação Javascript Montagem</h2>
-        <p>{docs.length > 0 && docs[0].title_content}</p>
-        <ul>
+        <p className="header-paragraph">{docs.length > 0 && docs[0].title_content}</p>
+        <ul className="header-list">
           {docs.length > 0 && docs[1].header_content.map((item, index) => (
-            <li className="header-doc-item" key={index}>{item.itemContent}</li>
+            <li className="header-doc-item" key={index}><i class="fas fa-arrow-right mr-5"></i>{item.itemContent}</li>
           ))}
         </ul>
-        <p>{docs.length > 0 && docs[2].bottom_header_content}</p>
+        <p className="header-paragraph">{docs.length > 0 && docs[2].bottom_header_content}</p>
       </div>
     )
   }
