@@ -1,0 +1,179 @@
+// Mixins Tamanhos
+@mixin verySmall {
+  @media (min-width: 0px) and (max-width: 799px) { @content; } }
+
+@mixin small {
+  @media (min-width: 800px) and (max-width: 990px) { @content; } }
+
+@mixin medium {
+  @media (min-width: 991px) and (max-width: 1450px) { @content; } }
+
+@mixin big {
+  @media (min-width: 1451px) { @content; } }
+
+// Mixins Comuns
+@mixin navbarBrand {
+  font-weight: bold;
+  color: #543c52;
+}
+
+@mixin paddingDefault {
+  padding: 5px;
+}
+
+@mixin marginDefault {
+  margin-right: 20%;
+}
+
+@mixin navLink {
+  color: #543c52;
+}
+
+@mixin navLinkIn {
+  color: #f55951;
+  font-weight: bold;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+@mixin activeTab {
+  background-color: transparent;
+  color: #f55951;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+@mixin badgeLight {
+  margin-left: 5px;
+  &:hover{
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #f55951;
+    color: #f1e8e6;
+  }
+}
+
+@mixin faCaretDown {
+  font-size: 12px;
+}
+
+@mixin code {
+  display: none;
+  padding-left: 20%;
+}
+
+@mixin guiaContent {
+  color: #272822;
+  font-family: 'Noto Sans JP';
+  font-weight: bold;
+}
+
+@mixin guiaList {
+  color: #edd2cb;
+  font-family: 'Noto Sans JP';
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px #343A40;
+  padding-right: 20%;
+  background: #543c52;
+}
+
+// Mixins Small
+@mixin guiaUsoSmall {
+  list-style-type: none;
+  margin-left: 40%;
+}
+
+@mixin navBarGuiaSmall {
+  position: fixed;
+  margin-left: 0px;
+  border-radius: 20px;
+  margin-top: 5%;
+  box-shadow: 2px 2px 8px #343A40;
+  width: 35%;
+}
+
+// Mixins Medium
+@mixin guiaUsoMedium {
+  list-style-type: none;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+@mixin navBarGuiaMedium {
+  position: fixed;
+  margin-left: 0px;
+  border-radius: 20px;
+  margin-top: -5%;
+  box-shadow: 2px 2px 8px #343A40;
+}
+
+// Mixins Big
+@mixin guiaUsoBig {
+  list-style-type: none;
+  margin-left: 30%;
+}
+
+@mixin navBarGuiaBig {
+  position: fixed;
+  margin-left: 0px;
+  border-radius: 20px;
+  margin-top: 1.5%;
+  box-shadow: 2px 2px 8px #343A40;
+}
+
+// Includes
+@include verySmall{
+  .nav-link { @include navLink; }
+  .nav-link-in { @include navLinkIn; }
+  .activeTab { @include activeTab; }
+  .guia-content { @include guiaContent; }
+  .navbar-brand { @include navbarBrand; }
+}
+
+@include small{
+  .guia-de-uso { @include guiaUsoSmall; }
+  #navbar-guia { @include navBarGuiaSmall; }
+  .navbar-brand { @include navbarBrand; }
+  .padding_li { @include paddingDefault; }
+  .margin-div { @include marginDefault; }
+  .nav-link { @include navLink; }
+  .nav-link-in { @include navLinkIn; }
+  .activeTab { @include activeTab; }
+  .badge-light { @include badgeLight; }
+  .fa-caret-down { @include faCaretDown; }
+  .code { @include code; }
+  .guia-content { @include guiaContent; }
+  .guia-list { @include guiaList; }
+}
+
+@include medium{
+  .guia-de-uso { @include guiaUsoMedium; }
+  #navbar-guia { @include navBarGuiaMedium; }
+  .navbar-brand { @include navbarBrand; }
+  .padding_li { @include paddingDefault; }
+  .margin-div { @include marginDefault; }
+  .nav-link { @include navLink; }
+  .nav-link-in { @include navLinkIn; }
+  .activeTab { @include activeTab; }
+  .badge-light { @include badgeLight; }
+  .fa-caret-down { @include faCaretDown; }
+  .code { @include code; }
+  .guia-content { @include guiaContent; }
+  .guia-list { @include guiaList; }
+}
+
+@include big{
+  .guia-de-uso { @include guiaUsoBig; }
+  #navbar-guia { @include navBarGuiaBig; }
+  .navbar-brand { @include navbarBrand; }
+  .padding_li { @include paddingDefault; }
+  .margin-div { @include marginDefault; }
+  .nav-link { @include navLink; }
+  .nav-link-in { @include navLinkIn; }
+  .activeTab { @include activeTab; }
+  .badge-light { @include badgeLight; }
+  .fa-caret-down { @include faCaretDown; }
+  .code { @include code; }
+  .guia-content { @include guiaContent; }
+  .guia-list { @include guiaList; }
+}

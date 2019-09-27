@@ -45,7 +45,6 @@ class HeaderDoc extends Component {
 }
 
 class MainDoc extends Component {
-
   state = {
     docs: []
   }
@@ -63,6 +62,9 @@ class MainDoc extends Component {
           docs: data
         })
       })
+    })
+    .catch(err => {
+      console.log(`Request returned with an error: ${err}`)
     })
   }
 
@@ -89,22 +91,24 @@ class MainDoc extends Component {
         <h2 className="section">Montagem Web App Docs.</h2>
         <div className="section-content">
           <ul>
-            {docs.length > 0 && docs[4].m_app_content.map((item, index) => (
-              <li className="canvas-doc-item">
-                <i class="fab fa-react mr-3"></i><span>{item.itemContent}</span>
-                <pre className="line-numbers">
-                  <code className="language-javascript">
-                    {item.example}
-                  </code>
-                </pre>
-              </li>
-            ))}
+
           </ul>
         </div>
       </div>
     )
   }
 }
+
+// {docs.length > 0 && docs[4].m_app_content.map((item, index) => (
+//   <li className="canvas-doc-item">
+//     <i class="fab fa-react mr-3"></i><span>{item.itemContent}</span>
+//     <pre className="line-numbers">
+//       <code className="language-javascript">
+//         {item.example}
+//       </code>
+//     </pre>
+//   </li>
+// ))}
 
 export const Documentacao = () => {
   return (
