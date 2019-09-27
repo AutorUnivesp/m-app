@@ -1,17 +1,17 @@
-@mixin verySmall() {
-    @media only screen and (max-width: 650px) {@content;}
+@mixin verySmall {
+    @media (min-width: 0px) and (max-width: 650px) {@content;}
 }
-@mixin small() {
-    @media only screen and (max-width: 799px) {@content;}
+@mixin small {
+    @media (min-width: 651px) and (max-width: 799px) {@content;}
 }
-@mixin medium() {
-    @media only screen and (max-width: 990px) {@content;}
+@mixin medium {
+    @media (min-width: 800px) and (max-width: 990px) {@content;}
 }
-@mixin big() {
-    @media only screen and (max-width: 1450px) {@content;}
+@mixin big {
+    @media (min-width: 991px) and (max-width: 1450px) {@content;}
 }
-@mixin veryBig() {
-    @media only screen and (min-width: 1451px) {@content;}
+@mixin veryBig {
+    @media (min-width: 1451px) {@content;}
 }
 
 $textColor : #543c52;
@@ -23,12 +23,24 @@ $textSizeBig : 15pt;
   margin: 0 20% 0 20%;
 }
 
+@mixin headerSmall {
+  margin: 0 5% 0 5%;
+}
+
 @mixin headerContent {
   margin-top: 12%;
   margin-bottom: 10%;
   background: white;
   border-radius: 20px;
   padding: 20px 10% 20px 10%;
+}
+
+@mixin headerContentSmall {
+  margin-top: 12%;
+  margin-bottom: 10%;
+  background: white;
+  border-radius: 30px;
+  padding: 20px 3% 20px 3%;
 }
 
 @mixin headerListItens {
@@ -51,25 +63,29 @@ $textSizeBig : 15pt;
   font-size: $textSizeBig;
 }
 
+@include verySmall {
+  .header-doc-item {@include headerListItens}
+  .header-doc-title {@include titlePage}
+  .doc-box {@include headerSmall}
+  .header-paragraph {@include headerParagraph}
+  .header-content {@include headerContentSmall}
+}
 
+@include small {
+  .header-doc-item {@include headerListItens}
+  .header-doc-title {@include titlePage}
+  .doc-box {@include headerSmall}
+  .header-paragraph {@include headerParagraph}
+  .header-content {@include headerContentSmall}
+}
 
-// @include verySmall {
-//   .header-doc-item {
-//     @include headerItemVerySmall;
-//   }
-// }
-//
-// @include small {
-//   .header-doc-item {
-//     @include headerItemSmall;
-//   }
-// }
-//
-// @include medium {
-//   .header-doc-item {
-//     @include headerItemMedium;
-//   }
-// }
+@include medium {
+  .header-doc-item {@include headerListItens}
+  .header-doc-title {@include titlePage}
+  .doc-box {@include headerSmall}
+  .header-paragraph {@include headerParagraph}
+  .header-content {@include headerContentSmall}
+}
 
 @include big {
   .header-doc-item {@include headerListItens}

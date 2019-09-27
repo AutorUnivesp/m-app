@@ -13,6 +13,8 @@
     "itemContent": "Github - Repositório de códigos front-end da Montagem, além de utilizar o Github pages para manter o montagem web-app."
   }, {
     "itemContent": "SheetsAPI - Guardamos a maior parte das coisas em planilhas do google. Alguns itens como as senhas e datas especifícas são armazenadas nesse formato e são requisitadas pelo site para trazer informações em formato JSON."
+  }, {
+    "itemContent": "Sass - Usamos esse pré-processador de CSS para estilizar o Montagem Web App."
   }]
 }, {
   "bottom_header_content": "A seguir, detalhamos melhor como utilizamos cada uma das tecnologias descritas, exemplos de como utilizá-las e alguns breves tutoriais."
