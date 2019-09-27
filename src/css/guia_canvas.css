@@ -59,29 +59,6 @@
     color: #f1e8e6;
   }
 
-  .hide-button {
-    margin-left: 75%;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .hide-button:hover {
-    margin-left: 75%;
-    cursor: pointer;
-    background-color: #f55951;
-  }
-
-  .show-button {
-    margin-left: 2px;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .show-button:hover {
-    cursor: pointer;
-    background-color: #f55951;
-  }
-
   .fa-caret-down {
     font-size: 12px;
   }
@@ -165,29 +142,6 @@
     color: #f1e8e6;
   }
 
-  .hide-button {
-    margin-left: 75%;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .hide-button:hover {
-    margin-left: 75%;
-    cursor: pointer;
-    background-color: #f55951;
-  }
-
-  .show-button {
-    margin-left: 2px;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .show-button:hover {
-    cursor: pointer;
-    background-color: #f55951;
-  }
-
   .fa-caret-down {
     font-size: 12px;
   }
@@ -268,29 +222,6 @@
     cursor: pointer;
     background-color: #f55951;
     color: #f1e8e6;
-  }
-
-  .hide-button {
-    margin-left: 75%;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .hide-button:hover {
-    margin-left: 75%;
-    cursor: pointer;
-    background-color: #f55951;
-  }
-
-  .show-button {
-    margin-left: 2px;
-    color: #543c52;
-    background-color: #f1e8e6;
-  }
-
-  .show-button:hover {
-    cursor: pointer;
-    background-color: #f55951;
   }
 
   .fa-caret-down {
