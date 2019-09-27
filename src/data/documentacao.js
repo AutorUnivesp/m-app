@@ -26,6 +26,42 @@ const doc = [
   },
   {
     bottom_header_content: "A seguir, detalhamos melhor como utilizamos cada uma das tecnologias descritas, exemplos de como utilizá-las e alguns breves tutoriais."
+  },
+  {
+    canvas_content: [
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      },
+      {
+        itemContent: '',
+        example: ''
+      }
+    ]
   }
 ]
 
