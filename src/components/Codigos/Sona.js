@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../../css/main.css'
-import '../../css/banners.css'
+// import '../../css/banners.css'
 import triangulo from '../../images/triangle_site.gif'
 
 class Sona extends Component {

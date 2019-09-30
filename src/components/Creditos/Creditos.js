@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../css/index.css'
 
 export class Creditos extends Component {
   state = {
