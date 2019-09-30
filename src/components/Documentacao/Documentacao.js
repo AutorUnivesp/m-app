@@ -91,24 +91,22 @@ class MainDoc extends Component {
         <div className="section-content">
           <h2 className="section">Montagem Web App Docs.</h2>
           <ul>
-
+            {docs.length > 0 && docs[4].m_app.map((item, index) => (
+              <li className="canvas-doc-item">
+                <i class="fab fa-react mr-3"></i><span>{item.itemContent}</span>
+                <pre className="line-numbers">
+                  <code className="language-javascript">
+                    {item.example}
+                  </code>
+                </pre>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     )
   }
 }
-
-// {docs.length > 0 && docs[4].m_app_content.map((item, index) => (
-//   <li className="canvas-doc-item">
-//     <i class="fab fa-react mr-3"></i><span>{item.itemContent}</span>
-//     <pre className="line-numbers">
-//       <code className="language-javascript">
-//         {item.example}
-//       </code>
-//     </pre>
-//   </li>
-// ))}
 
 export const Documentacao = () => {
   return (
