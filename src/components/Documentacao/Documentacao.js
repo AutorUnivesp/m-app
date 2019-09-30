@@ -72,8 +72,8 @@ class MainDoc extends Component {
     const { docs } = this.state
     return (
       <div className="main-documentation">
-        <h2 className="section">Canvas Docs.</h2>
         <div className="section-content">
+          <h2 className="section">Canvas Docs.</h2>
           <ul>
             {docs.length > 0 && docs[3].canvas_content.map((item, index) => (
               <li className="canvas-doc-item">
@@ -88,8 +88,8 @@ class MainDoc extends Component {
           </ul>
         </div>
 
-        <h2 className="section">Montagem Web App Docs.</h2>
         <div className="section-content">
+          <h2 className="section">Montagem Web App Docs.</h2>
           <ul>
 
           </ul>

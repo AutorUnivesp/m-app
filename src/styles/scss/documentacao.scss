@@ -70,10 +70,19 @@ $textSizeBig : 15pt;
 @mixin section {
   color: $textColor;
   text-shadow: $shadowTitle;
+  padding-bottom: 40px;
+}
+
+@mixin sectionContent {
+  @include headerContent;
+  padding: 50px;
+}
+
+@mixin canvasDocItem {
+  list-style-type: none;
 }
 
 // Includes
-
 
 @include verySmall {
   .header-doc-item {@include headerListItens}
@@ -81,6 +90,9 @@ $textSizeBig : 15pt;
   .doc-box {@include headerSmall}
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContentSmall}
+  .section{@include section}
+  .section-content{@include sectionContent}
+  .canvas-doc-item {@include canvasDocItem}
 }
 
 @include small {
@@ -89,6 +101,9 @@ $textSizeBig : 15pt;
   .doc-box {@include headerSmall}
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContentSmall}
+  .section{@include section}
+  .section-content{@include sectionContent}
+  .canvas-doc-item {@include canvasDocItem}
 }
 
 @include medium {
@@ -97,6 +112,9 @@ $textSizeBig : 15pt;
   .doc-box {@include headerSmall}
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContentSmall}
+  .section{@include section}
+  .section-content{@include sectionContent}
+  .canvas-doc-item {@include canvasDocItem}
 }
 
 @include big {
@@ -106,6 +124,8 @@ $textSizeBig : 15pt;
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContent}
   .section{@include section}
+  .section-content{@include sectionContent}
+  .canvas-doc-item {@include canvasDocItem}
 }
 
 @include veryBig {
@@ -115,4 +135,6 @@ $textSizeBig : 15pt;
   .header-paragraph {@include headerParagraph}
   .header-content {@include headerContent}
   .section{@include section}
+  .section-content{@include sectionContent}
+  .canvas-doc-item {@include canvasDocItem}
 }
