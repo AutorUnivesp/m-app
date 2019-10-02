@@ -6,7 +6,6 @@
   "dependencies": {
     "@instructure/canvas-theme": "^6.7.0",
     "@instructure/ui-icons": "^6.7.0",
-    "babel-plugin-prismjs": "^1.1.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
@@ -45,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-prismjs": "^1.1.1",
     "gh-pages": "^2.1.1"
   }
 }

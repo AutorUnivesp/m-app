@@ -1,0 +1,117 @@
+// Mixins Tamanhos
+@mixin verySmall() {
+  @media (min-width: 0px) and (max-width: 650px) {@content;} }
+
+@mixin small() {
+  @media (min-width: 651px) and (max-width: 799px) {@content;} }
+
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin veryBig() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin tituloCreditos {
+  color: #543c52;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin tituloVeryBig {
+  color: #543c52;
+  text-shadow: 0px 1px 1px #361d32;
+  font-size: 24pt;
+}
+
+@mixin versionCreditos {
+  color: #f55951;
+  font-size: 14pt;
+}
+
+@mixin marginTopBig {
+  margin-top: 5%;
+}
+
+@mixin marginTopVeryBig {
+  margin-top: 10%;
+}
+
+@mixin montagemWebVerySmall {
+  margin: 30px 33% 0 12%;
+  padding: 10px;
+  border-radius: 20px;
+  color: #f1e8e6;
+  background-color: #543c52;
+  width: 80%;
+}
+
+@mixin montagemWebSmall {
+  margin: 30px 33% 0 17%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #f1e8e6;
+  background-color: #543c52;
+  width: 70%;
+}
+
+@mixin montagemWebMedium {
+  margin: 30px 33% 0 21%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #f1e8e6;
+  background-color: #543c52;
+  width: 60%;
+}
+
+@mixin montagemWebBig {
+  margin: 30px 33% 0 25%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #f1e8e6;
+  background-color: #543c52;
+  width: 55%;
+}
+
+@mixin montagemWebVeryBig {
+  margin: 30px 33% 0 33%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #f1e8e6;
+  background-color: #543c52;
+}
+
+// includes
+@include verySmall{
+  .titulo-montagem-app { @include tituloCreditos; }
+  .montagem-web { @include montagemWebVerySmall; }
+  .version { @include versionCreditos; }
+}
+
+@include small{
+  .titulo-montagem-app { @include tituloCreditos; }
+  .montagem-web { @include montagemWebSmall; }
+  .version { @include versionCreditos; }
+}
+
+@include medium{
+  .titulo-montagem-app { @include tituloCreditos; }
+  .montagem-web { @include montagemWebMedium; }
+  .version { @include versionCreditos; }
+}
+
+@include big{
+  .titulo-montagem-app { @include tituloCreditos; }
+  .montagem-web { @include montagemWebBig; }
+  .version { @include versionCreditos; }
+  .marginTop-creditos { @include marginTopBig; }
+}
+
+@include veryBig{
+  .titulo-montagem-app { @include tituloVeryBig; }
+  .montagem-web { @include montagemWebVeryBig; }
+  .version { @include versionCreditos; }
+  .marginTop-creditos { @include marginTopVeryBig; }
+}

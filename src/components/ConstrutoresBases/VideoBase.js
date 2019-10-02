@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import cry from '../../images/crying.gif'
-import '../../css/construtoresBasesDiferenciados/videosbase.css'
+import '../../styles/scss/videosbase.scss'
 
 export default () =>
   <div className='gridVideosBase' style={{marginBottom: '50px'}}>

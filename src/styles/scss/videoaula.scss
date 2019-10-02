@@ -1,0 +1,372 @@
+// Mixins Tamanhos
+@mixin small() {
+  @media (min-width: 651px) and (max-width: 799px) {@content;} }
+
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin veryBig() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin gerarBotao {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Barlow';
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px #361d32;
+  border: 0;
+  margin-bottom: 20px;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin gerarBotaoVeryBig {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 20pt;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px #361d32;
+  border: 0;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin graduation { //todos. verybig não tem a classe
+  width: 500px !important;
+}
+
+@mixin gridContainerSmallMedium {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  grid-column-gap: 90px;
+  background-color: #f1e8e6;
+  margin-left: 5%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+@mixin gridContainerBig {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-column-gap: 90px;
+  background-color: #f1e8e6;
+  margin-left: 5%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+@mixin gridContainerVeryBig {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  /* grid-column-gap: 150px; */
+  background-color: #f1e8e6;
+  margin-top: 3%;
+}
+
+@mixin rowOne { //Todos
+  grid-column: 1 / -1;
+  padding-bottom: 50px;
+  background-color: #f1e8e6;
+}
+
+@mixin rowTwo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 30px;
+  background-color: #f1e8e6;
+}
+
+@mixin rowTwoVeryBig {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  margin-left: 90px;
+  background-color: #f1e8e6;
+}
+
+@mixin btnVideoaula { //todos. verybig não tem a classe
+  width: 100%;
+}
+
+@mixin headerFirstDiv {
+  font-size: 15pt;
+  text-align: left;
+  margin-left: 60px;
+  padding: 20px;
+  color: #543c52;
+}
+
+@mixin headerFirstDivVeryBig {
+  font-size: 20pt;
+  text-align: left;
+  margin-left: 60px;
+  padding: 20px;
+  color: #543c52;
+  font-family: 'Raleway'
+}
+
+@mixin headerPreview {
+  display: none;
+  margin-bottom: 5px;
+}
+
+@mixin headerPreviewVeryBig {
+  display: none;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@mixin simulacaoCanvasSmall {
+  background-color: #543c52;
+  padding: 20px;
+  font-size: 14pt;
+  color: #f1e8e6;
+  margin-top: 5px;
+  border-bottom: 5px solid #f55951;
+  text-align: center;
+}
+
+@mixin simulacaoCanvasMediumBig {
+  background-color: #543c52;
+  padding: 20px;
+  font-size: 14pt;
+  color: #f1e8e6;
+  margin-top: 30px;
+  border-bottom: 5px solid #f55951;
+  text-align: center;
+}
+
+@mixin simulacaoCanvasVeryBig {
+  background-color: #543c52;
+  padding: 20px;
+  color: #f1e8e6;
+  margin-top: 20px;
+  border-bottom: 5px solid #f55951;
+}
+
+@mixin rowThree {
+  grid-column: 1 / -1;
+  text-align: left;
+  margin-left: 210px;
+  background-color: #f1e8e6;
+}
+
+@mixin rowThreeVeryBig {
+  grid-column: 1 / -1;
+  text-align: left;
+  margin-left: 270px;
+  background-color: #f1e8e6;
+}
+
+@mixin videoaula { //Todos
+  text-align: left;
+  background-color: #f1e8e6;
+  padding-bottom: 0px;
+}
+
+@mixin formGroup { //Todos
+  background-color: #f1e8e6;
+  margin: 0 0 76px;
+}
+
+@mixin labelOne {
+  display: inline;
+  font-size: 14pt;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: #f1e8e6;
+  color: #543c52;
+}
+
+@mixin labelOneVeryBig {
+  display: inline;
+  font-size: 18pt;
+  font-family: 'Raleway';
+  font-weight: lighter;
+  background-color: #f1e8e6;
+  color: #543c52;
+}
+
+@mixin inputOne {
+  display: inline;
+  background-color: #543c52;
+  color: #f1e8e6;
+  padding: 5px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 15.5pt;
+  margin: 0 0 60px 8px;
+  &::placeholder{
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+}
+
+@mixin inputOneVeryBig {
+  display: inline;
+  background-color: #543c52;
+  color: #f1e8e6;
+  padding: 10px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 16pt;
+  margin: 0 0 57px 17px;
+  &::placeholder{
+    color: #edd2cb;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+}
+
+@mixin lastDivForm { //Todos
+  margin-bottom: 0;
+}
+
+@mixin mainContent {
+  padding-bottom: 80px;
+  background-color: white;
+  height: 800px;
+  background-color: #f1e8e6;
+  text-align: center;
+  padding-left: 10%;
+}
+
+@mixin mainContentVeryBig {
+  padding-bottom: 80px;
+  background-color: white;
+  height: 800px;
+  background-color: #f1e8e6;
+  text-align: center;
+}
+
+@mixin paragraph {
+  font-size: 12pt;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #543c52;
+}
+
+@mixin paragraphVeryBig {
+  font-size: 15pt;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #543c52;
+}
+
+@mixin woody {
+  border-radius: 10px;
+  width: 300px;
+}
+
+@mixin woodyVeryBig {
+  border-radius: 10px;
+}
+
+@mixin previewCanvas {
+  text-align: center;
+}
+
+// Includes
+@include small{
+  #gerarBotao { @include gerarBotao; }
+  .graduation { @include graduation; }
+  .gridContainer-videoaula { @include gridContainerSmallMedium; }
+  .rowOne { @include rowOne; }
+  .rowTwo { @include rowTwo; }
+  .btn { @include btnVideoaula; }
+  .headerFirstDiv { @include headerFirstDiv; }
+  #headerPreview { @include headerPreview; }
+  #simulacaoCanvas { @include simulacaoCanvasSmall; }
+  .rowThree { @include rowThree; }
+  .videoaula { @include videoaula; }
+  .form-group { @include formGroup; }
+  .label-one { @include labelOne; }
+  .input-one { @include inputOne; }
+  #last-div-form { @include lastDivForm; }
+  .main-content { @include mainContent; }
+  .paragraph { @include paragraph; }
+  .woody { @include woody; }
+}
+
+@include medium{
+  #gerarBotao { @include gerarBotao; }
+  .graduation { @include graduation; }
+  .gridContainer-videoaula { @include gridContainerSmallMedium; }
+  .rowOne { @include rowOne; }
+  .rowTwo { @include rowTwo; }
+  .btn { @include btnVideoaula; }
+  .headerFirstDiv { @include headerFirstDiv; }
+  #headerPreview { @include headerPreview; }
+  #simulacaoCanvas { @include simulacaoCanvasMediumBig; }
+  .rowThree { @include rowThree; }
+  .videoaula { @include videoaula; }
+  .form-group { @include formGroup; }
+  .label-one { @include labelOne; }
+  .input-one { @include inputOne; }
+  #last-div-form { @include lastDivForm; }
+  .main-content { @include mainContent; }
+  .paragraph { @include paragraph; }
+  .woody { @include woody; }
+}
+
+@include big{
+  #gerarBotao { @include gerarBotao; }
+  .graduation { @include graduation; }
+  .gridContainer-videoaula { @include gridContainerBig; }
+  .rowOne { @include rowOne; }
+  .rowTwo { @include rowTwo; }
+  .btn { @include btnVideoaula; }
+  .headerFirstDiv { @include headerFirstDiv; }
+  #headerPreview { @include headerPreview; }
+  #simulacaoCanvas { @include simulacaoCanvasMediumBig; }
+  .rowThree { @include rowThree; }
+  .videoaula { @include videoaula; }
+  .form-group { @include formGroup; }
+  .label-one { @include labelOne; }
+  .input-one { @include inputOne; }
+  #last-div-form { @include lastDivForm; }
+  .main-content { @include mainContent; }
+  .paragraph { @include paragraph; }
+  .woody { @include woody; }
+}
+
+@include veryBig{
+  #gerarBotao { @include gerarBotaoVeryBig; }
+  .gridContainer-videoaula { @include gridContainerVeryBig; }
+  .rowOne { @include rowOne; }
+  .rowTwo { @include rowTwoVeryBig; }
+  .headerFirstDiv { @include headerFirstDivVeryBig; }
+  #headerPreview { @include headerPreviewVeryBig; }
+  #simulacaoCanvas { @include simulacaoCanvasVeryBig; }
+  .rowThree { @include rowThreeVeryBig; }
+  .videoaula { @include videoaula; }
+  .form-group { @include formGroup; }
+  .label-one { @include labelOneVeryBig; }
+  .input-one { @include inputOneVeryBig; }
+  #last-div-form { @include lastDivForm; }
+  .main-content { @include mainContentVeryBig; }
+  .paragraph { @include paragraphVeryBig; }
+  .woody { @include woodyVeryBig; }
+  #preview-canvas { @include previewCanvas; }
+}

@@ -1,0 +1,123 @@
+// Mixins Tamanhos
+@mixin small {
+  @media (min-width: 0px) and (max-width: 799px) { @content; } }
+
+@mixin medium {
+  @media (min-width: 800px) and (max-width: 990px) { @content; } }
+
+@mixin big {
+  @media (min-width: 991px) { @content; } }
+
+// Mixins
+@mixin gridCodigosSmall {
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 10%;
+}
+
+@mixin codigoItensSmall {
+  display: block;
+  width: 220px;
+  height: 140px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 20pt;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    font-weight: 400;
+  }
+}
+
+@mixin paragrafoSmall {
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+@mixin codItens2Linhas {
+  margin-top: 33px;
+}
+
+@mixin gridCodigosMedium {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 10%;
+  grid-row-gap: 50px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+@mixin codigoItensMedium {
+  width: 220px;
+  height: 140px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 20pt;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    font-weight: 400;
+  }
+}
+
+@mixin paragrafoMediumBig {
+  margin-top: 50px;
+}
+
+@mixin gridCodigosBig {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  text-align: center;
+  margin-left: 23%;
+  margin-top: 10%;
+}
+
+@mixin codigoItensBig {
+  width: 250px;
+  height: 150px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 20pt;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    font-weight: 400;
+  }
+}
+
+// Includes
+@include small{
+  .gridCodigos { @include gridCodigosSmall; }
+  .codigoItens { @include codigoItensSmall; }
+  .codigoItens p { @include paragrafoSmall; }
+  #codItens2linhas p { @include codItens2Linhas; }
+}
+
+@include medium{
+  .gridCodigos { @include gridCodigosMedium; }
+  .codigoItens { @include codigoItensMedium; }
+  .codigoItens p { @include paragrafoMediumBig; }
+  #codItens2linhas p { @include codItens2Linhas; }
+}
+
+@include big{
+  .gridCodigos { @include gridCodigosBig; }
+  .codigoItens { @include codigoItensBig; }
+  .codigoItens p { @include paragrafoMediumBig; }
+  #codItens2linhas p { @include codItens2Linhas; }
+}

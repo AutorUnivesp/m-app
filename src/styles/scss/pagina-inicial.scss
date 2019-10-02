@@ -1,0 +1,157 @@
+// Mixins Tamanhos
+@mixin smallMedium() {
+  @media (min-width: 0px) and (max-width: 1450px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin gridDisciplinas {
+  display: block;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@mixin gridDisciplinasBig {
+  display: block;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@mixin tituloDisciplinas { //Todos
+  background-color: #543c52;
+  color: #ccc;
+  border-radius: 20px 0 0 0;
+}
+
+@mixin listaDisciplinas { //Todos
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@mixin disciplinas {
+  background: white;
+  border-radius: 20px 5px 5px 5px;
+}
+
+@mixin disciplinasBig {
+  background: white;
+  border-radius: 20px 5px 5px 5px;
+  box-shadow: 4px 4px 8px #343A40;
+  margin-bottom: 80px;
+}
+
+@mixin itemDisciplina {
+  color: grey;
+  &:hover{
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    cursor: pointer;
+  }
+}
+
+@mixin itemDisciplinaBig {
+  color: grey;
+  &:hover{
+    background-color: #f55951;
+    color: #f1e8e6;
+    text-align: center;
+    font-size: 12pt;
+    box-shadow: 8px 8px 15px #edd2cb;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+@mixin semanasMenuPreview { //Todos
+  display: none;
+}
+
+@mixin gridInputs { //Todos
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-column-gap: 20%;
+}
+
+@mixin inputSemanas { //Todos
+  display: inline;
+  background-color: #ccc;
+  color: #361d32;
+  padding: 5px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 15.5pt;
+  margin: 0 0 15px 0px;
+  width: 100%;
+  &::placeholder{
+    color: #361d32;
+    font-size: 9.5pt;
+    font-style: italic;
+  }
+}
+
+@mixin temaSemana { //Todos
+  color: #543c52;
+  font-size: 14pt;
+}
+
+@mixin inputsTemasLinks { //Todos
+  margin: 40px;
+}
+
+@mixin construirBotao { //Todos
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: 'Barlow';
+  width: 140px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px #361d32;
+  border: 0;
+  margin-bottom: 20px;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+// Includes
+@include smallMedium{
+  .gridDisciplinas { @include gridDisciplinas; }
+  .tituloDisciplinas { @include tituloDisciplinas; }
+  .listaDisciplinas { @include listaDisciplinas; }
+  .disciplinas { @include disciplinasBig; }
+  .itemDisciplina { @include itemDisciplina; }
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 { @include semanasMenuPreview; }
+  #preview-menu-semanas { @include semanasMenuPreview; }
+  .grid-inputs-semanas { @include gridInputs; }
+  .input-semanas { @include inputSemanas; }
+  .tema-semana { @include temaSemana; }
+  .inputs-temas { @include inputsTemasLinks; }
+  .inputs-links { @include inputsTemasLinks; }
+  #construirBotao { @include construirBotao; }
+}
+
+@include big{
+  .gridDisciplinas { @include gridDisciplinasBig; }
+  .tituloDisciplinas { @include tituloDisciplinas; }
+  .listaDisciplinas { @include listaDisciplinas; }
+  .disciplinas { @include disciplinas; }
+  .itemDisciplina { @include itemDisciplinaBig; }
+  #semanas-preview-BIM042019, #semanas-preview-BIM012020, #semanas-preview-SEM012020, #semanas-preview-SEM022020 { @include semanasMenuPreview; }
+  #preview-menu-semanas { @include semanasMenuPreview; }
+  .grid-inputs-semanas { @include gridInputs; }
+  .input-semanas { @include inputSemanas; }
+  .tema-semana { @include temaSemana; }
+  .inputs-temas { @include inputsTemasLinks; }
+  .inputs-links { @include inputsTemasLinks; }
+  #construirBotao { @include construirBotao; }
+}

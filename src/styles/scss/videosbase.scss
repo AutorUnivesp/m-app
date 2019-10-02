@@ -1,0 +1,80 @@
+// Mixins Tamanhos
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 1450px) {@content;} }
+
+@mixin big {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin gridVideosBaseMedium {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-column-gap: 90px;
+  background-color: #f1e8e6;
+  margin-left: 5%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+@mixin gridVideosBaseBig {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  grid-column-gap: 200px;
+  background-color: #f1e8e6;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+@mixin gerarBotaoMedium {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Barlow';
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  margin-bottom: 20px;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin gerarBotaoBig {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 20pt;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin headerPreview {
+  text-align: center;
+  display: none;
+}
+
+// Includes
+@include medium{
+  .gridVideosBase { @include gridVideosBaseMedium; }
+  #gerarBotaoVideoBase { @include gerarBotaoMedium; }
+  #headerPreviewVideo { @include headerPreview; }
+}
+
+@include big{
+  .gridVideosBase { @include gridVideosBaseBig; }
+  #gerarBotaoVideoBase { @include gerarBotaoBig; }
+  #headerPreviewVideo { @include headerPreview; }
+}

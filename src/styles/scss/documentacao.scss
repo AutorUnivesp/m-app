@@ -82,6 +82,12 @@ $textSizeBig : 15pt;
   list-style-type: none;
 }
 
+@mixin topic {
+  color: $textColor;
+  font-size: 14pt;
+  padding-bottom: 30px;
+}
+
 // Includes
 
 @include verySmall {
@@ -93,6 +99,7 @@ $textSizeBig : 15pt;
   .section{@include section}
   .section-content{@include sectionContent}
   .canvas-doc-item {@include canvasDocItem}
+  .topic{@include topic}
 }
 
 @include small {
@@ -104,6 +111,7 @@ $textSizeBig : 15pt;
   .section{@include section}
   .section-content{@include sectionContent}
   .canvas-doc-item {@include canvasDocItem}
+  .topic{@include topic}
 }
 
 @include medium {
@@ -115,6 +123,7 @@ $textSizeBig : 15pt;
   .section{@include section}
   .section-content{@include sectionContent}
   .canvas-doc-item {@include canvasDocItem}
+  .topic{@include topic}
 }
 
 @include big {
@@ -126,6 +135,7 @@ $textSizeBig : 15pt;
   .section{@include section}
   .section-content{@include sectionContent}
   .canvas-doc-item {@include canvasDocItem}
+  .topic{@include topic}
 }
 
 @include veryBig {
@@ -137,4 +147,5 @@ $textSizeBig : 15pt;
   .section{@include section}
   .section-content{@include sectionContent}
   .canvas-doc-item {@include canvasDocItem}
+  .topic{@include topic}
 }

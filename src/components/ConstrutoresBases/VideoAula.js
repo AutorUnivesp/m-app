@@ -4,7 +4,7 @@ import $ from 'jquery'
 import cry from '../../images/crying.gif'
 import '../../css/index.css'
 import '../../css/ava_global.css'
-import '../../css/construtoresBasesDiferenciados/videoaula.css'
+import '../../styles/scss/videoaula.scss'
 
 class VideoAula extends Component {
   render() {

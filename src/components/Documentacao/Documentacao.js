@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import Prism from "prismjs";
 import { IconInstructureLine } from '@instructure/ui-icons'
 import '../../styles/scss/documentacao.scss'
-import '../../data/documentacao.js'
+import doc from '../../data/documentacao.js'
 
 class HeaderDoc extends Component {
   state = {
@@ -51,6 +52,7 @@ class MainDoc extends Component {
 
   componentDidMount() {
     this.receiveMainDocData()
+    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   receiveMainDocData = () => {
@@ -73,30 +75,22 @@ class MainDoc extends Component {
     return (
       <div className="main-documentation">
         <div className="section-content">
-          <h2 className="section">Canvas Docs.</h2>
-          <ul>
-            {docs.length > 0 && docs[3].canvas_content.map((item, index) => (
-              <li className="canvas-doc-item">
-                <IconInstructureLine className="mr-3"/><span>{item.itemContent}</span>
-                <pre className="line-numbers">
-                  <code className="language-javascript">
-                    {item.example}
-                  </code>
-                </pre>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="section-content">
           <h2 className="section">Montagem Web App Docs.</h2>
           <ul>
-            {docs.length > 0 && docs[4].m_app.map((item, index) => (
-              <li className="canvas-doc-item">
-                <i class="fab fa-react mr-3"></i><span>{item.itemContent}</span>
-                <pre className="line-numbers">
-                  <code className="language-javascript">
-                    {item.example}
+            {doc[4].m_app.map((item, index) => (
+              <li className="canvas-doc-item" id={index}>
+                <div>
+                  <span className="topic">
+                    <i class="fab fa-react mr-3"></i>
+                    <strong>{item.subject}</strong>
+                  </span>
+                </div>
+                <div>
+                  {item.itemContent}
+                </div>
+                <pre className="line-numbers mb-5" style={{borderRadius: '20px'}}>
+                  <code className={`language-${item.codeType}`}>
+                    {item.example !== '' && item.example}
                   </code>
                 </pre>
               </li>
@@ -107,6 +101,24 @@ class MainDoc extends Component {
     )
   }
 }
+
+// ---------- CANVAS DOCS -----------
+
+// <div className="section-content">
+//   <h2 className="section">Canvas Docs.</h2>
+//   <ul>
+//     {docs.length > 0 && docs[3].canvas_content.map((item, index) => (
+//       <li className="canvas-doc-item">
+//         <IconInstructureLine className="mr-3"/><span>{item.itemContent}</span>
+//         <pre className="line-numbers">
+//           <code className="language-javascript">
+//             {item.example}
+//           </code>
+//         </pre>
+//       </li>
+//     ))}
+//   </ul>
+// </div>
 
 export const Documentacao = () => {
   return (

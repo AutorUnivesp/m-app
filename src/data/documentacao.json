@@ -1,5 +1,5 @@
 [{
-  "title_content": "Abaixo você encontrará as informações necessárias sobre todo o conteúdo de código <strong>front-end</strong> utilizados pela equipe da Montagem da Univesp. Em seguida você verá uma lista com as versões JS (ECMAScripts) utilizadas, assim como suas bibliotecas e frameworks. Além disso, também utilizamos outras tecnologias para integrar informações."
+  "title_content": "Abaixo você encontrará as informações necessárias sobre todo o conteúdo de código front-end utilizados pela equipe da Montagem da Univesp. Em seguida você verá uma lista com as versões JS (ECMAScripts) utilizadas, assim como suas bibliotecas e frameworks. Além disso, também utilizamos outras tecnologias para integrar informações."
 }, {
   "header_content": [{
     "itemContent": "ES5 e jQuery - 80% de todo o código escrito. (Utilizamos esse padrão para favorecer a compatibilidade com o Internet Explorer)"
@@ -13,6 +13,8 @@
     "itemContent": "Github - Repositório de códigos front-end da Montagem, além de utilizar o Github pages para manter o montagem web-app."
   }, {
     "itemContent": "SheetsAPI - Guardamos a maior parte das coisas em planilhas do google. Alguns itens como as senhas e datas especifícas são armazenadas nesse formato e são requisitadas pelo site para trazer informações em formato JSON."
+  }, {
+    "itemContent": "Sass - Optamos pelo uso do pré-processador de css: Sass, para estilizar 90% do conteúdo do site. Dessa forma, o código se torna enxuto e menos repetitivo, além de possibilitar declarações de variáveis."
   }]
 }, {
   "bottom_header_content": "A seguir, detalhamos melhor como utilizamos cada uma das tecnologias descritas, exemplos de como utilizá-las e alguns breves tutoriais."
@@ -44,28 +46,34 @@
   }]
 }, {
   "m_app": [{
-    "itemContent": "",
-    "example": ""
+    "subject": "Links e Routes",
+    "itemContent": "A aplicação web do site da montagem foi desenvolvida usando a lib React JS, sendo assim é uma aplicação do tipo 'single-page-app' que utiliza o sistema de rotas do 'react-router-dom' para renderizar as páginas. todos os 'Routes' estão no componente principal que controla a navegação - App.js. Usamos o componente 'Link' da mesma biblioteca para fazer a ponte com o 'Route' e levar o usuário para página correspondente.",
+    "example": "\n        <Link className=\"codigoItens\" to=\"/codigos/antigo/\" style={{ textDecoration: 'none'}}>\n          <p>Antigo</p>\n        </Link>\n\n        <Route path=\"/codigos/antigo/\" component={ModeloAntigo}/>\n        ",
+    "codeType": "html"
   }, {
-    "itemContent": "",
-    "example": ""
+    "subject": "Arquitetura de pastas",
+    "itemContent": "A divisão das pastas foram feitas de acordo com o seu conteúdo. Em uma aplicação React, a pasta 'public' não deve ser alterada. Sendo assim, tudo deve estar inserido no caminho m-app/src/... No caso do Montagem Web App, 'src' contém as pastas 'components' (responsável pelo componentes React), 'css' (que guarda alguns arquivos de estilo), 'data' (onde está os arquivos JSON com os dados), 'images' (onde guardamos imagens e gifs), 'styles' (que envolve todo o estilo criado para o site em Sass).",
+    "example": "\n        ____ public\n        ____ src\n             |___ components\n             |___ css\n             |___ data\n             |___ images\n             |___ styles\n        ____ App.js\n        ____ App.test.js\n        ____ index.js\n        .\n        .\n        .\n        ",
+    "codeType": "js"
   }, {
-    "itemContent": "",
-    "example": ""
+    "subject": "Componentes com estado e sem estado",
+    "itemContent": "Embora a grande maioria dos componentes sejam Stateful Components (Componentes com estado), existem alguns Stateless Components (Componentes sem estado). No desenvolvimento da aplicação, a maioria foi pensada de maneira Stateless e foi sendo refatorada para Statefull conforme a necessidade.\n        Já que guardamos os dados em JSON no repositório do Github, grande parte dos Stateless precisaram ser refatorados para receber os dados através de um 'raw'.\n        Abaixo mostramos alguns exemplos de componentes sem estado e com estado. Lembrando que o método Render é obrigatório em componentes com estado.",
+    "example": "\n        // Stateful\n\n        export class Creditos extends Component {\n          state = {\n            versoes: []\n          }\n\n          componentDidMount() {\n            this.receiveData()\n          }\n\n          receiveData = () => {\n            fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/versoes.json')\n            .then(response => {\n              response.json()\n              .then(data => {\n                this.setState({\n                  versoes: data.results\n                })\n              })\n            })\n            .catch(err => {\n              console.log(Request returned with an error: {err})\n            })\n          }\n\n          render() {\n            const { versoes } = this.state\n            return (\n              <div style={{marginTop: '10%'}}>\n                <h4 className=\"text-center mt-5 titulo-montagem-app\">Montagem Web App | Univesp</h4>\n                <div className=\"montagem-web\">\n                  <h5 className=\"my-4\">Versões</h5>\n                  <ul>\n                    {versoes.map((versao, index) => (\n                      <li key={index}>\n                        <div>\n                          <span className=\"version\">\n                            <strong>{versao.name}</strong>\n                          </span> - {versao.data}\n                        </div>\n                        <div className=\"ml-5 mt-3\">{versao.details}</div>\n                      </li>\n                    ))}\n                  </ul>\n                  <h5 className=\"mt-5 mb-3\">Créditos</h5>\n                  <ul>\n                    <li>Desenvolvido por Leonardo Reina, Gabriel Gallo e Victor Planas</li>\n                  </ul>\n                </div>\n              </div>\n            )\n          }\n        }\n\n          // Stateless\n\n          export const Construtores = () => {\n             return (\n               <div style={{marginTop: '15%'}}>\n                 <div className=\"construtor-title\">ESCOLHA SEU CONSTRUTOR</div>\n                 <div className=\"gridConstrutores\">\n                  <Link to='/construtores/bases/'>\n                    <button className=\"construtorElement\">\n                      <p>CONSTRUTOR<br/>BASES</p>\n                    </button>\n                  </Link>\n                  <Link to='/construtores/diferenciados/'>\n                   <button className=\"construtorElement\">\n                     <p>CONSTRUTOR<br />DIFERENCIADOS</p>\n                   </button>\n                  </Link>\n                 </div>\n               </div>\n             )\n          }\n          ",
+    "codeType": "js"
   }, {
-    "itemContent": "",
-    "example": ""
+    "subject": "Montando os dados com JS, JSON e o Github",
+    "itemContent": "Como já foi dito anteriormente, optamos por armazenar os dados da\n        aplicação em uma pasta 'data' com arquivos JSON. Esses arquivos foram construídos através de uma transformação\n        de um array de objetos em Javascript. Para isso utilizamos uma função nativa da linguagem e aplicamos um 'log' para\n        pegarmos a informação gerada. Abaixo um exemplo de como isso funciona:",
+    "example": "\n        // Temos um array armazenando algumas informações:\n\n        const example = [\n          {\n            itemExample: 'Primeira informação'\n          },\n          {\n            itemExample: 'Segunda informação'\n          },\n          {\n            itemExample: 'Terceira informação'\n          }\n        ]\n\n        // Usamos as funções nativas para transformá-lo em um JSON:\n\n        const exampleToJson = JSON.stringify(example)\n\n        console.log(exampleToJson)\n\n        // Em seguida salvamos o valor retornado (abaixo) em um arquivo json:\n\n        [\n          {\n            \"itemExample\":\"Primeira informação\"\n          },{\"itemExample\":\"Segunda informação\"\n          },{\"itemExample\":\"Terceira informação\"\n\n          }\n        ]\n\n        /*\n          Subimos o arquivo no Github e clicamos na opção 'Raw' na\n          pasta do arquivo. Copiamos o link do arquivo, que deve\n          se iniciar com\n          'https://raw.githubusercontent.com/.../.../example.json'\n\n          Em seguida usamos fetchAPI para trazer o conteúdo do json para o\n          nosso componente.\n        */\n\n        state = {\n          example: []\n        }\n\n        componentDidMount() {\n          this.receiveData()\n        }\n\n        receiveData = () => {\n          fetch('https://raw.githubusercontent.com/.../.../example.json')\n          .then(response => {\n            // tratamos a resposta com json\n            response.json()\n            .then(data => {\n            // salvamos em 'data'\n              this.setState({\n                // setamos o state do nosso componente para receber data\n                example: data\n              })\n            })\n          })\n          .catch(err => {\n            console.log('Request returned with an error: {err}')\n          })\n        }\n\n        // Após isso, podemos mapear a lista retornada e mostrar os dados utilizando a função .map():\n\n        render() {\n          return (\n            <ul>\n              {this.state.example.map((item, index) => (\n                <li key={index}>\n                  <div className=\"class-example\">{item.itemExample}</div>\n                </li>\n              ))}\n            </ul>\n          )\n        }\n        ",
+    "codeType": "js"
   }, {
-    "itemContent": "",
-    "example": ""
+    "subject": "Utilizando Sass para enxugar o código",
+    "itemContent": "O pré-processador de css Sass foi utilizado no desenvolvimento da\n        plataforma da Montagem como um recurso para deixar o código de css mais enxuto, o tornando menos\n        repetitivo. Isso se torna possível devido a possibilidade de declarações de variáveis na sintaxe scss.\n        Lembrando que, com o Sass, sempre que quisermos utilizar um trecho de css que se repete, criamos uma variável\n        com @mixin.\n        Para chamar as variáveis criadas, devemos sempre utilizar o @include.\n        Abaixo uma breve explicação de como utilizamos o Sass:",
+    "example": "\n        /* --------- CRIANDO MEDIA QUERIES COM MIXINS ------- */\n\n        @mixin small {\n          @media (min-width: 0px) and (max-width: 799px) { @content; } }\n\n        @mixin medium {\n          @media (min-width: 800px) and (max-width: 990px) { @content; } }\n\n        @mixin big {\n          @media (min-width: 991px) { @content; } }\n\n        /* --------- DECLARANDO VARIÁVEIS -------- */\n\n        $textColor : #543c52;\n        $shadowTitle : 0px 1px 1px #361d32;\n        $hoverColor : #f55951;\n\n        /* Declarando variáveis com trechos de código */\n\n        @mixin example {\n          display: block;\n          width: 220px;\n          height: 140px;\n          background-color: #543c52;\n          color: #f1e8e6;\n          border-radius: 15px;\n          font-size: 20pt;\n          cursor: pointer;\n          box-shadow: 3px 3px 20px #361d32;\n          &:hover{ /* Usando hover em Sass */\n            box-shadow: 8px 8px 15px #edd2cb;\n            background-color: $hoverColor; /* Aqui utilizamos a variável declarada */\n            color: #f1e8e6;\n            font-weight: 400;\n          }\n        }\n\n        @mixin example2 {\n          color: #361d32;\n          font-size: 5em;\n          &:hover{\n            color: $hoverColor;\n          }\n          &:focus{\n            border: 1px 1px solid black;\n            text-shadow: $shadowTitle;\n          }\n          &::placeholder{\n            color: $textColor;\n          }\n        }\n\n        /* --------- UTILIZANDO INCLUDES -------- */\n\n        @include small{ /* Primeiro é feito o @include da media querie */\n          /* Incluimos dentro da media querie os mixins necessários de acordo\n          com as classes, Id's ou tags */\n          .example { @include example; }\n          #example2 p { @include example2; }\n        }\n        ",
+    "codeType": "css"
   }, {
-    "itemContent": "",
-    "example": ""
-  }, {
-    "itemContent": "",
-    "example": ""
-  }, {
-    "itemContent": "",
-    "example": ""
+    "subject": "Possibilidades de Melhoria",
+    "itemContent": "No futuro esperamos verificar a necessidade do Redux para aplicação\n        do React. Além disso, uma integração com um banco de dados também seria ideal para\n        dados que mudam constantemente.",
+    "example": "",
+    "codeType": ""
   }]
 }]

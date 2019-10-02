@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
-import '../../css/construtoresBasesDiferenciados/pagina-inicial.css'
+import '../../styles/scss/pagina-inicial.scss'
 import Tabletop from 'tabletop'
 
 class Disciplines extends Component {

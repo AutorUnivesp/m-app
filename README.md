@@ -1,6 +1,16 @@
-# Montagem-Application
+# Montagem Web App
 
-## Integrate all montagem job in one application
+## Objetivos:
+- Integrar todo o trabalho da montagem em uma plataforma.
+- Automatizar tarefas
+
+## Tecnologias utilizadas:
+
+- React JS
+- Node JS
+- Sass
+- jQuery
+- Bootstrap
 
 - You need to have Git and NodeJS installed
 

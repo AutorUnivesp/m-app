@@ -1,0 +1,231 @@
+// Mixins Tamanhos
+@mixin verySmall() {
+  @media (min-width: 0px) and (max-width: 650px) {@content;} }
+
+@mixin small() {
+  @media (min-width: 651px) and (max-width: 799px) {@content;} }
+
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin veryBig() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin groupItem {
+  color: #f1e8e6;
+  background-color: #543c52;
+  border-radius: 10px 5px 20px 10px;
+  font-family: 'Raleway';
+  padding: 15px 0 15px 0;
+  font-size: 0.8em;
+  padding-left: 5px;
+  width: 50%;
+  margin-left: 25%;
+  &:hover{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:active{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:focus{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:visited{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+}
+
+@mixin groupItemBigs {
+  color: #f1e8e6;
+  background-color: #543c52;
+  border-radius: 10px 5px 20px 10px;
+  font-family: 'Raleway';
+  padding: 15px 0 15px 0;
+  font-size: 0.8em;
+  padding-left: 5px;
+  &:hover{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:active{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:focus{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }&:visited{
+    color: #f1e8e6;
+    background-color: #f55951;
+    border-radius: 10px 5px 20px 10px;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+}
+
+@mixin exeDiferenciadosMediumBig {
+  color: #543c52;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin hideButton {
+  margin-left: 75%;
+  color: #543c52;
+  background-color: #f1e8e6;
+  &:hover{
+    margin-left: 75%;
+    cursor: pointer;
+    background-color: #f55951;
+  }
+}
+
+@mixin showButton {
+  margin-left: 2px;
+  color: #543c52;
+  background-color: #f1e8e6;
+  &:hover{
+    cursor: pointer;
+    background-color: #f55951;
+  }
+}
+
+@mixin gridProfsPageBig {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 4%;
+  margin-left: 1%;
+}
+
+@mixin formModelo1Bigs {
+  margin: 0 10px 0 20px;
+}
+
+@mixin divCxCurtaBigs {
+  margin: 20px 0 20px 0;
+}
+
+@mixin btnCxCurtaBigs {
+  width: 150px;
+  font-size: 14px;
+}
+
+@mixin listModelo1Bigs {
+  color: #005662;
+  font-weight: bold;
+}
+
+@mixin perguntasBigs {
+  color: #333;
+  font-weight: normal;
+}
+
+@mixin paragraphModelo3Bigs {
+  padding-left: 30px;
+}
+
+@mixin collapseModelo3Bigs {
+  display: none;
+}
+
+@mixin gabaritoBigs {
+  display: none;
+}
+
+@mixin alternativasBigs {
+  font-size: 1.05em;
+  color: black;
+}
+
+@mixin paragraphModelo7Bigs {
+  font-size: 1.10em;
+  color: black;
+}
+
+@mixin gridProfsPageVeryBig {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 4%;
+  margin-top: 2%;
+}
+
+@mixin exeDiferenciadosVeryBig {
+  color: #543c52;
+  text-shadow: 0px 1px 1px #361d32;
+  margin-top: 5%;
+}
+
+// Includes
+@include verySmall{
+  .list-group-item-action { @include groupItem; }
+}
+
+@include small{
+  .list-group-item-action { @include groupItem; }
+}
+
+@include medium{
+  .list-group-item-action { @include groupItem; }
+  .exe-diferenciados { @include exeDiferenciadosMediumBig; }
+  .hide-button { @include hideButton; }
+  .show-button { @include showButton; }
+}
+
+@include big{
+  .list-group-item-action { @include groupItemBigs; }
+  .exe-diferenciados { @include exeDiferenciadosMediumBig; }
+  .hide-button { @include hideButton; }
+  .show-button { @include showButton; }
+  .gridProfsPage { @include gridProfsPageBig; }
+  .formModelo1 { @include formModelo1Bigs; }
+  .div-cx-curta { @include divCxCurtaBigs; }
+  .btn-cx-curta { @include btnCxCurtaBigs; }
+  .list-modelo1 { @include listModelo1Bigs; }
+  .perguntas { @include perguntasBigs; }
+  .paragraph-modelo3 { @include paragraphModelo3Bigs; }
+  .collapse-modelo3 { @include collapseModelo3Bigs; }
+  .gabarito { @include gabaritoBigs; }
+  .alternativas { @include alternativasBigs; }
+  .paragraph-modelo7 { @include paragraphModelo7Bigs; }
+}
+
+@include veryBig{
+  .list-group-item-action { @include groupItemBigs; }
+  .exe-diferenciados { @include exeDiferenciadosVeryBig; }
+  .hide-button { @include hideButton; }
+  .show-button { @include showButton; }
+  .gridProfsPage { @include gridProfsPageVeryBig; }
+  .formModelo1 { @include formModelo1Bigs; }
+  .div-cx-curta { @include divCxCurtaBigs; }
+  .btn-cx-curta { @include btnCxCurtaBigs; }
+  .list-modelo1 { @include listModelo1Bigs; }
+  .perguntas { @include perguntasBigs; }
+  .paragraph-modelo3 { @include paragraphModelo3Bigs; }
+  .collapse-modelo3 { @include collapseModelo3Bigs; }
+  .gabarito { @include gabaritoBigs; }
+  .alternativas { @include alternativasBigs; }
+  .paragraph-modelo7 { @include paragraphModelo7Bigs; }
+}
