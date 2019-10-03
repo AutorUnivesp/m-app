@@ -1,27 +1,4 @@
 @media (min-width: 0px) and (max-width: 650px) {
-  .title-main-codigo {
-    font-size: 15pt;
-  }
-
-  .secao-code {
-    background-color: #272822;
-    padding: 15px;
-    color: #08b0bf;
-    border-radius: 0 20px 0 0;
-    text-align: left;
-  }
-
-  .copy-button {
-    position: absolute;
-    right: 37%;
-  }
-
-  .gridCodigosCanvas {
-    margin-top: 75px;
-    display: grid;
-    grid-template-columns: 65% 35%;
-  }
-
   .div-gif {
     display: none;
   }
@@ -37,29 +14,6 @@
 }
 
 @media (min-width: 651px) and (max-width: 799px){
-  .title-main-codigo {
-    font-size: 15pt;
-  }
-
-  .secao-code {
-    background-color: #272822;
-    padding: 15px;
-    color: #08b0bf;
-    border-radius: 0 20px 0 0;
-    text-align: left;
-  }
-
-  .copy-button {
-    position: absolute;
-    right: 37%;
-  }
-
-  .gridCodigosCanvas {
-    margin-top: 75px;
-    display: grid;
-    grid-template-columns: 65% 35%;
-  }
-
   .div-gif {
     margin-top: 10%;
     margin-left: 15%;
@@ -76,29 +30,6 @@
 }
 
 @media (min-width: 800px) and (max-width: 990px) {
-  .title-main-codigo {
-    font-size: 15pt;
-  }
-
-  .secao-code {
-    background-color: #272822;
-    padding: 15px;
-    color: #08b0bf;
-    border-radius: 0 20px 0 0;
-    text-align: left;
-  }
-
-  .copy-button {
-    position: absolute;
-    right: 37%;
-  }
-
-  .gridCodigosCanvas {
-    margin-top: 75px;
-    display: grid;
-    grid-template-columns: 65% 35%;
-  }
-
   .div-gif {
     margin-top: 10%;
     margin-left: 15%;
@@ -115,29 +46,6 @@
 }
 
 @media (min-width: 991px) and (max-width: 1450px) {
-  .title-main-codigo {
-    font-size: 15pt;
-  }
-
-  .secao-code {
-    background-color: #272822;
-    padding: 15px;
-    color: #08b0bf;
-    border-radius: 0 20px 0 0;
-    text-align: left;
-  }
-
-  .copy-button {
-    position: absolute;
-    right: 61%;
-  }
-
-  .gridCodigosCanvas {
-    margin-top: 75px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-
   .div-gif {
     margin-top: 10%;
     margin-left: 15%;
@@ -154,29 +62,6 @@
 }
 
 @media (min-width: 1451px) {
-  .title-main-codigo {
-    font-size: 15pt;
-  }
-
-  .secao-code {
-    background-color: #272822;
-    padding: 15px;
-    color: #08b0bf;
-    border-radius: 0 20px 0 0;
-    text-align: left;
-  }
-
-  .copy-button {
-    position: absolute;
-    right: 61%;
-  }
-
-  .gridCodigosCanvas {
-    margin-top: 75px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-
   .div-gif {
     margin-top: 10%;
     margin-left: 15%;

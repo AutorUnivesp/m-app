@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { GoogleLogin } from 'react-google-login'
-import '../../css/index.css'
+import '../../styles/scss/home.scss'
 import initialGif from '../../images/Bm7L.gif'
 import logo from '../../images/logo_univesp_branco.svg'
 

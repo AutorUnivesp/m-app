@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import '../../styles/scss/index.scss'
+import '../../styles/scss/creditos.scss'
 
 export class Creditos extends Component {
   state = {
