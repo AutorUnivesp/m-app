@@ -1,0 +1,71 @@
+$body: "Barlow",sans-serif;
+
+@mixin _body {
+  font-family: $body;
+}
+
+@mixin container {
+  margin-left: 20px;
+}
+
+@mixin titleModelo3 {
+  padding-left: 30px;
+}
+
+@mixin spanTitleModelo3 {
+  font-size: 14pt;
+  color: #a01f1f;
+}
+
+@mixin btnModelo3 {
+  margin-top: 20px;
+  background-color: #d33338;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  border: 0;
+  width: 150px;
+  font-size: 1em;
+  margin-left: 6.5%;
+  text-align: center;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@mixin formControlModelo3 {
+  display: block;
+  width: 600px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@mixin collapseModelo3 {
+  display: none;
+}
+
+@mixin placeholder {
+  font-family: $body;
+}
+
+@mixin paragraphTwoModelo2 {
+  color: black;
+}
+
+
+body {@include _body;}
+.container {@include container;}
+.title-modelo3 {@include titleModelo3;}
+.spanTitle-modelo3 {@include spanTitleModelo3;}
+.btn-modelo3{@include btnModelo3;}
+.form-control-modelo3{@include formControlModelo3;}
+.collapse-modelo3{@include collapseModelo3;}
+::placeholder{@include placeholder;}
+.paragraph-two-modelo2{@include paragraphTwoModelo2;}

@@ -1,0 +1,196 @@
+$shadowColor : #888888;
+
+@mixin small {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin medium {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin big {
+  @media (min-width: 1451px) {@content;} }
+
+@mixin alerta2All {
+  border: 3px solid #38465B;
+  border-radius: 10px;
+  margin-top: -8px;
+  margin-left: 36.5%;
+  background-color: #f7f7f7;
+  display: none;
+}
+
+@mixin respCertaSmall {
+  display: none;
+}
+
+@mixin botaoOkAll {
+  text-transform: uppercase;
+  color: white;
+  background-color: #38465b;
+  text-decoration: none;
+  box-shadow: 2px 2px 8px $shadowColor;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  margin: 20px 33% 20px 33%;
+  cursor: pointer;
+  &:hover{
+    color: #ccc;
+    background-color: #3b5987;
+    box-shadow: 4px 4px 10px $shadowColor;
+  }
+}
+
+@mixin botaoEnviarGabaritoAll {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #ed3a47;
+  text-decoration: none;
+  box-shadow: 2px 2px 8px $shadowColor;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: #d33338;
+    box-shadow: 4px 4px 10px $shadowColor;
+  }
+}
+
+@mixin botaoRefazerAll {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #38465b;
+  text-decoration: none;
+  box-shadow: 2px 2px 8px $shadowColor;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: #607789;
+    box-shadow: 4px 4px 10px $shadowColor;
+  }
+}
+
+@mixin inicioDiferenciadosAll($correctMargin: 0%) {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  margin-left: $correctMargin;
+}
+
+@mixin borderDiferenciadosAll($marginLeft: 0%) {
+  font-size: 15px;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  border: 2px solid #61788A;
+  margin-left: $marginLeft
+}
+
+@mixin gridModelo4All {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-row-gap: 60px;
+  margin-top: 15px;
+  grid-column-gap: 40px;
+}
+
+@mixin droppableModelo4All {
+  width: 165px;
+  height: 90px;
+  background: white;
+  border: 3px dashed #61788A;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+@mixin draggableModelo4All {
+  width: 150px;
+  height: 80px;
+  background: #DEE5E8;
+  color: #000000;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  text-align: center;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  font-size: 10.5pt;
+  box-shadow: 2px 2px 4px $shadowColor;
+  &:hover{
+    box-shadow: 2px 2px 7px $shadowColor;
+    background: #a5c0cc;
+    border: 2px solid #DEE5E8;
+  }
+}
+
+@mixin topicosModelo4All {
+  width: 150px;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  text-align: left;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+@mixin gridContainerButtonModelo4($paddingLeft: 0%) {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  margin-top: 50px;
+  grid-column-gap: 15px;
+  padding-left: $paddingLeft;
+}
+
+@include small {
+  .alerta2 {@include alerta2All;}
+  .resposta-certa {@include respCertaSmall;}
+  .botaoOk {@include botaoOkAll;}
+  .botao-enviar-gabarito {@include botaoEnviarGabaritoAll;}
+  .botao-refazer {@include botaoRefazerAll;}
+  .inicio-diferenciados p {@include inicioDiferenciadosAll(32%);}
+  .border-diferenciados {@include borderDiferenciadosAll(7%);}
+  .gridContainer-modelo4 {@include gridModelo4All;}
+  .dropabble-modelo4 {@include droppableModelo4All;}
+  .draggable-modelo4 {@include draggableModelo4All;}
+  .topicos-modelo4 {@include topicosModelo4All;}
+  .gridContainer-button-modelo4 {@include gridContainerButtonModelo4(27%);}
+}
+
+@include medium {
+  .alerta2 {@include alerta2All;}
+  .botaoOk {@include botaoOkAll;}
+  .botao-enviar-gabarito {@include botaoEnviarGabaritoAll;}
+  .botao-refazer {@include botaoRefazerAll;}
+  .inicio-diferenciados p {@include inicioDiferenciadosAll(32%);}
+  .border-diferenciados {@include borderDiferenciadosAll(12%);}
+  .gridContainer-modelo4 {@include gridModelo4All;}
+  .dropabble-modelo4 {@include droppableModelo4All;}
+  .draggable-modelo4 {@include draggableModelo4All;}
+  .topicos-modelo4 {@include topicosModelo4All;}
+  .gridContainer-button-modelo4 {@include gridContainerButtonModelo4(32%);}
+}
+
+@include big {
+  .alerta2 {@include alerta2All;}
+  .botaoOk {@include botaoOkAll;}
+  .botao-enviar-gabarito {@include botaoEnviarGabaritoAll;}
+  .botao-refazer {@include botaoRefazerAll;}
+  .inicio-diferenciados p {@include inicioDiferenciadosAll(37%);}
+  .border-diferenciados {@include borderDiferenciadosAll(23%);}
+  .gridContainer-modelo4 {@include gridModelo4All;}
+  .dropabble-modelo4 {@include droppableModelo4All;}
+  .draggable-modelo4 {@include draggableModelo4All;}
+  .topicos-modelo4 {@include topicosModelo4All;}
+  .gridContainer-button-modelo4 {@include gridContainerButtonModelo4(37%);}
+}

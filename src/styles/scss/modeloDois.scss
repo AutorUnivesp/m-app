@@ -1,0 +1,100 @@
+$body: "Barlow", sans-serif;
+$colorCxCurta: #005662;
+$shadowCxCurtaPequena: 1px 1px 10px #888888;
+$shadowCxCurtaNormal: 2px 2px 10px #888888;
+$shadowCxCurtaGrande: 3px 3px 10px #888888;
+
+@mixin _body {
+  font-family: $body;
+}
+
+@mixin content {
+  padding-top: 50px;
+}
+
+@mixin formTagCxCurta {
+  margin-left: 20px;
+  margin-right: 10%;
+}
+
+@mixin liCxCurta {
+  font-weight: bold;
+  color: $colorCxCurta;
+}
+
+@mixin spanCxCurta {
+  color:#333;
+  font-weight: normal;
+}
+
+@mixin firstDivCxCurta {
+  margin: 20px 0 20px 0;
+}
+
+@mixin formCxCurta {
+  display: block;
+  width: 70%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@mixin botaoCxCurta {
+  box-shadow: $shadowCxCurtaNormal;
+  &:hover {
+    color: #f9ddba;
+    background-color: #d33338;
+    box-shadow: $shadowCxCurtaGrande;
+  }
+}
+
+@mixin formBorder {
+  box-shadow: $shadowCxCurtaPequena;
+}
+
+@mixin collpseCxCurta1 {
+  display: none;
+  color: #ff0000;
+  font-size: 14pt;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+@mixin btnCxCurta {
+  margin-top: 20px;
+  background-color: #d33338;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  border: 0;
+  width: 150px;
+  font-size: 1em;
+  margin-left: 6.5%;
+  text-align: center;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@mixin centralizaBotao {
+  text-align: center;
+}
+
+body {@include _body;}
+.content{@include content;}
+.form-tag-cx-curta{@include formTagCxCurta;}
+.li-cx-curta{@include liCxCurta;}
+.span-cx-curta{@include spanCxCurta;}
+.firstDiv-cx-curta{@include firstDivCxCurta;}
+.form-cx-curta{@include formCxCurta;}
+.botao-cx-curta{@include botaoCxCurta;}
+.form-border{@include formBorder;}
+.collapse-cx-curta1{@include collpseCxCurta1;}
+.btn-cx-curta{@include btnCxCurta;}
+.centraliza-botao{@include centralizaBotao;}

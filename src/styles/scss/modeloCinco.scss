@@ -1,0 +1,63 @@
+$shadowColor : #888888;
+@mixin small {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+@mixin medium {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+@mixin big {
+  @media (min-width: 1451px) {@content;} }
+
+@mixin gridContainerModelo5($marginLeft: 0px) {
+  display: grid;
+  grid-template-columns: 190px 190px 190px;
+  grid-column-gap: 20px;
+  margin-left: $marginLeft;
+}
+
+@mixin gridItemModelo5 {
+  width: 170px;
+  height: 95px;;
+  background: #DEE5E8;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px $shadowColor;
+  border-radius: 10px;
+  color: black;
+  &:hover {
+    background: #FFE370;
+  }
+}
+
+@mixin gridItemModelo5Paragraph {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin gridContainer2Modelo5($paddingLeft: 0%) {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-column-gap: 40px;
+  margin-top: 20px;
+  padding-left: $paddingLeft;
+}
+
+@include small {
+  .gridContainer-modelo5 {@include gridContainerModelo5(22px);}
+  .gridItem-modelo5 {@include gridItemModelo5;}
+  .gridItem-modelo5 p{@include gridItemModelo5Paragraph;}
+  .gridContainer2-modelo5 {@include gridContainer2Modelo5(27%);}
+};
+
+@include medium {
+  .gridContainer-modelo5 {@include gridContainerModelo5(22px);}
+  .gridItem-modelo5 {@include gridItemModelo5;}
+  .gridItem-modelo5 p{@include gridItemModelo5Paragraph;}
+  .gridContainer2-modelo5 {@include gridContainer2Modelo5(32%);}
+};
+
+@include big {
+  .gridContainer-modelo5 {@include gridContainerModelo5(0px);}
+  .gridItem-modelo5 {@include gridItemModelo5;}
+  .gridItem-modelo5 p{@include gridItemModelo5Paragraph;}
+  .gridContainer2-modelo5 {@include gridContainer2Modelo5(37%);}
+};

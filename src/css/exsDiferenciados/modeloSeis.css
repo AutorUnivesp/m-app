@@ -1,9 +1,4 @@
-@media (min-width: 651px) and (max-width: 799px){
-
-}
-
-@media (min-width: 800px) and (max-width: 990px){
-  /* Modelo 6 */
+/* @media (min-width: 800px) and (max-width: 990px){
   .gridContainer-checkbox {
     display: grid;
     grid-template-columns: 20px 670px;
@@ -33,7 +28,6 @@
 }
 
 @media (min-width: 991px) and (max-width: 1450px) {
-  /* Modelo 6 */
   .gridContainer-checkbox {
     display: grid;
     grid-template-columns: 20px 670px;
@@ -64,7 +58,6 @@
 }
 
 @media (min-width: 1451px) {
-  /* Modelo 6 */
   .gridContainer-checkbox {
     display: grid;
     grid-template-columns: 20px 670px;
@@ -92,4 +85,4 @@
     padding-left: 37%;
   }
 
-}
+} */

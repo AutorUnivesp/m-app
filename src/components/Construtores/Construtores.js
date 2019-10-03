@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import '../../css/construtores.css'
+import '../../styles/scss/construtores.scss'
 
 export const Construtores = () => {
    return (

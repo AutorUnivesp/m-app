@@ -1,0 +1,273 @@
+// Mixins Tamanhos
+@mixin verySmall() {
+  @media (min-width: 0px) and (max-width: 650px) {@content;} }
+
+@mixin small() {
+  @media (min-width: 651px) and (max-width: 799px) {@content;} }
+
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin veryBig() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin paragrafoDisabled {
+  color: #543c52;
+}
+
+@mixin paragrafoElement {
+  margin-top: 15px;
+}
+
+@mixin construtorTitleVerySmall {
+  color: #543c52;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 27%;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin gridConstrutoresVerySmall {
+  margin-left: 33%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin construtorElementVerySmall {
+  display: block;
+  width: 200px;
+  height: 110px;
+  margin-bottom: 50px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 1.5em;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  outline: none;
+  border: none;
+  &:focus{
+    outline: none;
+    border: none;
+  }
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+  }
+}
+
+@mixin disabledSmallMedium {
+  width: 220px;
+  height: 120px;
+  background-color: #A9A9A9;
+  border-radius: 15px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  box-shadow: 3px 3px 20px #361d32;
+  outline: none;
+  border: none;
+}
+
+@mixin construtorTitleSmall {
+  color: #543c52;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 27%;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin gridConstrutoresSmall {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 27%;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin construtorElementSmallMedium {
+  width: 220px;
+  height: 120px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 1.5em;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  outline: none;
+  border: none;
+  &:focus{
+    outline: none;
+    border: none;
+  }
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+  }
+}
+
+@mixin gridBasicosMedium {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  margin-left: 7%;
+  grid-column-gap: 95px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin construtorTitleMedium {
+  color: #543c52;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 23%;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin gridConstrutoresMedium {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 27%;
+  margin-left: 17%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridBasicosBig {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  margin-left: 17%;
+  grid-column-gap: 95px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin construtorTitleBigs {
+  color: #543c52;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 8%;
+  text-shadow: 0px 1px 1px #361d32;
+}
+
+@mixin gridConstrutoresBig {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 100px;
+  margin-left: 30%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin construtorElementBigs {
+  width: 250px;
+  height: 150px;
+  background-color: #543c52;
+  color: #f1e8e6;
+  border-radius: 15px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #361d32;
+  outline: none;
+  border: none;
+  &:focus{
+    outline: none;
+    border: none;
+  }
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+  }
+}
+
+@mixin disabledBigs {
+  width: 250px;
+  height: 150px;
+  background-color: #A9A9A9;
+  border-radius: 15px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  box-shadow: 3px 3px 20px #361d32;
+  outline: none;
+  border: none;
+}
+
+@mixin gridBasicosVeryBig {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  margin-left: 27%;
+  grid-column-gap: 30px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridConstrutoresVeryBig {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 100px;
+  margin-left: 35%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+// Includes
+@include verySmall{
+  .construtor-title { @include construtorTitleVerySmall; }
+  .gridConstrutores { @include gridConstrutoresVerySmall; }
+  .construtorElement { @include construtorElementVerySmall; }
+  .construtorElementDisabled { @include disabledSmallMedium; }
+  .construtorElementDisabled p{ @include paragrafoDisabled; }
+  .construtorElement p { @include paragrafoElement; }
+}
+
+@include small{
+  .construtor-title { @include construtorTitleSmall; }
+  .gridConstrutores { @include gridConstrutoresSmall; }
+  .construtorElement { @include construtorElementSmallMedium; }
+  .construtorElementDisabled { @include disabledSmallMedium; }
+  .construtorElementDisabled p{ @include paragrafoDisabled; }
+  .construtorElement p { @include paragrafoElement; }
+}
+
+@include medium{
+  .gridBasicos { @include gridBasicosMedium; }
+  .construtor-title { @include construtorTitleMedium; }
+  .gridConstrutores { @include gridConstrutoresMedium; }
+  .construtorElement { @include construtorElementSmallMedium; }
+  .construtorElementDisabled { @include disabledSmallMedium; }
+  .construtorElementDisabled p{ @include paragrafoDisabled; }
+  .construtorElement p { @include paragrafoElement; }
+}
+
+@include big{
+  .gridBasicos { @include gridBasicosBig; }
+  .construtor-title { @include construtorTitleBigs; }
+  .gridConstrutores { @include gridConstrutoresBig; }
+  .construtorElement { @include construtorElementBigs; }
+  .construtorElementDisabled { @include disabledBigs; }
+  .construtorElementDisabled p{ @include paragrafoDisabled; }
+  .construtorElement p { @include paragrafoElement; }
+}
+
+@include veryBig{
+  .gridBasicos { @include gridBasicosVeryBig; }
+  .construtor-title { @include construtorTitleBigs; }
+  .gridConstrutores { @include gridConstrutoresVeryBig; }
+  .construtorElement { @include construtorElementBigs; }
+  .construtorElementDisabled { @include disabledBigs; }
+  .construtorElementDisabled p{ @include paragrafoDisabled; }
+  .construtorElement p { @include paragrafoElement; }
+}

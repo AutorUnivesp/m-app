@@ -1,0 +1,51 @@
+@mixin small {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+@mixin medium {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+@mixin big {
+  @media (min-width: 1451px) {@content;} }
+
+@mixin gridContainerCheckbox($marginLeft, $paddingLeft) {
+  display: grid;
+  grid-template-columns: 20px 670px;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  margin-left: $marginLeft;
+  margin-top: 20px;
+  padding-left: $paddingLeft;
+}
+
+@mixin caixaCheckbox {
+  padding: 10px;
+  grid-column-gap: 0px;
+  width: .5px;
+  height: .2px;
+  border-radius: 3.5px;
+  background-color: #e0e0e0;
+}
+
+@mixin gridContainerButtonModelo6($paddingLeft) {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  margin-top: 70px;
+  grid-column-gap: 15px;
+  padding-left: $paddingLeft;
+}
+
+@include small {
+  .gridContainer-checkbox{@include gridContainerCheckbox(7.5%, 170px);}
+  .caixa-checkbox {@include caixaCheckbox;}
+  .gridContainer-button-modelo6 {@include gridContainerButtonModelo6(26%);}
+};
+
+@include medium {
+  .gridContainer-checkbox{@include gridContainerCheckbox(7.5%, 170px);}
+  .caixa-checkbox {@include caixaCheckbox;}
+  .gridContainer-button-modelo6 {@include gridContainerButtonModelo6(26%);}
+};
+
+@include big {
+  .gridContainer-checkbox{@include gridContainerCheckbox(5%, 30%);}
+  .caixa-checkbox {@include caixaCheckbox;}
+  .gridContainer-button-modelo6 {@include gridContainerButtonModelo6(37%);}
+};
