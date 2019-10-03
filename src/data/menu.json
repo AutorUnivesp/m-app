@@ -58,7 +58,7 @@
       "title": "v2.1",
       "icon": "",
       "link": "/creditos/",
-      "marginSpan": "ml-1"
+      "marginSpan": "ml-1 font-weight-bold"
     }
   ]
 }
