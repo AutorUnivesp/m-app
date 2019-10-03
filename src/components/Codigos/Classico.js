@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../../css/main.css'
 import triangulo from '../../images/triangle_site.gif'
 
 class Classico extends Component {
