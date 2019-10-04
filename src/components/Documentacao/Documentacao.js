@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Prism from "prismjs";
+import '../../styles/scss/prism.css'
 import { IconInstructureLine } from '@instructure/ui-icons'
 import '../../styles/scss/documentacao.scss'
 import doc from '../../data/documentacao.js'
@@ -21,6 +22,7 @@ class HeaderDoc extends Component {
         this.setState({
           docs: data
         })
+        Prism.highlightAll()
       })
     })
     .catch(err => {
@@ -52,7 +54,6 @@ class MainDoc extends Component {
 
   componentDidMount() {
     this.receiveMainDocData()
-    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   receiveMainDocData = () => {
@@ -63,6 +64,7 @@ class MainDoc extends Component {
         this.setState({
           docs: data
         })
+        Prism.highlightAll()
       })
     })
     .catch(err => {
@@ -77,7 +79,7 @@ class MainDoc extends Component {
         <div className="section-content">
           <h2 className="section">Montagem Web App Docs.</h2>
           <ul>
-            {doc[4].m_app.map((item, index) => (
+            {docs.length > 0 && docs[4].m_app.map((item, index) => (
               <li className="canvas-doc-item" id={index}>
                 <div>
                   <span className="topic">

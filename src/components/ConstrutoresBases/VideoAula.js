@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
 import cry from '../../images/crying.gif'
-import '../../css/ava_global.css'
+import '../../styles/scss/ava_global.css'
 import '../../styles/scss/videoaula.scss'
 
 class VideoAula extends Component {

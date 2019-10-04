@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Prism from "prismjs";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import '../../styles/scss/guia_canvas.scss'
-import '../../css/prism.css';
+import '../../styles/scss/prism.css';
 
 export class GuiaCanvas extends Component {
   state = {
