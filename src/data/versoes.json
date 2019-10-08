@@ -18,7 +18,12 @@
     {
       "name": "v2.1 ",
       "data": " 04/10/2019",
-      "details": "Adiciona a seção de Documentação do site e corrigi alguns pequenos bugs."
+      "details": "Adiciona a seção de Documentação do site e corrige alguns pequenos bugs."
+    },
+    {
+      "name": "v2.2 ",
+      "data": " 09/10/2019",
+      "details": "Corrige alguns bugs e atualiza a seção dos banners e a planilha das Videoaulas."
     }
   ]
 }

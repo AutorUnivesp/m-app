@@ -1,30 +1,26 @@
 import React, { Component } from 'react'
 import '../../styles/scss/banners.scss'
 import triangulo from '../../images/triangle_site.gif'
+import Tabletop from 'tabletop';
 
 export class Banners extends Component {
   state = {
     disciplines: [],
-    filteredDisciplines: []
+    filteredDisciplines: [],
+    filteredBanners: [],
+    bannersAPI: []
   }
 
   componentDidMount() {
-    this.receiveBannerData()
-  }
-
-  receiveBannerData = () => {
-    fetch('https://raw.githubusercontent.com/AutorUnivesp/m-app/master/src/data/banners.json')
-    .then(response => {
-      response.json()
-      .then(data => {
+    Tabletop.init({
+      key: '19F5VU7k_7JUQ7dEzWBmE8Gxsfb6RmgrKzXSLFVJ4Heo',
+      callback: googleData => {
         this.setState({
-          disciplines: data.banners,
-          filteredDisciplines: data.banners
+          bannersAPI: googleData,
+          filteredBanners: googleData
         })
-      })
-    })
-    .catch(err => {
-      console.log(`Request returned with an error: ${err}`)
+      },
+      simpleSheet: true
     })
   }
 
@@ -38,32 +34,33 @@ export class Banners extends Component {
   }
 
   onchange = e => {
-    const { disciplines } = this.state
-    const filteredDisciplines = disciplines.filter(dis => {
-      return dis.name.toLowerCase().includes(e.target.value.toLowerCase())
+    const { bannersAPI } = this.state
+    const filteredBanners = bannersAPI.filter(dis => {
+      return dis.Disciplina.toLowerCase().includes(e.target.value.toLowerCase())
+       || dis.Codigo.toLowerCase().includes(e.target.value.toLowerCase())
     })
     this.setState({
-      filteredDisciplines
+      filteredBanners
     })
   }
 
   render() {
-    const { filteredDisciplines } = this.state;
+    const { bannersAPI, filteredBanners } = this.state;
     return (
       <div className="grid-Banners">
         <div>
           <div className="search-div">
             <span><button className="fas fa-search button-search"></button></span>
-            <input className="search-field" placeholder="Pesquisar..." onChange={this.onchange}/>
+            <input className="search-field" placeholder="Pesquise pelo código ou nome..." onChange={this.onchange}/>
           </div>
           <div>
             <ul>
-              {filteredDisciplines.map(dis => (
+              {filteredBanners.length > 0 && filteredBanners.map(dis => (
                 <li style={{listStyle: 'none'}}>
                   <div className="discipline my-1">
-                    <span className="title-banners pr-2">{dis.name}</span>
+                    <span className="title-banners pr-2">{dis.Codigo} -- {dis.Disciplina}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
-                      this.copyToClipboard('https://assets.univesp.br/canvas/img/banners/' + dis.bannerCode)
+                      this.copyToClipboard('https://assets.univesp.br/canvas/img/banners/' + dis.Banner)
                     )}>Copy</span>
                   </div>
                 </li>
