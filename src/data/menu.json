@@ -13,21 +13,9 @@
       "marginSpan": "ml-1"
     },
     {
-      "title": "Diferenciados",
-      "icon": "fas fa-dice-d20 mr-2",
-      "link": "/diferenciados/",
-      "marginSpan": "ml-1"
-    },
-    {
       "title": "Códigos",
       "icon": "fas fa-code mr-2",
       "link": "/codigos/",
-      "marginSpan": "ml-1"
-    },
-    {
-      "title": "Guia de uso",
-      "icon": "fas fa-book mr-2",
-      "link": "/guia-de-uso/",
       "marginSpan": "ml-1"
     },
     {
@@ -37,9 +25,15 @@
       "marginSpan": "ml-1"
     },
     {
-      "title": "Básicos",
-      "icon": "fas fa-archive mr-2",
-      "link": "/basicos/",
+      "title": "Guia de uso",
+      "icon": "fas fa-book mr-2",
+      "link": "/guia-de-uso/",
+      "marginSpan": "ml-1"
+    },
+    {
+      "title": "Mais",
+      "icon": "fas fa-folder-plus",
+      "link": "/mais/",
       "marginSpan": "ml-1"
     },
     {

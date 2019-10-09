@@ -11,7 +11,7 @@ import { Construtores } from './components/Construtores/Construtores'
 import { ConstrutorBases } from './components/ConstrutoresBases/ConstrutorBases'
 import { ConstrutorDiferenciados } from './components/ConstrutoresDiferenciados/ConstrutorDiferenciados'
 import { Planilha } from './components/Planilha/Planilha'
-import { Basicos } from './components/Basicos/Basicos'
+import { Mais } from './components/Basicos/Mais'
 import { Banners } from './components/Basicos/Banners'
 import { VideoAulasPlanilha } from './components/Basicos/PlanilhaVideoAulas'
 import { Creditos } from './components/Creditos/Creditos'
@@ -138,9 +138,9 @@ class App extends Component {
         <Route path="/codigos/sona/" component={ModeloSona}/>
         <Route path="/guia-de-uso/" component={GuiaCanvas}/>
         <Route path="/planilha/" component={Planilha}/>
-        <Route exact path="/basicos/" component={Basicos}/>
-        <Route path="/basicos/banners/" component={Banners}/>
-        <Route path="/basicos/videoaulas/" component={VideoAulasPlanilha}/>
+        <Route exact path="/mais/" component={Mais}/>
+        <Route path="/mais/banners/" component={Banners}/>
+        <Route path="/mais/videoaulas/" component={VideoAulasPlanilha}/>
         <Route path="/senhas/" component={SenhasPage}/>
         <Route path="/documentacao/" component={Documentacao}/>
         <Route path="/creditos/" component={Creditos}/>
@@ -172,5 +172,12 @@ export default App
 //   "title": "Senhas úteis",
 //   "icon": "fas fa-key mr-2",
 //   "link": "/senhas/",
+//   "marginSpan": "ml-1"
+// },
+
+// {
+//   "title": "Diferenciados",
+//   "icon": "fas fa-dice-d20 mr-2",
+//   "link": "/diferenciados/",
 //   "marginSpan": "ml-1"
 // },

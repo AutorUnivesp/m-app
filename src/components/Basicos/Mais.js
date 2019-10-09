@@ -1,24 +1,24 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export const Basicos = () => {
+export const Mais = () => {
   return (
     <div style={{marginTop: '15%'}}>
       <div className="construtor-title">ESCOLHA UMA OPÇÃO</div>
       <div className="gridBasicos">
-       <Link to='/basicos/banners/'>
+       <Link to='/mais/banners/'>
          <button className="construtorElement">
-           <p>BANNERS</p>
+           <p>Banners</p>
          </button>
        </Link>
-       <Link to='/basicos/videoaulas/'>
+       <Link to='/mais/senhas/'>
         <button className="construtorElement">
-          <p>PLANILHA<br/>VIDEOAULAS</p>
+          <p>Senhas</p>
         </button>
        </Link>
        <Link >
         <button className="construtorElementDisabled">
-          <p>PLANILHA<br/>SLIDES</p>
+          <p>Modelos<br/>Diferenciados</p>
         </button>
        </Link>
       </div>

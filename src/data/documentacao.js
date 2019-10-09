@@ -367,5 +367,3 @@ const doc = [
 export default doc
 
 const docJson = JSON.stringify(doc)
-
-console.log(docJson)
