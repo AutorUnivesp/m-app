@@ -167,3 +167,10 @@ export default App
 
 /*
 <Route exact path="/basicos/slides/" component={Slides}/> */
+
+// {
+//   "title": "Senhas úteis",
+//   "icon": "fas fa-key mr-2",
+//   "link": "/senhas/",
+//   "marginSpan": "ml-1"
+// },

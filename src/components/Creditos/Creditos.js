@@ -42,7 +42,7 @@ export class Creditos extends Component {
           </ul>
           <h5 className="mt-5 mb-3">Créditos</h5>
           <ul>
-            <li>Desenvolvido por Leonardo Reina, Gabriel Gallo e Victor Planas</li>
+            <li>Desenvolvido por Leonardo Reina e Gabriel Gallo</li>
           </ul>
         </div>
       </div>

@@ -43,12 +43,6 @@
       "marginSpan": "ml-1"
     },
     {
-      "title": "Senhas úteis",
-      "icon": "fas fa-key mr-2",
-      "link": "/senhas/",
-      "marginSpan": "ml-1"
-    },
-    {
       "title": "Documentação",
       "icon": "fab fa-js-square mr-2",
       "link": "/documentacao/",
