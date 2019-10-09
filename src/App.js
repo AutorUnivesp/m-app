@@ -137,7 +137,7 @@ class App extends Component {
         <Route path="/codigos/sona/" component={ModeloSona}/>
         <Route path="/videoaulas/" component={PlanilhaVideoAulas}/>
         <Route path="/guia-de-uso/" component={GuiaCanvas}/>
-        <Route path="/controle/" component={ControlePlanilha}/>
+        <Route exact path="/controle/" component={ControlePlanilha}/>
         <Route exact path="/mais/" component={Mais}/>
         <Route path="/mais/banners/" component={Banners}/>
         <Route path="/mais/senhas/" component={SenhasPage}/>
