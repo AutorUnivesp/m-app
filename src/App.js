@@ -10,15 +10,15 @@ import { ModeloSona } from './components/Codigos/Sona.js'
 import { Construtores } from './components/Construtores/Construtores'
 import { ConstrutorBases } from './components/ConstrutoresBases/ConstrutorBases'
 import { ConstrutorDiferenciados } from './components/ConstrutoresDiferenciados/ConstrutorDiferenciados'
-import { Planilha } from './components/Planilha/Planilha'
-import { Mais } from './components/Basicos/Mais'
-import { Banners } from './components/Basicos/Banners'
-import { VideoAulasPlanilha } from './components/Basicos/PlanilhaVideoAulas'
+import { ControlePlanilha } from './components/Planilhas/ControlePlanilha'
+import { Mais } from './components/Mais/Mais'
+import { Banners } from './components/Mais/Banners'
+import { SenhasPage } from './components/Mais/SenhasPage'
+import { PlanilhaVideoAulas } from './components/Planilhas/PlanilhaVideoAulas'
 import { Creditos } from './components/Creditos/Creditos'
 import { Documentacao } from './components/Documentacao/Documentacao'
 import { SemanasPreenchidas } from './components/ConstrutoresDiferenciados/PaginaInicial'
 import { GuiaCanvas } from './components/GuiaUso/GuiaCanvas'
-import { SenhasPage } from './components/Senhas/SenhasPage'
 import inconstruction from './images/gif_home2.gif'
 import inconstructionSVG from './images/construction.svg'
 import $ from 'jquery'
@@ -131,17 +131,17 @@ class App extends Component {
         </nav>
         <Route exact path="/" component={Home} />
         <Route exact path="/construtores/" component={Construtores}/>
-        <Route path="/diferenciados/" component={Diferenciados}/>
         <Route exact path="/codigos/" component={Codigos}/>
         <Route path="/codigos/antigo/" component={ModeloAntigo}/>
         <Route path="/codigos/classico/" component={ModeloClassico}/>
         <Route path="/codigos/sona/" component={ModeloSona}/>
+        <Route path="/videoaulas/" component={PlanilhaVideoAulas}/>
         <Route path="/guia-de-uso/" component={GuiaCanvas}/>
-        <Route path="/planilha/" component={Planilha}/>
+        <Route path="/controle/" component={ControlePlanilha}/>
         <Route exact path="/mais/" component={Mais}/>
         <Route path="/mais/banners/" component={Banners}/>
-        <Route path="/mais/videoaulas/" component={VideoAulasPlanilha}/>
-        <Route path="/senhas/" component={SenhasPage}/>
+        <Route path="/mais/senhas/" component={SenhasPage}/>
+        <Route path="/mais/diferenciados/" component={Diferenciados}/>
         <Route path="/documentacao/" component={Documentacao}/>
         <Route path="/creditos/" component={Creditos}/>
         <Route exact path='/construtores/bases/' component={ConstrutorBases} />
@@ -168,16 +168,18 @@ export default App
 /*
 <Route exact path="/basicos/slides/" component={Slides}/> */
 
-// {
-//   "title": "Senhas úteis",
-//   "icon": "fas fa-key mr-2",
-//   "link": "/senhas/",
-//   "marginSpan": "ml-1"
-// },
+/*
+{
+  "title": "Senhas úteis",
+  "icon": "fas fa-key mr-2",
+  "link": "/senhas/",
+  "marginSpan": "ml-1"
+},
 
-// {
-//   "title": "Diferenciados",
-//   "icon": "fas fa-dice-d20 mr-2",
-//   "link": "/diferenciados/",
-//   "marginSpan": "ml-1"
-// },
+{
+  "title": "Diferenciados",
+  "icon": "fas fa-dice-d20 mr-2",
+  "link": "/diferenciados/",
+  "marginSpan": "ml-1"
+},
+*/

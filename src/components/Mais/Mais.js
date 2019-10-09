@@ -16,8 +16,8 @@ export const Mais = () => {
           <p>Senhas</p>
         </button>
        </Link>
-       <Link >
-        <button className="construtorElementDisabled">
+       <Link to='/mais/diferenciados/'>
+        <button className="construtorElement">
           <p>Modelos<br/>Diferenciados</p>
         </button>
        </Link>

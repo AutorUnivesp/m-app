@@ -13,13 +13,19 @@
       "marginSpan": "ml-1"
     },
     {
+      "title": "Videoaulas",
+      "icon": "fas fa-video mr-2",
+      "link": "/videoaulas/",
+      "marginSpan": "ml-1"
+    },
+    {
       "title": "Códigos",
       "icon": "fas fa-code mr-2",
       "link": "/codigos/",
       "marginSpan": "ml-1"
     },
     {
-      "title": "Planilha",
+      "title": "Controle",
       "icon": "fas fa-file-excel mr-2",
       "link": "/planilha/",
       "marginSpan": "ml-1"
@@ -32,7 +38,7 @@
     },
     {
       "title": "Mais",
-      "icon": "fas fa-folder-plus",
+      "icon": "fas fa-folder-plus mr-2",
       "link": "/mais/",
       "marginSpan": "ml-1"
     },
