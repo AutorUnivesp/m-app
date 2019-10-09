@@ -27,7 +27,7 @@
     {
       "title": "Controle",
       "icon": "fas fa-file-excel mr-2",
-      "link": "/planilha/",
+      "link": "/controle/",
       "marginSpan": "ml-1"
     },
     {
