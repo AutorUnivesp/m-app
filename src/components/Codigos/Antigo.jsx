@@ -62,9 +62,7 @@ class Antigo extends Component {
                 <li style={{listStyle: 'none'}} key={index}>
                   <div className="discipline my-1" key={index}>
                     <span className="title-banners pr-2">{dis.title}</span>
-                    <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
-                      this.copyToClipboard(dis.code)
-                    )}>Copy</span>
+                    <span className="badge badge-pill badge-light copy-button-banners" onClick={() => this.copyToClipboard(dis.code)}>Copy</span>
                   </div>
                 </li>
               ))}
