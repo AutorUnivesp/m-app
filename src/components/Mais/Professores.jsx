@@ -3,21 +3,21 @@ import '../../styles/scss/banners.scss'
 import triangulo from '../../images/triangle_site.gif'
 import Tabletop from 'tabletop';
 
-export class Banners extends Component {
+export class Professores extends Component {
   state = {
     disciplines: [],
     filteredDisciplines: [],
-    filteredBanners: [],
-    bannersAPI: []
+    filteredProfessores: [],
+    professoresAPI: []
   }
 
   componentDidMount() {
     Tabletop.init({
-      key: '1wkwej7BvHKeBf1FlZEwV7yvKsfvGEwautlqi133qP3k',
+      key: '1rnfF4vFBD-vQw8EPtT5FniEnwrHympK5qITYlV6EtNE',
       callback: googleData => {
         this.setState({
-          bannersAPI: googleData,
-          filteredBanners: googleData
+          professoresAPI: googleData,
+          filteredProfessores: googleData
         })
       },
       simpleSheet: true
@@ -34,33 +34,33 @@ export class Banners extends Component {
   }
 
   onchange = e => {
-    const { bannersAPI } = this.state
-    const filteredBanners = bannersAPI.filter(dis => {
-      return dis.Disciplina.toLowerCase().includes(e.target.value.toLowerCase())
+    const { professoresAPI } = this.state
+    const filteredProfessores = professoresAPI.filter(dis => {
+      return dis.Nome.toLowerCase().includes(e.target.value.toLowerCase())
        || dis.Codigo.toLowerCase().includes(e.target.value.toLowerCase())
     })
     this.setState({
-      filteredBanners
+      filteredProfessores
     })
   }
 
   render() {
-    const { bannersAPI, filteredBanners } = this.state;
+    const { professoresAPI, filteredProfessores } = this.state;
     return (
       <div className="grid-Banners">
         <div>
           <div className="search-div">
             <span><button className="fas fa-search button-search"></button></span>
-            <input className="search-field" placeholder="Pesquise pelo código ou nome..." onChange={this.onchange}/>
+            <input className="search-field" placeholder="Pesquise pelo nome do professor(a)..." onChange={this.onchange}/>
           </div>
           <div>
             <ul>
-              {filteredBanners.length > 0 && filteredBanners.map(dis => (
+              {filteredProfessores.length > 0 && filteredProfessores.map(dis => (
                 <li style={{listStyle: 'none'}}>
                   <div className="discipline my-1">
-                    <span className="title-banners pr-2">{dis.Codigo} -- {dis.Disciplina}</span>
+                    <span className="title-banners pr-2">{dis.Nome}</span>
                     <span className="badge badge-pill badge-light copy-button-banners" onClick={() => (
-                      this.copyToClipboard('https://assets.univesp.br/canvas/img/banners/' + dis.Banner)
+                      this.copyToClipboard('https://assets.univesp.br/canvas/img/prof/' + dis.Docente)
                     )}>Copy</span>
                   </div>
                 </li>

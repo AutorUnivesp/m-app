@@ -24,6 +24,12 @@
       "name": "v2.2 ",
       "data": " 09/10/2019",
       "details": "Corrige alguns bugs e atualiza a seção dos banners e a planilha das Videoaulas."
+    },
+    {
+      "name": "v2.3",
+      "data": "17/01/2020",
+      "details": "Adiciona Construtor do Menu Semanas da página inicial contendo as classes que estão rodando no atual código de Javascript do desbloqueio (Server Time).
+      Adiciona busca da foto dos professores dentro da seção 'Mais'."
     }
   ]
 }

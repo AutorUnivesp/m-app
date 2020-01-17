@@ -1,0 +1,79 @@
+// Mixins Tamanhos
+@mixin verySmall() {
+  @media (min-width: 0px) and (max-width: 650px) {@content;} }
+
+@mixin small() {
+  @media (min-width: 651px) and (max-width: 799px) {@content;} }
+
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 990px) {@content;} }
+
+@mixin big() {
+  @media (min-width: 991px) and (max-width: 1450px) {@content;} }
+
+@mixin veryBig() {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin gridPlusVerySmall {
+  margin-left: 33%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridPlusSmall {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 27%;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridPlusMedium {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  margin-left: 24%;
+  grid-gap: 15% 10%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridPlusBig {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  margin-left: 27%;
+  grid-gap: 15% 2%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@mixin gridPlusVeryBig {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  margin-left: 28%;
+  grid-gap: 15% 1%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+// Includes
+@include verySmall{
+  .gridPlus { @include gridPlusVerySmall; }
+}
+
+@include small{
+  .gridPlus { @include gridPlusSmall; }
+}
+
+@include medium{
+  .gridPlus { @include gridPlusMedium; }
+}
+
+@include big{
+  .gridPlus { @include gridPlusBig; }
+}
+
+@include veryBig{
+  .gridPlus { @include gridPlusVeryBig; }
+}

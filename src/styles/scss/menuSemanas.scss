@@ -1,0 +1,68 @@
+// Mixins Tamanhos
+@mixin medium() {
+  @media (min-width: 800px) and (max-width: 1450px) {@content;} }
+
+@mixin big {
+  @media (min-width: 1451px) {@content;} }
+
+// Mixins
+@mixin gridInputsSemanas {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 70%;
+}
+
+@mixin gridInputsSemanasMedium {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 95%;
+}
+
+@mixin botaoMenuSemanas($marginLeft) {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 20pt;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  margin-left: $marginLeft;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin botaoBimestres {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 16pt;
+  font-weight: bold;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  margin-left: 20%;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+// Includes
+@include big{
+  .gridInputsSemanas { @include gridInputsSemanas; }
+  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(110%); }
+  #botaoBimestres { @include botaoBimestres; }
+}
+
+@include medium{
+  .gridInputsSemanas { @include gridInputsSemanasMedium; }
+  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(140%); }
+  #botaoBimestres { @include botaoBimestres; }
+}

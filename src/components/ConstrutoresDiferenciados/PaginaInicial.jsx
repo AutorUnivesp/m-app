@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link } from "react-router-dom";
+import cry from '../../images/crying.gif'
+
 import '../../styles/scss/pagina-inicial.scss'
 import Tabletop from 'tabletop'
 

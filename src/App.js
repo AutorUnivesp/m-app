@@ -13,11 +13,12 @@ import { ConstrutorDiferenciados } from './components/ConstrutoresDiferenciados/
 import { ControlePlanilha } from './components/Planilhas/ControlePlanilha'
 import { Mais } from './components/Mais/Mais'
 import { Banners } from './components/Mais/Banners'
+import { Professores } from './components/Mais/Professores'
 import { SenhasPage } from './components/Mais/SenhasPage'
 import { PlanilhaVideoAulas } from './components/Planilhas/PlanilhaVideoAulas'
 import { Creditos } from './components/Creditos/Creditos'
 import { Documentacao } from './components/Documentacao/Documentacao'
-import { SemanasPreenchidas } from './components/ConstrutoresDiferenciados/PaginaInicial'
+import  MenuSemanas  from './components/ConstrutoresDiferenciados/MenuSemanas'
 import { GuiaCanvas } from './components/GuiaUso/GuiaCanvas'
 // import inconstruction from './images/gif_home2.gif'
 // import inconstructionSVG from './images/construction.svg'
@@ -140,13 +141,14 @@ class App extends Component {
         <Route exact path="/controle/" component={ControlePlanilha}/>
         <Route exact path="/mais/" component={Mais}/>
         <Route path="/mais/banners/" component={Banners}/>
+        <Route path="/mais/professores/" component={Professores}/>
         <Route path="/mais/senhas/" component={SenhasPage}/>
         <Route path="/mais/diferenciados/" component={Diferenciados}/>
         <Route path="/documentacao/" component={Documentacao}/>
         <Route path="/creditos/" component={Creditos}/>
         <Route exact path='/construtores/bases/' component={ConstrutorBases} />
         <Route exact path='/construtores/diferenciados/' component={ConstrutorDiferenciados} />
-        <Route path='/construtores/diferenciados/Bimestrais/' component={SemanasPreenchidas} />
+        <Route path='/construtores/diferenciados/MenuSemanas/' component={MenuSemanas} />
       </div>
     )
   }

@@ -66,6 +66,10 @@
   display: none;
 }
 
+@mixin mainContent {
+  width: 10%;
+}
+
 // Includes
 @include medium{
   .gridVideosBase { @include gridVideosBaseMedium; }

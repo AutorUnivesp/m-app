@@ -14,7 +14,7 @@ export const Construtores = () => {
         </Link>
         <Link to='/construtores/diferenciados/'>
          <button className="construtorElement">
-           <p>CONSTRUTOR<br />DIFERENCIADOS</p>
+           <p>MENU<br />SEMANAS</p>
          </button>
         </Link>
        </div>
