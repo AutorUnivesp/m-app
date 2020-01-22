@@ -58,11 +58,13 @@
 @include big{
   .gridInputsSemanas { @include gridInputsSemanas; }
   #gerarBotaoMenuSemanas { @include botaoMenuSemanas(110%); }
-  #botaoBimestres { @include botaoBimestres; }
+  #botaoSemanal { @include botaoBimestres; }
+  #botaoSemestral { @include botaoBimestres; }
 }
 
 @include medium{
   .gridInputsSemanas { @include gridInputsSemanasMedium; }
   #gerarBotaoMenuSemanas { @include botaoMenuSemanas(140%); }
-  #botaoBimestres { @include botaoBimestres; }
+  #botaoSemanal { @include botaoBimestres; }
+  #botaoSemestral { @include botaoBimestres; }
 }

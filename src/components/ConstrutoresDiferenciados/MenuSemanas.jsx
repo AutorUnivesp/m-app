@@ -83,7 +83,8 @@ const InputsVideoBase = () =>
 const ParagrafoVideoBase = () =>
   <div className="rowOne">
     <h2 className="headerFirstDiv" id="testebim">Coloque os dados corretamente para gerar.</h2>
-    <button className="pl-0 pt-0" id="botaoBimestres">1º Bimestre</button>
+    <button className="pl-0 pt-0" id="botaoSemanal">Semanal</button>
+    <button className="pl-0 pt-0" id="botaoSemestral">Quinzenal</button>
   </div>
 
 const PreviewVideoBase = () =>
@@ -115,7 +116,8 @@ class GerarVideoBase extends Component {
         setTimeout(this.returnHtml, 1000)
       }
     }
-    geraData1Bim();
+    geraDataSemanal();
+    geraDataSemestral();
   }
 
   switchHtml = () => {
@@ -755,8 +757,8 @@ function transformaData(x){
 
 // --- Código do botão Bimestre. ps: para atualizar o botão, altere as datas ---
 
-function geraData1Bim(){
-  $("#botaoBimestres").click(function(){
+function geraDataSemanal(){
+  $("#botaoSemanal").click(function(){
     let sem1 = document.getElementById('data-semana1').value
     let sem2 = document.getElementById('data-semana2').value
     let sem3 = document.getElementById('data-semana3').value
@@ -788,6 +790,43 @@ function geraData1Bim(){
     document.getElementById("data-semana7").value = res7;
 
     var res8 = sem8.replace("", "2020-04-20");
+    document.getElementById("data-semana8").value = res8;
+  });
+};
+
+function geraDataSemestral(){
+  $('#botaoSemestral').click(function(){
+    let sem1 = document.getElementById('data-semana1').value
+    let sem2 = document.getElementById('data-semana2').value
+    let sem3 = document.getElementById('data-semana3').value
+    let sem4 = document.getElementById('data-semana4').value
+    let sem5 = document.getElementById('data-semana5').value
+    let sem6 = document.getElementById('data-semana6').value
+    let sem7 = document.getElementById('data-semana7').value
+    let sem8 = document.getElementById('data-semana8').value
+
+    var res1 = sem1.replace("", "2020-03-02");
+    document.getElementById("data-semana1").value = res1;
+
+    var res2 = sem2.replace("", "2020-03-16");
+    document.getElementById("data-semana2").value = res2;
+
+    var res3 = sem3.replace("", "2020-03-30");
+    document.getElementById("data-semana3").value = res3;
+
+    var res4 = sem4.replace("", "2020-04-13");
+    document.getElementById("data-semana4").value = res4;
+
+    var res5 = sem5.replace("", "2020-04-27");
+    document.getElementById("data-semana5").value = res5;
+
+    var res6 = sem6.replace("", "2020-05-11");
+    document.getElementById("data-semana6").value = res6;
+
+    var res7 = sem7.replace("", "2020-05-25");
+    document.getElementById("data-semana7").value = res7;
+
+    var res8 = sem8.replace("", "2020-06-08");
     document.getElementById("data-semana8").value = res8;
   });
 };
