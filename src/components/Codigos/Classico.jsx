@@ -37,8 +37,8 @@ class Classico extends Component {
       response.json()
       .then(data => {
         this.setState({
-          disciplines: data.classico,
-          filteredDisciplines: data.classico
+          disciplines: data.classico || [],
+          filteredDisciplines: data.classico || []
         })
       })
     })
@@ -58,7 +58,7 @@ class Classico extends Component {
           </div>
           <div>
             <ul>
-              {filteredDisciplines.map((dis, index) => (
+              {filteredDisciplines && filteredDisciplines.map((dis, index) => (
                 <li style={{listStyle: 'none'}} key={index}>
                   <div className="discipline my-1" key={index}>
                     <span className="title-banners pr-2">{dis.title}</span>

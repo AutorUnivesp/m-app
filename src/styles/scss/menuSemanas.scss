@@ -54,17 +54,204 @@
   }
 }
 
+@mixin botaoData {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 10pt;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  margin-left: 25%;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin botaoResumoVisual {
+  background-color: #543c52;
+  color: #f1e8e6;
+  font-size: 10pt;
+  font-weight: bold;
+  width: 125px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #361d32;
+  border: 0;
+  margin-left: 25%;
+  &:hover{
+    box-shadow: 8px 8px 15px #edd2cb;
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin ajudaStyle {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-column-gap: 15%;
+  margin-left: 9%;
+}
+
+@mixin gridTopo($columnGap) {
+  display: grid;
+  grid-template-columns: 30% 30% 30% 30%;
+  grid-column-gap: $columnGap;
+  margin-left: 10%;
+}
+
+@mixin gridApresentacao($columnGapApresentacao) {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-column-gap: $columnGapApresentacao;
+  margin-left: 9%;
+}
+
+@mixin gridPlanejamento($columnGapPlanejamento) {
+  display: grid;
+  grid-template-columns: 30% 30% 30% 30%;
+  grid-column-gap: $columnGapPlanejamento;
+  margin-left: 9%;
+}
+
+@mixin gridFormadores($columnGapFormadores) {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: $columnGapFormadores;
+  margin-left: 9%;
+}
+
+@mixin listaSelec {
+  list-style: none;
+  &:hover{
+    background-color: #f55951;
+    color: #f1e8e6;
+    cursor: pointer;
+  }
+}
+
+@mixin plano($marginPLano) {
+  margin-left: $marginPLano;
+}
+
+// Modal
+
+@mixin modalStyle {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+@mixin modalContentStyle($widthModal) {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 8px solid #543c52;
+  width: $widthModal;
+  height: 95%;
+  overflow: auto;
+}
+
+@mixin modalCloseStyle {
+  color: #f55951;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 95%;
+  &:hover{
+    color: #543c52;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@mixin perguntaModal {
+  background-color: #fefefe;
+  color: #543c52;
+  font-weight: bold;
+  border: 1px solid #543c52;
+  border-radius: 2%;
+  width: 100%;
+  &:hover{
+    cursor: pointer;
+    color: #f55951;
+    border: 1px solid #f55951;
+  }
+}
+
+@mixin perguntaModalToggle {
+  background-color: #fefefe;
+  color: #f55951;
+  font-weight: bold;
+  border: 1px solid #f55951;
+  border-radius: 2%;
+  width: 100%;
+}
+
+@mixin respostaModal {
+  background-color: #fefefe;
+  color: #f55951;
+  border: 1px solid #f55951;
+  border-radius: 2%;
+  width: 100%;
+  display: none;
+}
+
 // Includes
 @include big{
   .gridInputsSemanas { @include gridInputsSemanas; }
-  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(110%); }
+  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(92%); }
+  #botaoCabecalho { @include botaoMenuSemanas(140%); }
   #botaoSemanal { @include botaoBimestres; }
   #botaoSemestral { @include botaoBimestres; }
+  .gridInputsTopo { @include gridTopo(15%); }
+  .gridPlanejamento { @include gridPlanejamento(15%); }
+  .gridTopoFormadores { @include gridFormadores(15%); }
+  .listaSelect { @include listaSelec; }
+  .gridInputsApresentacao { @include gridApresentacao(15%); }
+  #botaoAjuda { @include botaoBimestres; }
+  #botaoProva2 { @include botaoData; }
+  #botaoResumoVisual { @include botaoResumoVisual; }
+  .modal { @include modalStyle; }
+  .modal-content { @include modalContentStyle(40%); }
+  .close { @include modalCloseStyle; }
+  .perguntaModal { @include perguntaModal; }
+  .perguntaModalToggle { @include perguntaModalToggle; }
+  .respostaModal { @include respostaModal; }
+  #plano { @include plano(20px); }
 }
 
 @include medium{
   .gridInputsSemanas { @include gridInputsSemanasMedium; }
-  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(140%); }
+  #gerarBotaoMenuSemanas { @include botaoMenuSemanas(100%); }
   #botaoSemanal { @include botaoBimestres; }
-  #botaoSemestral { @include botaoBimestres; }
+  #botaoSemestral { @include botaoBimestres;}
+  #botaoCabecalho { @include botaoMenuSemanas(175%); margin-top: -10%; }
+  .gridInputsTopo { @include gridTopo(35%); }
+  .gridPlanejamento { @include gridPlanejamento(30%); }
+  .gridTopoFormadores { @include gridFormadores(35%); }
+  .listaSelect { @include listaSelec; }
+  .gridInputsApresentacao { @include gridApresentacao(30%); }
+  #botaoAjuda { @include botaoBimestres; }
+  #botaoProva2 { @include botaoData; }
+  #botaoResumoVisual { @include botaoResumoVisual; }
+  .modal { @include modalStyle; }
+  .modal-content { @include modalContentStyle(55%); }
+  .close { @include modalCloseStyle; }
+  .perguntaModal { @include perguntaModal; }
+  .perguntaModalToggle { @include perguntaModalToggle; }
+  .respostaModal { @include respostaModal; }
+  #plano { @include plano(10px); }
 }
