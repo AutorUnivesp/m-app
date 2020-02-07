@@ -500,7 +500,7 @@ const GerarCabecalhoFunction = () => {
   }
 
   // cabecalho1Data 7
-  if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 == "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" && cabecalho.date8 == "" && cabecalho.tema8 == "" && cabecalho.link8 == "" && cabecalho.modelo !== "") {
+  if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 == "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 == "" && cabecalho.modelo !== "") {
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
         <h1 class="discipline-name">{cabecalho.disciplina}</h1>
@@ -532,7 +532,7 @@ const GerarCabecalhoFunction = () => {
     )
 
     // cabecalho2Datas 7
-  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 !== "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" && cabecalho.date8 == "" && cabecalho.tema8 == "" && cabecalho.link8 == "" && cabecalho.modelo !== "") {
+  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 == "" && cabecalho.modelo !== "") {
 
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
@@ -565,7 +565,7 @@ const GerarCabecalhoFunction = () => {
     )
 
     // cabecalhoSemEstudo 7
-  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas == "" && cabecalho.horaSemanal == "0" && cabecalho.prova == "" && cabecalho.prova2 == "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" && cabecalho.date8 == "" && cabecalho.tema8 == "" && cabecalho.link8 == "" && cabecalho.modelo !== "") {
+  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas == "" && cabecalho.horaSemanal == "0" && cabecalho.prova == "" && cabecalho.prova2 == "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 == "" && cabecalho.modelo !== "") {
 
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
@@ -591,7 +591,7 @@ const GerarCabecalhoFunction = () => {
     )
 
     // cabecalho1Data 8
-  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 == "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" || cabecalho.date8 !== "" && cabecalho.tema8 !== "" || cabecalho.link8 !== "" && cabecalho.modelo !== "") {
+  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 == "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 !== "" && cabecalho.modelo !== "") {
 
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
@@ -626,7 +626,7 @@ const GerarCabecalhoFunction = () => {
     )
 
     // cabecalho2Datas 8
-  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 !== "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" || cabecalho.date8 !== "" && cabecalho.tema8 !== "" || cabecalho.link8 !== "" && cabecalho.modelo !== "") {
+  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas !== "" && cabecalho.horaSemanal !== "" && cabecalho.prova !== "" && cabecalho.prova2 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 !== "" && cabecalho.modelo !== "") {
 
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
@@ -661,7 +661,7 @@ const GerarCabecalhoFunction = () => {
     )
 
     // cabecalhoSemEstudo 8
-  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas == "" && cabecalho.horaSemanal == "0" && cabecalho.prova == "" && cabecalho.prova2 == "" || cabecalho.date1 !== "" && cabecalho.date2 !== "" || cabecalho.date3 !== "" || cabecalho.date4 !== "" || cabecalho.date5 !== "" || cabecalho.date6 !== "" || cabecalho.date7 !== "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" || cabecalho.link1 !== "" || cabecalho.link2 !== "" || cabecalho.link3 !== "" || cabecalho.link4 !== "" || cabecalho.link5 !== "" || cabecalho.link6 !== "" || cabecalho.link7 !== "" || cabecalho.date8 !== "" && cabecalho.tema8 !== "" || cabecalho.link8 !== "" && cabecalho.modelo !== "") {
+  } else if (cabecalho.disciplina !== "" && cabecalho.banner !== "" && cabecalho.curso !== "" && cabecalho.plano !== "" && cabecalho.horas == "" && cabecalho.horaSemanal == "0" && cabecalho.prova == "" && cabecalho.prova2 == "" && cabecalho.tema1 !== "" && cabecalho.tema2 !== "" && cabecalho.tema3 !== "" && cabecalho.tema4 !== "" && cabecalho.tema5 !== "" && cabecalho.tema6 !== "" && cabecalho.tema7 !== "" && cabecalho.tema8 !== "" && cabecalho.modelo !== "") {
 
     return(
       <div class="header"><img class="img-banner" src={'https://assets.univesp.br/canvas/img/banners/' + cabecalho.banner} alt="" /> <span class="course-name">{cabecalho.curso}</span>
