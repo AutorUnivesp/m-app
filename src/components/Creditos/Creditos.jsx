@@ -39,6 +39,7 @@ export class Creditos extends Component {
            <li><span className="version">v2.1</span><br />04/10/2019<br />Adicionada a seção de Documentação do site e corrige alguns pequenos bugs.</li>
            <li><span className="version">v2.2</span><br />09/10/2019<br />Corrige alguns bugs e atualiza a seção dos banners e a planilha das Videoaulas.</li>
            <li><span className="version">v2.3</span><br />17/01/2020<br />Adicionado Construtor do Menu Semanas da página inicial e busca da foto dos professores dentro da seção 'Mais'.</li>
+           <li><span className="version">v2.4</span><br />07/02/2020<br />Adicionado Construtor da Página Inicial.</li>
             {versoes.map((versao, index) => (
               <li key={index}>
                 <div><span className="version"><strong>{versao.name}</strong></span> - {versao.data}</div>

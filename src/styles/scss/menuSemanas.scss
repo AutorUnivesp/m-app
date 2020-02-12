@@ -28,11 +28,17 @@
   box-shadow: 2px 2px 8px #361d32;
   border: 0;
   margin-left: $marginLeft;
+  outline-color: transparent;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
   &:hover{
     box-shadow: 8px 8px 15px #edd2cb;
     background-color: #f55951;
     color: #f1e8e6;
     cursor: pointer;
+  }&:active{
+    top: 3px;
   }
 }
 
@@ -46,11 +52,17 @@
   box-shadow: 2px 2px 8px #361d32;
   border: 0;
   margin-left: 20%;
+  outline-color: transparent;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
   &:hover{
     box-shadow: 8px 8px 15px #edd2cb;
     background-color: #f55951;
     color: #f1e8e6;
     cursor: pointer;
+  }&:active{
+    top: 3px;
   }
 }
 
@@ -64,11 +76,17 @@
   box-shadow: 2px 2px 8px #361d32;
   border: 0;
   margin-left: 25%;
+  outline-color: transparent;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
   &:hover{
     box-shadow: 8px 8px 15px #edd2cb;
     background-color: #f55951;
     color: #f1e8e6;
     cursor: pointer;
+  }&:active{
+    top: 3px;
   }
 }
 
@@ -82,11 +100,17 @@
   box-shadow: 2px 2px 8px #361d32;
   border: 0;
   margin-left: 25%;
+  outline-color: transparent;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
   &:hover{
     box-shadow: 8px 8px 15px #edd2cb;
     background-color: #f55951;
     color: #f1e8e6;
     cursor: pointer;
+  }&:active{
+    top: 3px;
   }
 }
 
@@ -214,6 +238,7 @@
   .gridInputsSemanas { @include gridInputsSemanas; }
   #gerarBotaoMenuSemanas { @include botaoMenuSemanas(92%); }
   #botaoCabecalho { @include botaoMenuSemanas(140%); }
+  #botaoLimpar { @include botaoMenuSemanas(220%); }
   #botaoSemanal { @include botaoBimestres; }
   #botaoSemestral { @include botaoBimestres; }
   .gridInputsTopo { @include gridTopo(15%); }
@@ -239,6 +264,7 @@
   #botaoSemanal { @include botaoBimestres; }
   #botaoSemestral { @include botaoBimestres;}
   #botaoCabecalho { @include botaoMenuSemanas(175%); margin-top: -10%; }
+  #botaoLimpar { @include botaoMenuSemanas(290%); margin-top: -10%; }
   .gridInputsTopo { @include gridTopo(35%); }
   .gridPlanejamento { @include gridPlanejamento(30%); }
   .gridTopoFormadores { @include gridFormadores(35%); }
