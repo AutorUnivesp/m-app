@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/m-app/static/css/main.dd539d93.chunk.css",
-    "main.js": "/m-app/static/js/main.9b463369.chunk.js",
-    "main.js.map": "/m-app/static/js/main.9b463369.chunk.js.map",
+    "main.css": "/m-app/static/css/main.18c451ff.chunk.css",
+    "main.js": "/m-app/static/js/main.27cfcd3e.chunk.js",
+    "main.js.map": "/m-app/static/js/main.27cfcd3e.chunk.js.map",
     "runtime~main.js": "/m-app/static/js/runtime~main.209ac6fa.js",
     "runtime~main.js.map": "/m-app/static/js/runtime~main.209ac6fa.js.map",
     "static/css/2.efa0c240.chunk.css": "/m-app/static/css/2.efa0c240.chunk.css",
-    "static/js/2.149db183.chunk.js": "/m-app/static/js/2.149db183.chunk.js",
-    "static/js/2.149db183.chunk.js.map": "/m-app/static/js/2.149db183.chunk.js.map",
+    "static/js/2.4b505d8e.chunk.js": "/m-app/static/js/2.4b505d8e.chunk.js",
+    "static/js/2.4b505d8e.chunk.js.map": "/m-app/static/js/2.4b505d8e.chunk.js.map",
     "index.html": "/m-app/index.html",
-    "precache-manifest.a5d41dcc406e45126860c7a789b0bb71.js": "/m-app/precache-manifest.a5d41dcc406e45126860c7a789b0bb71.js",
+    "precache-manifest.46c9e82d047f52b9f22e53e86bbe0103.js": "/m-app/precache-manifest.46c9e82d047f52b9f22e53e86bbe0103.js",
     "service-worker.js": "/m-app/service-worker.js",
     "static/css/2.efa0c240.chunk.css.map": "/m-app/static/css/2.efa0c240.chunk.css.map",
-    "static/css/main.dd539d93.chunk.css.map": "/m-app/static/css/main.dd539d93.chunk.css.map",
+    "static/css/main.18c451ff.chunk.css.map": "/m-app/static/css/main.18c451ff.chunk.css.map",
     "static/media/Bm7L.gif": "/m-app/static/media/Bm7L.db165230.gif",
     "static/media/crying.gif": "/m-app/static/media/crying.c31cfa71.gif",
-    "static/media/logo_univesp_branco.svg": "/m-app/static/media/logo_univesp_branco.e8640bb3.svg",
+    "static/media/logo_univesp.jpg": "/m-app/static/media/logo_univesp.550d5daf.jpg",
     "static/media/triangle_site.gif": "/m-app/static/media/triangle_site.0ff4c110.gif"
   }
 }
