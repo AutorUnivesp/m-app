@@ -38,7 +38,7 @@ export class GuiaCanvas extends Component {
           {guia_data.map((item, index) => (
             <div className="my-5 margin-div" key={index}>
               <li id={item.id} key={item.id}>
-                <h2 style={{fontWeight: 'bold', paddingTop: '70px'}}>{item.title}</h2>
+                <h2 style={{fontWeight: 'bold', paddingTop: '70px', color: '#af1c26'}}>{item.title}</h2>
                 <p className="py-4 guia-content">{item.paragraph}</p>
                 <ol className="guia-list">
                   {item.list.map((listItem, index) => {
@@ -64,7 +64,7 @@ export class GuiaCanvas extends Component {
                     }
                   })}
                 </ol>
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <code className="language-html">
                     {item.code}
                   </code>

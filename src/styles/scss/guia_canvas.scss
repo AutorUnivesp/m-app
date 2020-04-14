@@ -14,7 +14,7 @@
 // Mixins Comuns
 @mixin navbarBrand {
   font-weight: bold;
-  color: #543c52;
+  color: #af1c26;
 }
 
 @mixin paddingDefault {
@@ -26,11 +26,11 @@
 }
 
 @mixin navLink {
-  color: #543c52;
+  color: #565e69;
 }
 
 @mixin navLinkIn {
-  color: #f55951;
+  color: #af1c26;
   font-weight: bold;
   font-size: 16pt;
   cursor: pointer;
@@ -38,7 +38,7 @@
 
 @mixin activeTab {
   background-color: transparent;
-  color: #f55951;
+  color: #af1c26;
   font-weight: bold;
   font-size: 16pt;
 }
@@ -63,18 +63,18 @@
 }
 
 @mixin guiaContent {
-  color: #272822;
+  color: #565e69;
   font-family: 'Noto Sans JP';
   font-weight: bold;
 }
 
 @mixin guiaList {
-  color: #edd2cb;
+  color: white;
   font-family: 'Noto Sans JP';
   border-radius: 20px;
   box-shadow: 3px 3px 8px #343A40;
   padding-right: 20%;
-  background: #543c52;
+  background: #565e69;
 }
 
 // Mixins Small

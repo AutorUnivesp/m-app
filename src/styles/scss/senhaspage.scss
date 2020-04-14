@@ -54,7 +54,7 @@ $hoverColor : #f55951;
 }
 
 @mixin iconSenhas {
-  color: #361d32;
+  color: #af1c26;
   font-size: 5em;
   &:hover{
     color: $hoverColor;
@@ -62,7 +62,7 @@ $hoverColor : #f55951;
 }
 
 @mixin iconSmallMedium{
-  color: #361d32;
+  color: #af1c26;
   font-size: 4em;
   &:hover{
     color: $hoverColor;
@@ -70,38 +70,37 @@ $hoverColor : #f55951;
 }
 
 @mixin copySenhas{
-  background: #361d32;
-  color: #f1e8e6;
+  background: #8996a9;
+  color: white;
   &:hover{
-    background: $hoverColor;
-    color: #361d32;
+    background: #af1c26;
     cursor: pointer;
   }
 }
 
 @mixin paragrafoSenhas {
-  color: $textColor;
+  color: #af1c26;
 }
 
 @mixin paragrafoSenhasVeryBig {
-  color: $textColor;
+  color: #af1c26;
   font-size: 12pt;
 }
 
 @mixin loginSenhas2 {
-  color: $textColor;
+  color: #af1c26;
   font-size: 1.3em;
   text-shadow: $shadowTitle;
 }
 
 @mixin loginSenhas2Big {
-  color: $textColor;
+  color: #af1c26;
   font-size: 1.2em;
   text-shadow: $shadowTitle;
 }
 
 @mixin loginSenhas2VeryBig {
-  color: $textColor;
+  color: #af1c26;
   font-size: 1.5em;
   text-shadow: $shadowTitle;
 }

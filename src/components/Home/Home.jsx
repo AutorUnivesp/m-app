@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { GoogleLogin } from 'react-google-login'
 import '../../styles/scss/home.scss'
 import initialGif from '../../images/Bm7L.gif'
-import logo from '../../images/logo_univesp_branco.svg'
+import logo from '../../images/logo_univesp.jpg'
 
 export class Home extends Component {
   state = {
@@ -24,12 +24,13 @@ export class Home extends Component {
 
     return (
       <div className='text-center home-div-principal'>
+      <img className="mt-3 mb-3 " src={logo} width="150"/><br/>
+      <div className="boxHome">
         <img className="img-home shadow-lg" src={initialGif} alt="Página em construção" />
         <h1 className="montagem-name mt-4 text-center mr-4">
           <span className="monta">MONTA</span>
           <span className="gem">GEM</span>
         </h1>
-        <img className="mt-3 mb-3 logo-univesp" src={logo} width="150"/><br/>
         <GoogleLogin
           clientId="149444863402-7ulom30mslsi955t27gsmfthaskgvddf.apps.googleusercontent.com"
           buttonText={googleLogin}
@@ -37,6 +38,7 @@ export class Home extends Component {
           onFailure={responseGoogle}
           cookiePolicy={'single_host_origin'}
         />
+        </div>
       </div>
     )
   }

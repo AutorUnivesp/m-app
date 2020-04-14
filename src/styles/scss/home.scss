@@ -36,13 +36,13 @@
 }
 
 @mixin montaHome ($fontSizeMonta) {
-  color: #f55951;
+  color: #af1c26;
   font-size: $fontSizeMonta;
   font-family: 'Russo One';
 }
 
 @mixin gemHome ($fontSizeGem) {
-  color: #543c52;
+  color: #af1c26;
   font-size: $fontSizeGem;
   font-family: 'Russo One';
 }
@@ -91,17 +91,17 @@
   color: #543c52;
   &:hover{
     text-decoration: none;
-    color: #f55951;
+    color: #009691;
   }
 }
 
 @mixin construtorLink ($fontSizeConstrutor, $paddingLeftConstrutor) {
-  color: #361d32;
+  color: #af1c26;
   border-radius: 0px 5px 20px 0px;
   font-size: $fontSizeConstrutor;
   padding-left: $paddingLeftConstrutor;
   &:hover{
-    color: #f55951;
+    color: #009691;
     border-radius: 0px 5px 20px 0px;
     text-decoration: none;
     cursor: pointer;
@@ -109,26 +109,18 @@
   }
 }
 
-@mixin logoUnivespAll {
-  margin-bottom: 1rem !important;
-  background-color: #f55951;
-  box-shadow: 0.5px 0.5px 7px white;
-  padding: 10px;
-  border-radius: 8px;
-}
-
 @mixin navbarFixedTopScrolledAll {
-  background-color: #361d32 !important;
+  background-color: #af1c26 !important;
   height: 55px;
   transition: background-color 400ms ease-in-out;
 }
 
 @mixin construtorLinkColorAll {
-  color: #f1e8e6;
+  color: white;
   font-weight: lighter;
   transition: color 400ms ease-in-out;
   &:hover{
-    color: #f55951;
+    color: #00d3cc;
     font-weight: lighter;
     transition: color 100ms ease-in-out;
   }
@@ -139,14 +131,14 @@
   font-weight: lighter;
   transition: color 400ms ease-in-out;
   &:hover{
-    color: #f55951;
+    color: #00d3cc;
     font-weight: lighter;
     transition: color 100ms ease-in-out;
   }
 }
 
 @mixin activeTabAppBigs {
-  color: #f55951;
+  color: #00d3cc;
   border-radius: 0px 5px 20px 0px;
   text-decoration: none;
   cursor: pointer;
@@ -167,6 +159,14 @@
   z-index: 3;
 }
 
+@mixin box-home {
+  border: 2px solid #af1c26;
+  width: 35%;
+  margin-left: 33%;
+  border-radius: 5px;
+  height: 350px;
+}
+
 // Includes
 @include verySmall{
   .home-div-principal { @include homeDivPrincipal(12%); }
@@ -179,7 +179,6 @@
   .grid-nav { @include gridNavSmallMedium; }
   .grid-nav a { @include gridNavaAll; }
   .construtor-link { @include construtorLink(12px, 0px); }
-  .logo-univesp { @include logoUnivespAll; }
   .navbar-fixed-top.scrolled { @include navbarFixedTopScrolledAll; }
   .construtor-link.link-color { @include construtorLinkColorAll; }
   .grid-nav a.scroll-in { @include gridNavaScrollInAll; }
@@ -198,7 +197,6 @@
   .grid-nav { @include gridNavSmallMedium; }
   .grid-nav a { @include gridNavaAll; }
   .construtor-link { @include construtorLink(12px, 0px); }
-  .logo-univesp { @include logoUnivespAll; }
   .navbar-fixed-top.scrolled { @include navbarFixedTopScrolledAll; }
   .construtor-link.link-color { @include construtorLinkColorAll; }
   .grid-nav a.scroll-in { @include gridNavaScrollInAll; }
@@ -209,40 +207,40 @@
 @include medium{
   .home-div-principal { @include homeDivPrincipal(12%); }
   .home { @include homeAll; }
-  .img-home { @include imgHome(190px, 0px); }
+  .img-home { @include imgHome(150px, 0px); }
   .montagem-name { @include montagemName(48pt, 0%); }
-  .monta { @include montaHome(52pt); }
-  .gem { @include gemHome(52pt); }
+  .monta { @include montaHome(32pt); }
+  .gem { @include gemHome(32pt); }
   #icon-canvas1 { @include iconCanvas1(60%); }
   .grid-nav { @include gridNavSmallMedium; }
   .grid-nav a { @include gridNavaAll; }
   .construtor-link { @include construtorLink(12px, 5px); }
-  .logo-univesp { @include logoUnivespAll; }
   .navbar-fixed-top.scrolled { @include navbarFixedTopScrolledAll; }
   .construtor-link.link-color { @include construtorLinkColorAll; }
   .grid-nav a.scroll-in { @include gridNavaScrollInAll; }
   .div-gif {@include divGif(block, 10%, 15%);} // medium
   .menu-superior {@include menuSuperior;}
+  .boxHome { @include box-home; }
 }
 
 @include big{
-  .home-div-principal { @include homeDivPrincipal(7%); }
+  .home-div-principal { @include homeDivPrincipal(4%); }
   .home { @include homeAll; }
-  .img-home { @include imgHome(190px, 0px); }
+  .img-home { @include imgHome(150px, 0px); }
   .montagem-name { @include montagemName(62pt, 0%); }
-  .monta { @include montaHome(62pt); }
-  .gem { @include gemHome(62pt); }
+  .monta { @include montaHome(42pt); }
+  .gem { @include gemHome(42pt); }
   #icon-canvas1 { @include iconCanvas1(5px); }
   .grid-nav { @include gridNavBig; }
   .grid-nav a { @include gridNavaAll; }
   .activeTabApp { @include activeTabAppBigs; }
   .construtor-link { @include construtorLink(11.4pt, 2px); }
-  .logo-univesp { @include logoUnivespAll; }
   .navbar-fixed-top.scrolled { @include navbarFixedTopScrolledAll; }
   .construtor-link.link-color { @include construtorLinkColorAll; }
   .grid-nav a.scroll-in { @include gridNavaScrollInAll; }
   .div-gif {@include divGif(block, 10%, 15%);} // big
   .menu-superior {@include menuSuperior;}
+  .boxHome { @include box-home; }
 }
 
 @include veryBig{
@@ -250,17 +248,17 @@
   .home { @include homeAll; }
   .img-home { @include imgHome(250px, 200px); }
   .montagem-name { @include montagemName(62pt, 1%); }
-  .monta { @include montaHome(62pt); }
-  .gem { @include gemHome(62pt); }
+  .monta { @include montaHome(48pt); }
+  .gem { @include gemHome(48pt); }
   #icon-canvas1 { @include iconCanvas1(8px); }
   .grid-nav { @include gridNavVeryBig; }
   .grid-nav a { @include gridNavaAll; }
   .activeTabApp { @include activeTabAppBigs; }
   .construtor-link { @include construtorLink(13pt, 20px); }
-  .logo-univesp { @include logoUnivespAll; }
   .navbar-fixed-top.scrolled { @include navbarFixedTopScrolledAll; }
   .construtor-link.link-color { @include construtorLinkColorAll; }
   .grid-nav a.scroll-in { @include gridNavaScrollInAll; }
   .div-gif {@include divGif(block, 10%, 15%);} // veryBig
   .menu-superior {@include menuSuperior;}
+  .boxHome { @include box-home; }
 }

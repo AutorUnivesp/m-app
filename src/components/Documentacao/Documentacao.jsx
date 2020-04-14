@@ -90,7 +90,7 @@ class MainDoc extends Component {
                 <div>
                   {item.itemContent}
                 </div>
-                <pre className="line-numbers mb-5" style={{borderRadius: '20px'}}>
+                <pre className="line-numbers mb-5" style={{borderRadius: '20px', backgroundColor: '#323538'}}>
                   <code className={`language-${item.codeType}`}>
                     {item.example !== '' && item.example}
                   </code>

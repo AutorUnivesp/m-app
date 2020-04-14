@@ -16,7 +16,7 @@
 
 // Mixins
 @mixin paragrafoDisabled {
-  color: #543c52;
+  color: #af1c26;
 }
 
 @mixin paragrafoElement {
@@ -24,12 +24,12 @@
 }
 
 @mixin construtorTitleVerySmall {
-  color: #543c52;
+  color: #af1c26;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 27%;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: 0px 1px 1px #80131a;
 }
 
 @mixin gridConstrutoresVerySmall {
@@ -43,13 +43,13 @@
   width: 200px;
   height: 110px;
   margin-bottom: 50px;
-  background-color: #543c52;
+  background-color: #af1c26;
   color: #f1e8e6;
   border-radius: 15px;
   font-size: 1.5em;
   line-height: 1.5;
   cursor: pointer;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 3px 3px 20px #80131a;
   outline: none;
   border: none;
   &:focus{
@@ -70,18 +70,18 @@
   border-radius: 15px;
   font-size: 1.7em;
   line-height: 1.5;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 3px 3px 20px #80131a;
   outline: none;
   border: none;
 }
 
 @mixin construtorTitleSmall {
-  color: #543c52;
+  color: #af1c26;
   text-align: center;
   font-size: 1.8em;
   font-weight: bold;
   margin-top: 27%;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: 0px 1px 1px #80131a;
 }
 
 @mixin gridConstrutoresSmall {
@@ -96,13 +96,13 @@
 @mixin construtorElementSmallMedium {
   width: 220px;
   height: 120px;
-  background-color: #543c52;
+  background-color: #af1c26;
   color: #f1e8e6;
   border-radius: 15px;
   font-size: 1.5em;
   line-height: 1.5;
   cursor: pointer;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 3px 3px 20px #80131a;
   outline: none;
   border: none;
   &:focus{
@@ -126,12 +126,12 @@
 }
 
 @mixin construtorTitleMedium {
-  color: #543c52;
+  color: #af1c26;
   text-align: center;
   font-size: 1.8em;
   font-weight: bold;
   margin-top: 23%;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: 0px 1px 1px #80131a;
 }
 
 @mixin gridConstrutoresMedium {
@@ -153,12 +153,12 @@
 }
 
 @mixin construtorTitleBigs {
-  color: #543c52;
+  color: #af1c26;
   text-align: center;
   font-size: 2.2em;
   font-weight: bold;
   margin-top: 8%;
-  text-shadow: 0px 1px 1px #361d32;
+  text-shadow: 0px 1px 1px #80131a;
 }
 
 @mixin gridConstrutoresBig {
@@ -173,13 +173,13 @@
 @mixin construtorElementBigs {
   width: 250px;
   height: 150px;
-  background-color: #543c52;
-  color: #f1e8e6;
+  background-color: #565e69;
+  color: white;
   border-radius: 15px;
   font-size: 1.7em;
   line-height: 1.5;
   cursor: pointer;
-  box-shadow: 3px 3px 20px #361d32;
+
   outline: none;
   border: none;
   &:focus{
@@ -187,9 +187,9 @@
     border: none;
   }
   &:hover{
-    box-shadow: 8px 8px 15px #edd2cb;
-    background-color: #f55951;
-    color: #f1e8e6;
+    box-shadow: 1px 2px 10px #565e69;
+    background-color: #af1c26;
+    color: white;
   }
 }
 
@@ -200,7 +200,7 @@
   border-radius: 15px;
   font-size: 1.7em;
   line-height: 1.5;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 3px 3px 20px #80131a;
   outline: none;
   border: none;
 }

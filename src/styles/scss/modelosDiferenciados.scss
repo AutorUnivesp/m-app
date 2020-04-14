@@ -17,7 +17,7 @@
 // Mixins
 @mixin groupItem {
   color: #f1e8e6;
-  background-color: #543c52;
+  background-color: #af1c26;
   border-radius: 10px 5px 20px 10px;
   font-family: 'Raleway';
   padding: 15px 0 15px 0;
@@ -27,89 +27,83 @@
   margin-left: 25%;
   &:hover{
     color: #f1e8e6;
-    background-color: #f55951;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:active{
     color: #f1e8e6;
-    background-color: #f55951;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:focus{
     color: #f1e8e6;
-    background-color: #f55951;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:visited{
     color: #f1e8e6;
-    background-color: #f55951;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }
 }
 
 @mixin groupItemBigs {
   color: #f1e8e6;
-  background-color: #543c52;
+  background-color: #af1c26;
   border-radius: 10px 5px 20px 10px;
   font-family: 'Raleway';
   padding: 15px 0 15px 0;
   font-size: 0.8em;
   padding-left: 5px;
   &:hover{
-    color: #f1e8e6;
-    background-color: #f55951;
+    color: white;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:active{
-    color: #f1e8e6;
-    background-color: #f55951;
+    color: white;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:focus{
-    color: #f1e8e6;
-    background-color: #f55951;
+    color: white;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }&:visited{
-    color: #f1e8e6;
-    background-color: #f55951;
+    color: white;
+    background-color: #565e69;
     border-radius: 10px 5px 20px 10px;
-    font-weight: bold;
     font-family: 'Raleway';
   }
 }
 
 @mixin exeDiferenciadosMediumBig {
-  color: #543c52;
+  color: #af1c26;
   text-shadow: 0px 1px 1px #361d32;
 }
 
 @mixin hideButton {
   margin-left: 75%;
-  color: #543c52;
+  color: #af1c26;
   background-color: #f1e8e6;
   &:hover{
     margin-left: 75%;
     cursor: pointer;
-    background-color: #f55951;
+    background-color: #565e69;
+    color: white;
   }
 }
 
 @mixin showButton {
   margin-left: 2px;
-  color: #543c52;
+  color: #af1c26;
   background-color: #f1e8e6;
   &:hover{
     cursor: pointer;
-    background-color: #f55951;
+    background-color: #565e69;
+    color: white;
   }
 }
 

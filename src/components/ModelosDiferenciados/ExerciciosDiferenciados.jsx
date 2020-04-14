@@ -72,7 +72,7 @@ class ProfsPage extends Component {
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active bg-light" id="list-modelo1" role="tabpanel" aria-labelledby="list-modelo1-list">
                 <ModeloUmDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code1')
                     code1.style.display = 'none'
@@ -94,7 +94,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo2" role="tabpanel" aria-labelledby="list-modelo2-list">
                 <ModeloDoisDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code2')
                     code1.style.display = 'none'
@@ -116,7 +116,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo3" role="tabpanel" aria-labelledby="list-modelo3-list">
                 <ModeloTresDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code3')
                     code1.style.display = 'none'
@@ -138,7 +138,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo4" role="tabpanel" aria-labelledby="list-modelo4-list">
                 <ModeloQuatroDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code4')
                     code1.style.display = 'none'
@@ -160,7 +160,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo5" role="tabpanel" aria-labelledby="list-modelo5-list">
                 <ModeloCincoDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code5')
                     code1.style.display = 'none'
@@ -182,7 +182,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo6" role="tabpanel" aria-labelledby="list-modelo6-list">
                 <ModeloSeisDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code6')
                     code1.style.display = 'none'
@@ -204,7 +204,7 @@ class ProfsPage extends Component {
               </div>
               <div className="tab-pane fade bg-light" id="list-modelo7" role="tabpanel" aria-labelledby="list-modelo7-list">
                 <ModeloSeteDiferenciado />
-                <pre className="line-numbers">
+                <pre className="line-numbers" style={{backgroundColor: '#323538'}}>
                   <span className="hide-button badge badge-pill" onClick={() => {
                     let code1 = document.getElementById('code7')
                     code1.style.display = 'none'

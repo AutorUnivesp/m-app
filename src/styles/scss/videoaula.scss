@@ -13,37 +13,37 @@
 
 // Mixins
 @mixin gerarBotao {
-  background-color: #543c52;
-  color: #f1e8e6;
+  background-color: #af1c26;
+  color: white;
   font-size: 18pt;
   font-weight: bold;
   font-family: 'Barlow';
   width: 100px;
   border-radius: 8px;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 1px 1px 5px #565e69;
   border: 0;
   margin-bottom: 20px;
   &:hover{
-    box-shadow: 8px 8px 15px #edd2cb;
-    background-color: #f55951;
-    color: #f1e8e6;
+    box-shadow: 1px 2px 10px #565e69;
+    background-color: #8996a9;
+    color: white;
     cursor: pointer;
   }
 }
 
 @mixin gerarBotaoVeryBig {
-  background-color: #543c52;
-  color: #f1e8e6;
+  background-color: #af1c26;
+  color: white;
   font-size: 20pt;
   font-weight: bold;
   width: 120px;
   border-radius: 8px;
-  box-shadow: 3px 3px 20px #361d32;
+  box-shadow: 1px 1px 5px #565e69;
   border: 0;
   &:hover{
-    box-shadow: 8px 8px 15px #edd2cb;
-    background-color: #f55951;
-    color: #f1e8e6;
+    box-shadow: 1px 2px 10px #565e69;
+    background-color: #8996a9;
+    color: white;
     cursor: pointer;
   }
 }
@@ -56,7 +56,7 @@
   display: grid;
   grid-template-columns: 380px 1fr;
   grid-column-gap: 90px;
-  background-color: #f1e8e6;
+  background-color: white;
   margin-left: 5%;
   margin-right: 4%;
   margin-top: 4%;
@@ -66,7 +66,7 @@
   display: grid;
   grid-template-columns: 500px 1fr;
   grid-column-gap: 90px;
-  background-color: #f1e8e6;
+  background-color: white;
   margin-left: 5%;
   margin-right: 4%;
   margin-top: 4%;
@@ -76,28 +76,28 @@
   display: grid;
   grid-template-columns: 50% 40%;
   /* grid-column-gap: 150px; */
-  background-color: #f1e8e6;
+  background-color: white;
   margin-top: 3%;
 }
 
 @mixin rowOne { //Todos
   grid-column: 1 / -1;
   padding-bottom: 50px;
-  background-color: #f1e8e6;
+  background-color: white;
 }
 
 @mixin rowTwo {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-left: 30px;
-  background-color: #f1e8e6;
+  background-color: white;
 }
 
 @mixin rowTwoVeryBig {
   display: grid;
   grid-template-columns: 300px 300px;
   margin-left: 90px;
-  background-color: #f1e8e6;
+  background-color: white;
 }
 
 @mixin btnVideoaula { //todos. verybig não tem a classe
@@ -109,7 +109,7 @@
   text-align: left;
   margin-left: 60px;
   padding: 20px;
-  color: #543c52;
+  color: #565e69;
 }
 
 @mixin headerFirstDivVeryBig {
@@ -117,7 +117,7 @@
   text-align: left;
   margin-left: 60px;
   padding: 20px;
-  color: #543c52;
+  color: #565e69;
   font-family: 'Raleway'
 }
 
@@ -133,55 +133,55 @@
 }
 
 @mixin simulacaoCanvasSmall {
-  background-color: #543c52;
+  background-color: #565e69;
   padding: 20px;
   font-size: 14pt;
-  color: #f1e8e6;
+  color: white;
   margin-top: 5px;
-  border-bottom: 5px solid #f55951;
+  border-bottom: 5px solid #8996a9;
   text-align: center;
 }
 
 @mixin simulacaoCanvasMediumBig {
-  background-color: #543c52;
+  background-color: #565e69;
   padding: 20px;
   font-size: 14pt;
-  color: #f1e8e6;
+  color: white;
   margin-top: 30px;
-  border-bottom: 5px solid #f55951;
+  border-bottom: 5px solid #8996a9;
   text-align: center;
 }
 
 @mixin simulacaoCanvasVeryBig {
-  background-color: #543c52;
+  background-color: #565e69;
   padding: 20px;
-  color: #f1e8e6;
+  color: white;
   margin-top: 20px;
-  border-bottom: 5px solid #f55951;
+  border-bottom: 5px solid #8996a9;
 }
 
 @mixin rowThree {
   grid-column: 1 / -1;
   text-align: left;
   margin-left: 210px;
-  background-color: #f1e8e6;
+  background-color: white;
 }
 
 @mixin rowThreeVeryBig {
   grid-column: 1 / -1;
   text-align: left;
   margin-left: 270px;
-  background-color: #f1e8e6;
+  background-color: white;
 }
 
 @mixin videoaula { //Todos
   text-align: left;
-  background-color: #f1e8e6;
+  background-color: white;
   padding-bottom: 0px;
 }
 
 @mixin formGroup { //Todos
-  background-color: #f1e8e6;
+  background-color: white;
   margin: 0 0 76px;
 }
 
@@ -190,8 +190,8 @@
   font-size: 14pt;
   font-family: sans-serif;
   font-weight: lighter;
-  background-color: #f1e8e6;
-  color: #543c52;
+  background-color: white;
+  color: #565e69;
 }
 
 @mixin labelOneVeryBig {
@@ -199,21 +199,22 @@
   font-size: 18pt;
   font-family: 'Raleway';
   font-weight: lighter;
-  background-color: #f1e8e6;
-  color: #543c52;
+  background-color: white;
+  color: #565e69;
 }
 
 @mixin inputOne {
   display: inline;
-  background-color: #543c52;
-  color: #f1e8e6;
+  background-color: #8996a9;
+  color: white;
   padding: 5px;
   border-radius: 6px;
   border: 0;
   font-size: 15.5pt;
   margin: 0 0 60px 8px;
+  outline: none;
   &::placeholder{
-    color: #edd2cb;
+    color: white;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -221,15 +222,16 @@
 
 @mixin inputOneVeryBig {
   display: inline;
-  background-color: #543c52;
-  color: #f1e8e6;
+  background-color: #8996a9;
+  color: white;
   padding: 10px;
   border-radius: 6px;
   border: 0;
   font-size: 16pt;
   margin: 0 0 57px 17px;
+  outline: none;
   &::placeholder{
-    color: #edd2cb;
+    color: white;
     font-size: 9.5pt;
     font-style: italic;
   }
@@ -243,7 +245,7 @@
   padding-bottom: 80px;
   background-color: white;
   height: 800px;
-  background-color: #f1e8e6;
+  background-color: white;
   text-align: center;
   padding-left: 10%;
 }
@@ -252,7 +254,7 @@
   padding-bottom: 80px;
   background-color: white;
   height: 800px;
-  background-color: #f1e8e6;
+  background-color: white;
   text-align: center;
 }
 

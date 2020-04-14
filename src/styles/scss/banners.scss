@@ -44,7 +44,7 @@
   padding: 7.5px 0 7.5px 10px;
   border: 0;
   border-radius: 20px;
-  background-color: #543c52;
+  background-color: #8896a9;
   color: #f1e8e6;
   padding-left: 40px;
   &::placeholder{
@@ -52,7 +52,7 @@
   }
   &:focus{
     outline: none;
-    box-shadow: 0px 0px 5px #f55951;
+    box-shadow: 0px 0px 5px #565e69;
   }
 }
 
@@ -61,7 +61,7 @@
   padding: 7.5px 0 7.5px 10px;
   border: 0;
   border-radius: 20px;
-  background-color: #543c52;
+  background-color: #8896a9;
   color: #f1e8e6;
   padding-left: 40px;
   &::placeholder{
@@ -88,9 +88,9 @@
 @mixin discipline {
   margin-left: 0%;
   margin-right: 20%;
-  background-color: #543c52;
+  background-color: #565e69;
   padding: 5px;
-  color: #f1e8e6;
+  color: white;
   border-radius: 10px;
   width: 115%;
 }
@@ -98,9 +98,9 @@
 @mixin disciplineBig {
   margin-left: 0%;
   margin-right: 20%;
-  background-color: #543c52;
+  background-color: #565e69;
   padding: 5px;
-  color: #f1e8e6;
+  color: white;
   border-radius: 10px;
 }
 
@@ -110,7 +110,7 @@
   right: 28%;
   &:hover{
     cursor: pointer;
-    background: #f55951;
+    background: #af1c26;
     color: #361d32;
   }
 }
@@ -121,7 +121,7 @@
   right: 44%;
   &:hover{
     cursor: pointer;
-    background: #f55951;
+    background: #af1c26;
     color: #361d32;
   }
 }
@@ -132,7 +132,7 @@
   right: 60%;
   &:hover{
     cursor: pointer;
-    background: #f55951;
+    background: #af1c26;
     color: #361d32;
   }
 }

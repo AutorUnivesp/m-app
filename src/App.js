@@ -96,7 +96,7 @@ class App extends Component {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               {menu_data.map((item, index) => (
-                <li className="nav-item" key={index}>
+                <li  key={index}>
                   <Link className="py-3 my-1 construtor-link" to={item.link} onClick={this.active}>
                     <span className={item.marginSpan}>
                       <i className={item.icon}></i>
