@@ -25,6 +25,10 @@ export class SenhasPage extends Component {
     this.executeCopy(document.getElementById('copy-4'), document.getElementById('copy4'));
     this.executeCopy(document.getElementById('copy-5'), document.getElementById('copy5'));
     this.executeCopy(document.getElementById('copy-6'), document.getElementById('copy6'));
+    this.executeCopy(document.getElementById('copy-7'), document.getElementById('copy7'));
+    this.executeCopy(document.getElementById('copy-8'), document.getElementById('copy8'));
+    this.executeCopy(document.getElementById('copy-9'), document.getElementById('copy9'));
+    this.executeCopy(document.getElementById('copy-10'), document.getElementById('copy10'));
   }
 
   executeCopy = (elemento, copy) => {
@@ -55,11 +59,11 @@ export class SenhasPage extends Component {
             </a>
           <br/><br/>
 
-          <p className="paragrafo-senhaspage">Login: <span id="copy1">{dataAPI.length > 0 ? dataAPI[0].canvas: 'Aguardando dados'}</span>
+          <p className="paragrafo-senhaspage">Login: <span id="copy1">montagem.ava@univesp.br</span>
             <span className="badge badge-light" id="copy-1">Copy</span>
           </p>
 
-          <p className="paragrafo-senhaspage">Senha: <span id="copy2">{dataAPI.length > 0 ? dataAPI[1].canvas: 'Aguardando dados'}</span>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy2">QueAMarisaMonte!</span>
             <span className="badge badge-light" id="copy-2">Copy</span>
           </p>
 
@@ -86,6 +90,39 @@ export class SenhasPage extends Component {
             <span className="badge badge-light" id="copy-6">Copy</span>
           </p>
         </div>
+
+        <div id="login-drive-autor" style={{marginTop: '15%'}}>
+
+          <p className="login">LOGIN DRIVE</p>
+            <a className="my-3" href="https://drive.google.com/drive/my-drive" target="_blank" title="drive gabaritos"><span className="icon-google-drive" id="gabaritos-senhas"><i className="fab fa-google-drive"></i></span></a>
+          <br/><br/>
+
+          <p className="paragrafo-senhaspage">Login: <span id="copy7">autor@univesp.br</span>
+            <span className="badge badge-light" id="copy-7">Copy</span>
+          </p>
+
+          <p className="paragrafo-senhaspage">Senha: <span id="copy8">materialdidatic0!</span>
+            <span className="badge badge-light" id="copy-8">Copy</span>
+          </p>
+
+        </div>
+
+        <div id="login-aluno-teste" style={{marginTop: '15%'}}>
+
+          <p className="login">LOGIN ALUNO TESTE</p>
+            <a className="my-3" href="https://login.univesp.br/" target="_blank" title="drive gabaritos"><span className="icon-google-drive" id="gabaritos-senhas"><i class="fas fa-user"></i></span></a>
+          <br/><br/>
+
+          <p className="paragrafo-senhaspage">Login: <span id="copy9">1000001@aluno.univesp.br</span>
+            <span className="badge badge-light" id="copy-9">Copy</span>
+          </p>
+
+          <p className="paragrafo-senhaspage">Senha: <span id="copy10">@luno_teste</span>
+            <span className="badge badge-light" id="copy-10">Copy</span>
+          </p>
+
+        </div>
+
       </div>
     )
   }
