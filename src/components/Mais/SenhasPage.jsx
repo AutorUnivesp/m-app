@@ -63,7 +63,7 @@ export class SenhasPage extends Component {
             <span className="badge badge-light" id="copy-1">Copy</span>
           </p>
 
-          <p className="paragrafo-senhaspage">Senha: <span id="copy2">QueAMarisaMonte!</span>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy2">#TheBestTeam!</span>
             <span className="badge badge-light" id="copy-2">Copy</span>
           </p>
 
@@ -83,10 +83,10 @@ export class SenhasPage extends Component {
         <div id="login-drive">
           <p className="login">LOGIN DRIVE GABARITOS</p>
           <a className="my-3" href="https://drive.google.com/drive/my-drive" target="_blank" title="drive gabaritos"><span className="icon-google-drive" id="gabaritos-senhas"><i className="fab fa-google-drive"></i></span></a><br /><br />
-          <p className="paragrafo-senhaspage">Login: <span id="copy5">{dataAPI.length > 0 ? dataAPI[0].gabaritos: 'Aguardando dados'}</span>
+          <p className="paragrafo-senhaspage">Login: <span id="copy5">gabaritos.ava@univesp.br</span>
             <span className="badge badge-light" id="copy-5">Copy</span>
           </p>
-          <p className="paragrafo-senhaspage">Senha: <span id="copy6">{dataAPI.length > 0 ? dataAPI[1].gabaritos: 'Aguardando dados'}</span>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy6">#Gaba@4159#!</span>
             <span className="badge badge-light" id="copy-6">Copy</span>
           </p>
         </div>
@@ -101,7 +101,7 @@ export class SenhasPage extends Component {
             <span className="badge badge-light" id="copy-7">Copy</span>
           </p>
 
-          <p className="paragrafo-senhaspage">Senha: <span id="copy8">materialdidatic0!</span>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy8">66SocorroUnivesp!</span>
             <span className="badge badge-light" id="copy-8">Copy</span>
           </p>
 
@@ -117,7 +117,7 @@ export class SenhasPage extends Component {
             <span className="badge badge-light" id="copy-9">Copy</span>
           </p>
 
-          <p className="paragrafo-senhaspage">Senha: <span id="copy10">@luno_teste</span>
+          <p className="paragrafo-senhaspage">Senha: <span id="copy10">@luno_teste2020</span>
             <span className="badge badge-light" id="copy-10">Copy</span>
           </p>
 
