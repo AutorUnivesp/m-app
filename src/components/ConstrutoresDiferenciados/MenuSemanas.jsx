@@ -4777,28 +4777,28 @@ function geraDataSemanal(){
     let sem7 = document.getElementById('data-semana7').value
     let sem8 = document.getElementById('data-semana8').value
 
-    var res1 = sem1.replace("", "2020-05-04");
+    var res1 = sem1.replace("", "2020-08-03");
     document.getElementById("data-semana1").value = res1;
 
-    var res2 = sem2.replace("", "2020-05-11");
+    var res2 = sem2.replace("", "2020-08-10");
     document.getElementById("data-semana2").value = res2;
 
-    var res3 = sem3.replace("", "2020-05-18");
+    var res3 = sem3.replace("", "2020-08-17");
     document.getElementById("data-semana3").value = res3;
 
-    var res4 = sem4.replace("", "2020-05-25");
+    var res4 = sem4.replace("", "2020-08-24");
     document.getElementById("data-semana4").value = res4;
 
-    var res5 = sem5.replace("", "2020-06-01");
+    var res5 = sem5.replace("", "2020-08-31");
     document.getElementById("data-semana5").value = res5;
 
-    var res6 = sem6.replace("", "2020-06-08");
+    var res6 = sem6.replace("", "2020-09-07");
     document.getElementById("data-semana6").value = res6;
 
-    var res7 = sem7.replace("", "2020-06-15");
+    var res7 = sem7.replace("", "2020-09-14");
     document.getElementById("data-semana7").value = res7;
 
-    var res8 = sem8.replace("", "2020-06-22");
+    var res8 = sem8.replace("", "2020-09-21");
     document.getElementById("data-semana8").value = res8;
   });
 };
@@ -4815,28 +4815,28 @@ function geraDataSemestral(){
     let sem7 = document.getElementById('data-semana7').value
     let sem8 = document.getElementById('data-semana8').value
 
-    var res1 = sem1.replace("", "2020-05-04");
+    var res1 = sem1.replace("", "2020-08-03");
     document.getElementById("data-semana1").value = res1;
 
-    var res2 = sem2.replace("", "2020-05-18");
+    var res2 = sem2.replace("", "2020-08-17");
     document.getElementById("data-semana2").value = res2;
 
-    var res3 = sem3.replace("", "2020-06-01");
+    var res3 = sem3.replace("", "2020-08-31");
     document.getElementById("data-semana3").value = res3;
 
-    var res4 = sem4.replace("", "2020-06-15");
+    var res4 = sem4.replace("", "2020-09-14");
     document.getElementById("data-semana4").value = res4;
 
-    var res5 = sem5.replace("", "2020-06-29");
+    var res5 = sem5.replace("", "2020-09-28");
     document.getElementById("data-semana5").value = res5;
 
-    var res6 = sem6.replace("", "2020-07-13");
+    var res6 = sem6.replace("", "2020-10-12");
     document.getElementById("data-semana6").value = res6;
 
-    var res7 = sem7.replace("", "2020-07-27");
+    var res7 = sem7.replace("", "2020-10-26");
     document.getElementById("data-semana7").value = res7;
 
-    var res8 = sem8.replace("", "2020-08-10");
+    var res8 = sem8.replace("", "2020-11-09");
     document.getElementById("data-semana8").value = res8;
   });
 };
